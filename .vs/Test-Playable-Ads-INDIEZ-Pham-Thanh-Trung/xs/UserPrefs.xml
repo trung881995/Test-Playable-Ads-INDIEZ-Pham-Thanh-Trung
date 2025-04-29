@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{41F17415-F0E4-71C9-D2A2-65D7CC97EE4C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BEDRILL/Track_Environment_Free/Readme.txt">
+    <Files>
+      <File FileName="Assets/BEDRILL/Track_Environment_Free/Readme.txt" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung" expanded="True">
+            <Node name="Assets" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor-firstpass PreferredExecutionTarget="c0e863b7-8471-4b52-b6cb-0c7c76c6223a" />
+</Properties>
