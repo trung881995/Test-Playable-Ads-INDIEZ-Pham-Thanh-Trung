@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BrokenVector/LowPolyRoadPack/Demo/Low Poly Road Pack Demo.unity
+- path: Assets/Nebula - Free low poly car pack/Scenes/Sample.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
