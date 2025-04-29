@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63727
+63846
 Successfully changed project path to: /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,13 +58,13 @@ Successfully changed project path to: /Users/phamthanhtrung/Desktop/Projects/Tes
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8419870784]  Target information:
 
-Player connection [8419870784]  * "[IP] 192.168.2.18 [Port] 0 [Flags] 2 [Guid] 1039791124 [EditorId] 1039791124 [Version] 1048832 [Id] OSXEditor(0,192.168.2.18) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8419870784]  * "[IP] 192.168.2.18 [Port] 0 [Flags] 2 [Guid] 1982851711 [EditorId] 1982851711 [Version] 1048832 [Id] OSXEditor(0,192.168.2.18) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8419870784] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8419870784] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 8.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 10.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.61f1 (6c53ebaf375d)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -87,22 +87,22 @@ Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/Uni
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005110 seconds.
-- Loaded All Assemblies, in  0.233 seconds
+Registered in 0.005232 seconds.
+- Loaded All Assemblies, in  0.244 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
-2025-04-29 14:44:53.951 Unity[34048:7432928] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+2025-04-29 14:47:05.482 Unity[34124:7435044] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 65 ms
+Android Extension - Scanning For ADB Devices 67 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.280 seconds
-Domain Reload Profiling: 514ms
-	BeginReloadAssembly (74ms)
+- Finished resetting the current domain, in  0.291 seconds
+Domain Reload Profiling: 535ms
+	BeginReloadAssembly (84ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -110,21 +110,21 @@ Domain Reload Profiling: 514ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (31ms)
+	initialDomainReloadingComplete (32ms)
 	LoadAllAssembliesAndSetupDomain (99ms)
-		LoadAssemblies (76ms)
+		LoadAssemblies (86ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (96ms)
 			TypeCache.Refresh (95ms)
-				TypeCache.ScanAssembly (85ms)
+				TypeCache.ScanAssembly (86ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (281ms)
+	FinalizeReload (291ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (251ms)
+		SetupLoadedEditorAssemblies (264ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (166ms)
+			InitializePlatformSupportModulesInManaged (178ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
@@ -138,43 +138,43 @@ Domain Reload Profiling: 514ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.389 seconds
+- Loaded All Assemblies, in  0.368 seconds
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
-2025-04-29 14:44:55.262 Unity[34048:7432928] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+2025-04-29 14:47:06.770 Unity[34124:7435044] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.312 seconds
-Domain Reload Profiling: 701ms
-	BeginReloadAssembly (78ms)
+- Finished resetting the current domain, in  0.314 seconds
+Domain Reload Profiling: 682ms
+	BeginReloadAssembly (73ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
+		CreateAndSetChildDomain (17ms)
 	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (261ms)
-		LoadAssemblies (185ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (245ms)
+		LoadAssemblies (164ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (114ms)
-			TypeCache.Refresh (103ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (104ms)
 				TypeCache.ScanAssembly (90ms)
 			ScanForSourceGeneratedMonoScriptInfo (7ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (312ms)
+	FinalizeReload (314ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (213ms)
+		SetupLoadedEditorAssemblies (214ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (26ms)
-			ProcessInitializeOnLoadAttributes (156ms)
+			ProcessInitializeOnLoadAttributes (157ms)
 			ProcessInitializeOnLoadMethodAttributes (10ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
@@ -182,12 +182,12 @@ Domain Reload Profiling: 701ms
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3127 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (48.8 KB). Loaded Objects now: 3595.
+Unloading 19 unused Assets / (48.4 KB). Loaded Objects now: 3595.
 Memory consumption went from 125.5 MB to 125.5 MB.
-Total: 2.351625 ms (FindLiveObjects: 0.116250 ms CreateObjectMapping: 0.057458 ms MarkObjects: 2.115584 ms  DeleteObjects: 0.061875 ms)
+Total: 2.740875 ms (FindLiveObjects: 0.103500 ms CreateObjectMapping: 0.051333 ms MarkObjects: 2.517792 ms  DeleteObjects: 0.067750 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -204,19 +204,96 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 504085.102118 seconds.
-  path: Assets/Nebula - Free low poly car pack/Scenes
-  artifactKey: Guid(689a0798242b7b74c8223488793dae22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nebula - Free low poly car pack/Scenes using Guid(689a0798242b7b74c8223488793dae22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4e5d1b630b416b2a84b68ba91e969640') in 0.002143 seconds
+  Time since last request: 504216.424366 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6feb99f21cf5547b68a24b14d01fd34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6feb99f21cf5547b68a24b14d01fd34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '58ccc689b0e78e5b7582f8f1c6df1509') in 0.001127 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.996211 seconds.
-  path: Assets/Nebula - Free low poly car pack/Scenes/Sample.unity
-  artifactKey: Guid(45f3b678765076a4e898a000719ccec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nebula - Free low poly car pack/Scenes/Sample.unity using Guid(45f3b678765076a4e898a000719ccec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9507305b840c9d46cfc69a504d47f7bc') in 0.000471 seconds
+  Time since last request: 24.615870 seconds.
+  path: Assets/Scenes/PlayableAdsScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayableAdsScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1e31a868196c3ae05777ac3d94a22ad2') in 0.000263 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.578548 seconds.
+  path: Assets/BrokenVector
+  artifactKey: Guid(16e8a29051a8e41ed901d6ce657929f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrokenVector using Guid(16e8a29051a8e41ed901d6ce657929f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6c2f569e60967c64c91c03251c0d5986') in 0.000524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 106.884761 seconds.
+  path: Assets/Nebula - Free low poly car pack/Prefabs
+  artifactKey: Guid(d89c3dc68bafcd34083f75106dde0c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nebula - Free low poly car pack/Prefabs using Guid(d89c3dc68bafcd34083f75106dde0c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a8e11a4d534e1b87a0feff7bca7e57c1') in 0.000555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.456083 seconds.
+  path: Assets/Nebula - Free low poly car pack/Prefabs/Vehicles
+  artifactKey: Guid(a08028b7273415b4c809a8a18a55c274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nebula - Free low poly car pack/Prefabs/Vehicles using Guid(a08028b7273415b4c809a8a18a55c274) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '44a481311ef393760cb11673d191d56e') in 0.000455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.747618 seconds.
+  path: Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/Ambulance.prefab
+  artifactKey: Guid(cacb113296c6b574f9ee6f490eaee098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/Ambulance.prefab using Guid(cacb113296c6b574f9ee6f490eaee098) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'be6d231cea530b13d37fac3a980bb202') in 0.117553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 68
+========================================================================
+Received Import Request.
+  Time since last request: 1.949065 seconds.
+  path: Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/Police.prefab
+  artifactKey: Guid(52764cd8044f2c647a16b4966971d8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/Police.prefab using Guid(52764cd8044f2c647a16b4966971d8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fa46ba1295186c9eec38f5bb54438dfe') in 0.010750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 63
+========================================================================
+Received Import Request.
+  Time since last request: 0.584360 seconds.
+  path: Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/Muscle.prefab
+  artifactKey: Guid(affd65c6c8bad6f438c35382c581f299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/Muscle.prefab using Guid(affd65c6c8bad6f438c35382c581f299) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ed92d665b535541e1cdf3dc81625f26a') in 0.009939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 64
+========================================================================
+Received Import Request.
+  Time since last request: 0.518328 seconds.
+  path: Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/Minivan.prefab
+  artifactKey: Guid(c98f7aa5a4b596d4aa2cbec16569d93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/Minivan.prefab using Guid(c98f7aa5a4b596d4aa2cbec16569d93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dc29dfa89ae15424be1149d1a909cae5') in 0.009922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.685335 seconds.
+  path: Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/LorryCargo.prefab
+  artifactKey: Guid(41e707e83fa326a4daa125fdc4a6a0fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nebula - Free low poly car pack/Prefabs/Vehicles/LorryCargo.prefab using Guid(41e707e83fa326a4daa125fdc4a6a0fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '385493dd9be4d9ae2b5c3c183cfeda86') in 0.010690 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 132

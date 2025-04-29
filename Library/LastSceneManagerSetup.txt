@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Nebula - Free low poly car pack/Scenes/Sample.unity
+- path: Assets/Scenes/PlayableAdsScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
