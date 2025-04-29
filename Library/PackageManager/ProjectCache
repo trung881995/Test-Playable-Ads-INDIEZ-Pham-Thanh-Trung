@@ -5,20 +5,34 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638810110530000000
-    m_Hash: 4119161248
+      ticks: 638815117780000000
+    m_Hash: 3878167302
   m_LockFileStatus:
     m_FilePath: /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638810110580000000
-    m_Hash: 2710114812
+      ticks: 638815117780000000
+    m_Hash: 3045844327
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
-  m_LocalFileStatus: []
+  m_LocalFileStatus:
+  - m_FilePath: /Users/phamthanhtrung/Downloads/6/scripts/package.json
+    m_PathExists: 1
+    m_ContentTrackingEnabled: 1
+    m_ModificationDate:
+      serializedVersion: 2
+      ticks: 638795848000000000
+    m_Hash: 3670587088
+  - m_FilePath: /Users/phamthanhtrung/Downloads/6/scripts
+    m_PathExists: 1
+    m_ContentTrackingEnabled: 1
+    m_ModificationDate:
+      serializedVersion: 2
+      ticks: 0
+    m_Hash: 0
 m_ProjectPath: /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Packages
 m_EditorVersion: 2022.3.61f1 (6c53ebaf375d)
 m_ResolvedPackages:
@@ -805,6 +819,69 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.9.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: uk.lunalabs.luna@file:/Users/phamthanhtrung/Downloads/6/scripts
+  testable: 0
+  isDirectDependency: 1
+  version: 6.3.0
+  source: 4
+  resolvedPath: /Users/phamthanhtrung/Downloads/6/scripts
+  assetPath: Packages/uk.lunalabs.luna
+  name: uk.lunalabs.luna
+  displayName: Unity Playworks Plugin
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: feature
+  description: 'Build your ads in Unity, and convert them using the Unity Playworks
+    Plugin.
+
+
+    To get started, download our tutorial project by clicking on the
+    QuickStart button in the upper right corner, which teaches you the required knowledge
+    to get started with ads.
+
+
+    Or download at: https://playground.lunalabs.io/downloads'
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - Luna
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://docs.lunalabs.io/docs/playable/overview
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
