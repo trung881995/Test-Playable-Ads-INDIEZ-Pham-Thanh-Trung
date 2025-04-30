@@ -1,13 +1,18 @@
-﻿<Properties StartupConfiguration="{41F17415-F0E4-71C9-D2A2-65D7CC97EE4C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BEDRILL/Track_Environment_Free/Readme.txt">
+﻿<Properties StartupConfiguration="{3DAD8B3E-2A62-58CE-3511-9D5AA68ECDA6}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AICarRigidbodyController.cs">
     <Files>
-      <File FileName="Assets/BEDRILL/Track_Environment_Free/Readme.txt" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CheckpointsManager.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/AICarRigidbodyController.cs" Line="21" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung" expanded="True">
-            <Node name="Assets" expanded="True" selected="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="AICarRigidbodyController.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -15,6 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="42769a0d-6ccf-4151-849c-f18b9bc39d32" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
