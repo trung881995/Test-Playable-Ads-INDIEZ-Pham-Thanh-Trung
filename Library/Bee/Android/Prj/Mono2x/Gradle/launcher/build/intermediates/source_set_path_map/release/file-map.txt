@@ -1,0 +1,9 @@
+com.DefaultCompany.INDIEZ.launcher-pngs-0 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/generated/res/pngs/release
+com.DefaultCompany.INDIEZ.launcher-resValues-1 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/generated/res/resValues/release
+com.DefaultCompany.INDIEZ.launcher-rs-2 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/generated/res/rs/release
+com.DefaultCompany.INDIEZ.launcher-mergeReleaseResources-3 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.DefaultCompany.INDIEZ.launcher-mergeReleaseResources-4 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.DefaultCompany.INDIEZ.launcher-merged_res-5 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/merged_res/release
+com.DefaultCompany.INDIEZ.launcher-main-6 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res
+com.DefaultCompany.INDIEZ.launcher-release-7 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/release/res
+com.DefaultCompany.INDIEZ.launcher-packaged_res-8 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release
