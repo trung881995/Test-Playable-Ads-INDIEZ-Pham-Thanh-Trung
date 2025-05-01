@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{3DAD8B3E-2A62-58CE-3511-9D5AA68ECDA6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerCarController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HandleCollision.cs">
     <Files>
-      <File FileName="Assets/Scripts/CheckpointsManager.cs" Line="38" Column="6" />
-      <File FileName="Assets/Scripts/AICarRigidbodyController.cs" Line="15" Column="1" />
-      <File FileName="Assets/Scripts/PlayerCarController.cs" Line="137" Column="1" />
+      <File FileName="Assets/Scripts/CheckpointsManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AICarRigidbodyController.cs" Line="35" Column="39" />
+      <File FileName="Assets/Scripts/PlayerCarController.cs" Line="120" Column="5" />
+      <File FileName="Assets/Scripts/HandleCollision.cs" Line="7" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +12,7 @@
           <Node name="Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlayerCarController.cs" selected="True" />
+                <Node name="HandleCollision.cs" selected="True" />
               </Node>
             </Node>
           </Node>
