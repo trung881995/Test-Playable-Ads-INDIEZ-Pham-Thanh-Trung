@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/PlayableAdsScene.unity
+- path: Assets/ARCADE - Ultimate Vehicles Pack/Scenes/Desert.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
