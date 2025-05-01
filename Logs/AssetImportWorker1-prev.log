@@ -22,7 +22,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55961
+57356
 Successfully changed project path to: /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,13 +58,13 @@ Successfully changed project path to: /Users/phamthanhtrung/Desktop/Projects/Tes
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8419870784]  Target information:
 
-Player connection [8419870784]  * "[IP] 192.168.2.18 [Port] 0 [Flags] 2 [Guid] 3479064488 [EditorId] 3479064488 [Version] 1048832 [Id] OSXEditor(0,192.168.2.18) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8419870784]  * "[IP] 192.168.2.18 [Port] 0 [Flags] 2 [Guid] 2264057291 [EditorId] 2264057291 [Version] 1048832 [Id] OSXEditor(0,192.168.2.18) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8419870784] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8419870784] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 14.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 15.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.61f1 (6c53ebaf375d)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56150
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -87,22 +87,22 @@ Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/Uni
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005917 seconds.
-- Loaded All Assemblies, in  0.262 seconds
+Registered in 0.002000 seconds.
+- Loaded All Assemblies, in  0.234 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
-2025-05-01 21:14:59.851 Unity[12150:10369929] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+2025-05-01 22:37:49.307 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 67 ms
+Android Extension - Scanning For ADB Devices 76 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.293 seconds
-Domain Reload Profiling: 555ms
-	BeginReloadAssembly (94ms)
+- Finished resetting the current domain, in  0.306 seconds
+Domain Reload Profiling: 539ms
+	BeginReloadAssembly (76ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -110,26 +110,26 @@ Domain Reload Profiling: 555ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (105ms)
-		LoadAssemblies (97ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (101ms)
+		LoadAssemblies (78ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (100ms)
-			TypeCache.Refresh (100ms)
-				TypeCache.ScanAssembly (89ms)
+		AnalyzeDomain (97ms)
+			TypeCache.Refresh (97ms)
+				TypeCache.ScanAssembly (87ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (293ms)
+	FinalizeReload (306ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (265ms)
+		SetupLoadedEditorAssemblies (278ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (179ms)
+			InitializePlatformSupportModulesInManaged (191ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (60ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
+			ProcessInitializeOnLoadAttributes (59ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -138,10 +138,10 @@ Domain Reload Profiling: 555ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.481 seconds
+- Loaded All Assemblies, in  0.467 seconds
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
-2025-05-01 21:15:01.383 Unity[12150:10369929] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+2025-05-01 22:37:50.793 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
@@ -169,48 +169,48 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Use
 (Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
 
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.488 seconds
-Domain Reload Profiling: 966ms
-	BeginReloadAssembly (83ms)
+- Finished resetting the current domain, in  0.479 seconds
+Domain Reload Profiling: 943ms
+	BeginReloadAssembly (78ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (18ms)
 	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (8ms)
+	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (342ms)
-		LoadAssemblies (250ms)
+	LoadAllAssembliesAndSetupDomain (334ms)
+		LoadAssemblies (247ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (134ms)
-			TypeCache.Refresh (121ms)
-				TypeCache.ScanAssembly (101ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
+		AnalyzeDomain (125ms)
+			TypeCache.Refresh (113ms)
+				TypeCache.ScanAssembly (99ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (489ms)
+	FinalizeReload (480ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (381ms)
+		SetupLoadedEditorAssemblies (374ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (18ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (306ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
+			ProcessInitializeOnLoadAttributes (300ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (132.4 KB). Loaded Objects now: 3794.
-Memory consumption went from 136.5 MB to 136.3 MB.
-Total: 3.218708 ms (FindLiveObjects: 0.108292 ms CreateObjectMapping: 0.054500 ms MarkObjects: 2.876500 ms  DeleteObjects: 0.178875 ms)
+Unloading 34 unused Assets / (122.9 KB). Loaded Objects now: 3792.
+Memory consumption went from 135.6 MB to 135.5 MB.
+Total: 2.784458 ms (FindLiveObjects: 0.115209 ms CreateObjectMapping: 0.051125 ms MarkObjects: 2.468167 ms  DeleteObjects: 0.149375 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -227,40 +227,2632 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 612550.825700 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Skyboxes
-  artifactKey: Guid(483a6c242b0f9564c92b56f5e554d0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Skyboxes using Guid(483a6c242b0f9564c92b56f5e554d0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ee9130320c64a5f120cbb82df87064f4') in 0.001433 seconds
+  Time since last request: 617520.187853 seconds.
+  path: Assets/CartoonTracksPack1/Track1
+  artifactKey: Guid(7747731d2f00bc948ad23d82265425e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonTracksPack1/Track1 using Guid(7747731d2f00bc948ad23d82265425e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '19cf7520325e2ce3e09fbdfe0c41353f') in 0.001435 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Skyboxes/Night/Skybox_Night.mat
-  artifactKey: Guid(5e48c5a40e0cd5b4da6d02e938c70cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Skyboxes/Night/Skybox_Night.mat using Guid(5e48c5a40e0cd5b4da6d02e938c70cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '41fa3a2afa3b8f07976a08bd9eb37b8e') in 0.131772 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x309507000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.286 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 22:45:13.806 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.770 seconds
+Domain Reload Profiling: 1056ms
+	BeginReloadAssembly (107ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (162ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (770ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (326ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (253ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Unloading 3287 Unused Serialized files (Serialized files now loaded: 0)
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 17 unused Assets / (100.2 KB). Loaded Objects now: 3809.
+Memory consumption went from 135.9 MB to 135.8 MB.
+Total: 2.872917 ms (FindLiveObjects: 0.163708 ms CreateObjectMapping: 0.063875 ms MarkObjects: 2.592917 ms  DeleteObjects: 0.051750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.648757 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Skyboxes/Night/Textures/Top.png
-  artifactKey: Guid(d3837623775c8fc43bf845fee6a328ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Skyboxes/Night/Textures/Top.png using Guid(d3837623775c8fc43bf845fee6a328ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 1802.743574 seconds.
+  path: Assets/CartoonTracksPack1/Track1/Meshes/Materials/BANNERS.mat
+  artifactKey: Guid(cc78efcdfefbd1946b3cfd8213f5b476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonTracksPack1/Track1/Meshes/Materials/BANNERS.mat using Guid(cc78efcdfefbd1946b3cfd8213f5b476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f33ddda0d16914589f32aa8ab25da78a') in 0.028432 seconds
+ -> (artifact id: '2fff601742c2aff2f2473f24c0cf5b59') in 0.623741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/CartoonTracksPack1/Track1/Meshes/Materials/BARRIER.mat
+  artifactKey: Guid(0e65db2183b5ac74a973fc7ca41f8be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonTracksPack1/Track1/Meshes/Materials/BARRIER.mat using Guid(0e65db2183b5ac74a973fc7ca41f8be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0bd14a4b5ff4e66524bae83bc4b38178') in 0.315905 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Skyboxes/Night/Textures/Bottom.png
-  artifactKey: Guid(df6b3815b3c8d76479f0739a8730ba3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Skyboxes/Night/Textures/Bottom.png using Guid(df6b3815b3c8d76479f0739a8730ba3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 0.000111 seconds.
+  path: Assets/CartoonTracksPack1/Track1/Meshes/Materials/ROAD_MARKS.mat
+  artifactKey: Guid(2d71a638e4c372c46bfe0ee86bfbe4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonTracksPack1/Track1/Meshes/Materials/ROAD_MARKS.mat using Guid(2d71a638e4c372c46bfe0ee86bfbe4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7e1c1baf577691e1fad8359d9120d4ec') in 0.006475 seconds
+ -> (artifact id: '04744d6bcc4c05d09a592784137c3d4e') in 0.399110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/CartoonTracksPack1/Track1/Meshes/Materials/GARAGES.mat
+  artifactKey: Guid(361313c7da333414a8c9a9bfe9eef847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonTracksPack1/Track1/Meshes/Materials/GARAGES.mat using Guid(361313c7da333414a8c9a9bfe9eef847) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bb0b32e08b230fc1dfa4dde423bb2bb6') in 0.493303 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/CartoonTracksPack1/Track1/Meshes/Materials/START_LEDS.mat
+  artifactKey: Guid(ec63e2f99ff7d0c4ba51bea1b8e48be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonTracksPack1/Track1/Meshes/Materials/START_LEDS.mat using Guid(ec63e2f99ff7d0c4ba51bea1b8e48be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5342eae3fe0ded0b9ffbb7e9f2fc535e') in 0.132241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.310 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:15:53.175 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.855 seconds
+Domain Reload Profiling: 1165ms
+	BeginReloadAssembly (119ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (149ms)
+		LoadAssemblies (185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (855ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (313ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (237ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3287 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 3867.
+Memory consumption went from 143.7 MB to 143.6 MB.
+Total: 3.773709 ms (FindLiveObjects: 0.134083 ms CreateObjectMapping: 0.056542 ms MarkObjects: 3.530041 ms  DeleteObjects: 0.052584 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.301 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:17:14.555 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.778 seconds
+Domain Reload Profiling: 1080ms
+	BeginReloadAssembly (92ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (186ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (779ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (340ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (267ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.2 KB). Loaded Objects now: 3884.
+Memory consumption went from 150.4 MB to 150.3 MB.
+Total: 3.373708 ms (FindLiveObjects: 0.172500 ms CreateObjectMapping: 0.112833 ms MarkObjects: 3.021667 ms  DeleteObjects: 0.066208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.273 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:18:08.958 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.721 seconds
+Domain Reload Profiling: 995ms
+	BeginReloadAssembly (92ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (139ms)
+		LoadAssemblies (162ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (722ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (304ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (232ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.2 KB). Loaded Objects now: 3901.
+Memory consumption went from 156.8 MB to 156.7 MB.
+Total: 3.660916 ms (FindLiveObjects: 0.280917 ms CreateObjectMapping: 0.169041 ms MarkObjects: 3.136625 ms  DeleteObjects: 0.072375 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.270 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:18:43.317 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.770 seconds
+Domain Reload Profiling: 1041ms
+	BeginReloadAssembly (85ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (167ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (770ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (329ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (255ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 3918.
+Memory consumption went from 163.3 MB to 163.2 MB.
+Total: 4.054416 ms (FindLiveObjects: 0.159792 ms CreateObjectMapping: 0.109917 ms MarkObjects: 3.705875 ms  DeleteObjects: 0.077625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.320 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:29:00.753 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.805 seconds
+Domain Reload Profiling: 1126ms
+	BeginReloadAssembly (96ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (158ms)
+		LoadAssemblies (183ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (806ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (355ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (272ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 3935.
+Memory consumption went from 169.7 MB to 169.6 MB.
+Total: 3.793833 ms (FindLiveObjects: 0.177417 ms CreateObjectMapping: 0.127208 ms MarkObjects: 3.402917 ms  DeleteObjects: 0.085708 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.333 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:37:51.811 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.808 seconds
+Domain Reload Profiling: 1141ms
+	BeginReloadAssembly (93ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (159ms)
+		LoadAssemblies (185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (808ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (362ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (32ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 3952.
+Memory consumption went from 176.1 MB to 176.0 MB.
+Total: 3.737833 ms (FindLiveObjects: 0.178250 ms CreateObjectMapping: 0.110791 ms MarkObjects: 3.365917 ms  DeleteObjects: 0.082541 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b7cf000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.296 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:38:26.378 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.809 seconds
+Domain Reload Profiling: 1105ms
+	BeginReloadAssembly (84ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (164ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (809ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (359ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 3969.
+Memory consumption went from 182.5 MB to 182.4 MB.
+Total: 4.227167 ms (FindLiveObjects: 0.185541 ms CreateObjectMapping: 0.127375 ms MarkObjects: 3.806000 ms  DeleteObjects: 0.107166 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b78f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.293 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:40:40.833 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.759 seconds
+Domain Reload Profiling: 1052ms
+	BeginReloadAssembly (87ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (164ms)
+		LoadAssemblies (186ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (760ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (326ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (31ms)
+			ProcessInitializeOnLoadAttributes (251ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.4 KB). Loaded Objects now: 3986.
+Memory consumption went from 188.9 MB to 188.8 MB.
+Total: 12.563209 ms (FindLiveObjects: 0.181584 ms CreateObjectMapping: 0.123125 ms MarkObjects: 12.183791 ms  DeleteObjects: 0.073834 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b78f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.310 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:42:15.732 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.820 seconds
+Domain Reload Profiling: 1130ms
+	BeginReloadAssembly (89ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (178ms)
+		LoadAssemblies (195ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (821ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (374ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (291ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 4003.
+Memory consumption went from 195.4 MB to 195.3 MB.
+Total: 3.464042 ms (FindLiveObjects: 0.186375 ms CreateObjectMapping: 0.109875 ms MarkObjects: 3.090625 ms  DeleteObjects: 0.076708 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b7cf000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.298 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:42:53.210 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.829 seconds
+Domain Reload Profiling: 1127ms
+	BeginReloadAssembly (88ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (187ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (829ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (374ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 4020.
+Memory consumption went from 201.8 MB to 201.7 MB.
+Total: 4.174209 ms (FindLiveObjects: 0.208750 ms CreateObjectMapping: 0.131208 ms MarkObjects: 3.758917 ms  DeleteObjects: 0.074500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17db87000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.300 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:44:20.040 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.852 seconds
+Domain Reload Profiling: 1153ms
+	BeginReloadAssembly (90ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (168ms)
+		LoadAssemblies (188ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (853ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (375ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (297ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.4 KB). Loaded Objects now: 4037.
+Memory consumption went from 208.2 MB to 208.1 MB.
+Total: 3.776125 ms (FindLiveObjects: 0.192584 ms CreateObjectMapping: 0.119125 ms MarkObjects: 3.382750 ms  DeleteObjects: 0.081083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17db87000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.330 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-01 23:45:43.276 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.809 seconds
+Domain Reload Profiling: 1140ms
+	BeginReloadAssembly (96ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (190ms)
+		LoadAssemblies (214ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (809ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (359ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (32ms)
+			ProcessInitializeOnLoadAttributes (282ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 4054.
+Memory consumption went from 214.6 MB to 214.5 MB.
+Total: 3.509958 ms (FindLiveObjects: 0.193500 ms CreateObjectMapping: 0.151250 ms MarkObjects: 3.098459 ms  DeleteObjects: 0.066416 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17db87000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.343 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-02 00:08:30.997 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.813 seconds
+Domain Reload Profiling: 1156ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (155ms)
+		LoadAssemblies (188ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (813ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (368ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (288ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.4 KB). Loaded Objects now: 4071.
+Memory consumption went from 221.1 MB to 221.0 MB.
+Total: 4.054708 ms (FindLiveObjects: 0.174833 ms CreateObjectMapping: 0.119875 ms MarkObjects: 3.680459 ms  DeleteObjects: 0.078916 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17db87000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.323 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-02 00:09:17.318 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.823 seconds
+Domain Reload Profiling: 1146ms
+	BeginReloadAssembly (99ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (147ms)
+		LoadAssemblies (174ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (824ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (369ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (291ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 4088.
+Memory consumption went from 227.5 MB to 227.4 MB.
+Total: 3.677667 ms (FindLiveObjects: 0.178500 ms CreateObjectMapping: 0.116333 ms MarkObjects: 3.315375 ms  DeleteObjects: 0.066459 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.347 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-02 00:11:31.391 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.823 seconds
+Domain Reload Profiling: 1170ms
+	BeginReloadAssembly (96ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (208ms)
+		LoadAssemblies (229ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (823ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (368ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (289ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 4105.
+Memory consumption went from 233.9 MB to 233.8 MB.
+Total: 4.197917 ms (FindLiveObjects: 0.290333 ms CreateObjectMapping: 0.195000 ms MarkObjects: 3.644209 ms  DeleteObjects: 0.067583 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3972.994993 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Arch_banner_finish_free_obs.prefab
+  artifactKey: Guid(c7bebf8ce7ad3264abbb7ed6a6953153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Arch_banner_finish_free_obs.prefab using Guid(c7bebf8ce7ad3264abbb7ed6a6953153) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0d1d74ae29207171723083372625d924') in 0.182984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.327 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-02 00:17:29.133 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.844 seconds
+Domain Reload Profiling: 1171ms
+	BeginReloadAssembly (102ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (181ms)
+		LoadAssemblies (205ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (844ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (393ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (317ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3287 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 4122.
+Memory consumption went from 240.6 MB to 240.5 MB.
+Total: 3.473833 ms (FindLiveObjects: 0.190166 ms CreateObjectMapping: 0.112042 ms MarkObjects: 3.095834 ms  DeleteObjects: 0.074208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17b187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.322 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-02 00:18:46.540 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.828 seconds
+Domain Reload Profiling: 1151ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (168ms)
+		LoadAssemblies (193ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (828ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (367ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.4 KB). Loaded Objects now: 4139.
+Memory consumption went from 247.3 MB to 247.2 MB.
+Total: 3.485000 ms (FindLiveObjects: 0.184084 ms CreateObjectMapping: 0.111167 ms MarkObjects: 3.120125 ms  DeleteObjects: 0.069000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17dc13000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.315 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-02 00:22:22.023 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.825 seconds
+Domain Reload Profiling: 1141ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (174ms)
+		LoadAssemblies (196ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (826ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (378ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (290ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 4156.
+Memory consumption went from 253.6 MB to 253.5 MB.
+Total: 6.139833 ms (FindLiveObjects: 0.193208 ms CreateObjectMapping: 0.126250 ms MarkObjects: 5.633083 ms  DeleteObjects: 0.186208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17dc13000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.332 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-02 00:24:25.231 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.832 seconds
+Domain Reload Profiling: 1164ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (186ms)
+		LoadAssemblies (207ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (832ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (379ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (302ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.3 KB). Loaded Objects now: 4173.
+Memory consumption went from 260.1 MB to 260.0 MB.
+Total: 3.421542 ms (FindLiveObjects: 0.181500 ms CreateObjectMapping: 0.121167 ms MarkObjects: 3.052416 ms  DeleteObjects: 0.065792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17dc13000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.342 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-02 00:26:24.704 Unity[15412:10438774] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.845 seconds
+Domain Reload Profiling: 1187ms
+	BeginReloadAssembly (99ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (197ms)
+		LoadAssemblies (222ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (845ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (363ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (285ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (100.4 KB). Loaded Objects now: 4190.
+Memory consumption went from 266.5 MB to 266.4 MB.
+Total: 3.681792 ms (FindLiveObjects: 0.211625 ms CreateObjectMapping: 0.143375 ms MarkObjects: 3.247333 ms  DeleteObjects: 0.078042 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

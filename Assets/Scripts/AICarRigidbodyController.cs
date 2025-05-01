@@ -21,7 +21,7 @@ public class AICarRigidbodyController : MonoBehaviour
     private Rigidbody rb;
     private CheckpointManager checkpointManager;
     private int currentCheckpointIndex = 0;
-
+    private bool isGrounded = false;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,70 +30,91 @@ public class AICarRigidbodyController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Transform target = checkpointManager.GetCheckpoint(currentCheckpointIndex);
-        if (target == null) return;
-
-        Vector3 targetDir = (target.position - transform.position).normalized;
-
-        // Góc quay giữa hướng xe và checkpoint
-        float angleToTarget = Vector3.SignedAngle(transform.forward, targetDir, Vector3.up);
-
-        // Quay mượt theo hướng checkpoint
-        Quaternion targetRotation = Quaternion.LookRotation(targetDir);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed * Time.fixedDeltaTime);
-
-        // Giảm lực nếu cua gắt
-        float adjustedForce = moveForce;
-        if (Mathf.Abs(angleToTarget) > slowTurnThreshold)
+        rb.AddForce(-transform.up * 1000f * Time.fixedDeltaTime, ForceMode.Acceleration);
+        if (isGrounded)
         {
-            adjustedForce *= 0.5f;
-        }
+            Transform target = checkpointManager.GetCheckpoint(currentCheckpointIndex);
+            if (target == null) return;
 
-        // Drift nhẹ nếu cua gắt
-        if (Mathf.Abs(angleToTarget) > slowTurnThreshold)
-        {
-            Vector3 driftDir = transform.right * Mathf.Sign(angleToTarget); // drift trái/phải
-            rb.AddForce(driftDir * driftForce * Time.fixedDeltaTime, ForceMode.Acceleration);
-        }
+            Vector3 targetDir = (target.position - transform.position).normalized;
 
-        // Thêm lực tiến nếu chưa quá tốc độ
-        if (rb.velocity.magnitude < maxSpeed)
-        {
-            rb.AddForce(transform.forward * adjustedForce * Time.fixedDeltaTime, ForceMode.Acceleration);
-        }
+            // Góc quay giữa hướng xe và checkpoint
+            float angleToTarget = Vector3.SignedAngle(transform.forward, targetDir, Vector3.up);
 
-        // Kiểm tra đến checkpoint
-        if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
-        {
-            currentCheckpointIndex++;
-            if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+            // Quay mượt theo hướng checkpoint
+            Quaternion targetRotation = Quaternion.LookRotation(targetDir);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed * Time.fixedDeltaTime);
+
+            // Giảm lực nếu cua gắt
+            float adjustedForce = moveForce;
+            if (Mathf.Abs(angleToTarget) > slowTurnThreshold)
             {
-                currentCheckpointIndex = 0;
+                adjustedForce *= 0.5f;
             }
-        }
 
-        // ==== Raycast né vật cản ====
-        RaycastHit hit;
-        Vector3 centerDir = transform.forward;
-        Vector3 leftDir = Quaternion.AngleAxis(-30, Vector3.up) * transform.forward;
-        Vector3 rightDir = Quaternion.AngleAxis(30, Vector3.up) * transform.forward;
+            // Drift nhẹ nếu cua gắt
+            if (Mathf.Abs(angleToTarget) > slowTurnThreshold)
+            {
+                Vector3 driftDir = transform.right * Mathf.Sign(angleToTarget); // drift trái/phải
+                rb.AddForce(driftDir * driftForce * Time.fixedDeltaTime, ForceMode.Acceleration);
+            }
 
-        if (Physics.Raycast(transform.position, centerDir, out hit, obstacleDetectionRange, obstacleLayers))
-        {
-            rb.AddForce(transform.right * avoidanceForce * Time.fixedDeltaTime, ForceMode.Acceleration);
-        }
-        else if (Physics.Raycast(transform.position, leftDir, out hit, obstacleDetectionRange, obstacleLayers))
-        {
-            rb.AddForce(transform.right * avoidanceForce * Time.fixedDeltaTime, ForceMode.Acceleration);
-        }
-        else if (Physics.Raycast(transform.position, rightDir, out hit, obstacleDetectionRange, obstacleLayers))
-        {
-            rb.AddForce(-transform.right * avoidanceForce * Time.fixedDeltaTime, ForceMode.Acceleration);
-        }
+            // Thêm lực tiến nếu chưa quá tốc độ
+            if (rb.velocity.magnitude < maxSpeed)
+            {
+                rb.AddForce(transform.forward * adjustedForce * Time.fixedDeltaTime, ForceMode.Acceleration);
+            }
 
-        // Debug Ray
-        Debug.DrawRay(transform.position, centerDir * obstacleDetectionRange, Color.red);
-        Debug.DrawRay(transform.position, leftDir * obstacleDetectionRange, Color.yellow);
-        Debug.DrawRay(transform.position, rightDir * obstacleDetectionRange, Color.yellow);
+            // Kiểm tra đến checkpoint
+            if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+            {
+                currentCheckpointIndex++;
+                if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                {
+                    currentCheckpointIndex = 0;
+                }
+            }
+
+            // ==== Raycast né vật cản ====
+            RaycastHit hit;
+            Vector3 centerDir = transform.forward;
+            Vector3 leftDir = Quaternion.AngleAxis(-30, Vector3.up) * transform.forward;
+            Vector3 rightDir = Quaternion.AngleAxis(30, Vector3.up) * transform.forward;
+
+            if (Physics.Raycast(transform.position, centerDir, out hit, obstacleDetectionRange, obstacleLayers))
+            {
+                rb.AddForce(transform.right * avoidanceForce * Time.fixedDeltaTime, ForceMode.Acceleration);
+            }
+            else if (Physics.Raycast(transform.position, leftDir, out hit, obstacleDetectionRange, obstacleLayers))
+            {
+                rb.AddForce(transform.right * avoidanceForce * Time.fixedDeltaTime, ForceMode.Acceleration);
+            }
+            else if (Physics.Raycast(transform.position, rightDir, out hit, obstacleDetectionRange, obstacleLayers))
+            {
+                rb.AddForce(-transform.right * avoidanceForce * Time.fixedDeltaTime, ForceMode.Acceleration);
+            }
+
+            // Debug Ray
+            Debug.DrawRay(transform.position, centerDir * obstacleDetectionRange, Color.red);
+            Debug.DrawRay(transform.position, leftDir * obstacleDetectionRange, Color.yellow);
+            Debug.DrawRay(transform.position, rightDir * obstacleDetectionRange, Color.yellow);
+        }
+        
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.layer == 7)
+        {
+            isGrounded = true;
+            Debug.Log("onGround");
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == 7)
+        {
+            isGrounded = false;
+            Debug.Log("exitGround");
+        }
     }
 }
