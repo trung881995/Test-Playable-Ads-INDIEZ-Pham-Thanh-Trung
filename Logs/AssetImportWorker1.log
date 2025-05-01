@@ -22,7 +22,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55005
+56927
 Successfully changed project path to: /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,13 +58,13 @@ Successfully changed project path to: /Users/phamthanhtrung/Desktop/Projects/Tes
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8419870784]  Target information:
 
-Player connection [8419870784]  * "[IP] 192.168.2.18 [Port] 0 [Flags] 2 [Guid] 1303984414 [EditorId] 1303984414 [Version] 1048832 [Id] OSXEditor(0,192.168.2.18) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8419870784]  * "[IP] 192.168.2.18 [Port] 0 [Flags] 2 [Guid] 1096131458 [EditorId] 1096131458 [Version] 1048832 [Id] OSXEditor(0,192.168.2.18) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8419870784] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8419870784] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 17.19 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 11.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.61f1 (6c53ebaf375d)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56190
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56511
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -87,49 +87,49 @@ Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/Uni
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006205 seconds.
-- Loaded All Assemblies, in  0.250 seconds
+Registered in 0.004951 seconds.
+- Loaded All Assemblies, in  0.251 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
-2025-05-01 20:29:08.704 Unity[11190:10332110] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+2025-05-01 22:15:50.566 Unity[14511:10419337] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 71 ms
+Android Extension - Scanning For ADB Devices 82 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.299 seconds
-Domain Reload Profiling: 549ms
-	BeginReloadAssembly (86ms)
+- Finished resetting the current domain, in  0.493 seconds
+Domain Reload Profiling: 744ms
+	BeginReloadAssembly (80ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (7ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
 	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (101ms)
-		LoadAssemblies (88ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (82ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (98ms)
-			TypeCache.Refresh (97ms)
-				TypeCache.ScanAssembly (87ms)
+		AnalyzeDomain (103ms)
+			TypeCache.Refresh (102ms)
+				TypeCache.ScanAssembly (93ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (299ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (493ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (272ms)
+		SetupLoadedEditorAssemblies (464ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (186ms)
+			InitializePlatformSupportModulesInManaged (370ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (59ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
+			ProcessInitializeOnLoadAttributes (64ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -138,10 +138,10 @@ Domain Reload Profiling: 549ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.466 seconds
+- Loaded All Assemblies, in  0.430 seconds
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
-2025-05-01 20:29:10.248 Unity[11190:10332110] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+2025-05-01 22:15:51.982 Unity[14511:10419337] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
@@ -170,47 +170,47 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Use
 
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.453 seconds
-Domain Reload Profiling: 918ms
-	BeginReloadAssembly (81ms)
+Domain Reload Profiling: 881ms
+	BeginReloadAssembly (79ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
+		CreateAndSetChildDomain (20ms)
 	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (7ms)
+	RebuildNativeTypeToScriptingClass (8ms)
 	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (334ms)
-		LoadAssemblies (246ms)
+	LoadAllAssembliesAndSetupDomain (297ms)
+		LoadAssemblies (204ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (127ms)
-			TypeCache.Refresh (116ms)
-				TypeCache.ScanAssembly (102ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (118ms)
+				TypeCache.ScanAssembly (104ms)
 			ScanForSourceGeneratedMonoScriptInfo (7ms)
-			ResolveRequiredComponents (4ms)
+			ResolveRequiredComponents (3ms)
 	FinalizeReload (453ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (343ms)
+		SetupLoadedEditorAssemblies (349ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (31ms)
-			ProcessInitializeOnLoadAttributes (268ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (277ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3321 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (132.0 KB). Loaded Objects now: 3824.
-Memory consumption went from 136.8 MB to 136.6 MB.
-Total: 4.122125 ms (FindLiveObjects: 0.133458 ms CreateObjectMapping: 0.060458 ms MarkObjects: 3.763792 ms  DeleteObjects: 0.163833 ms)
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (122.5 KB). Loaded Objects now: 3792.
+Memory consumption went from 135.5 MB to 135.4 MB.
+Total: 2.805875 ms (FindLiveObjects: 0.142750 ms CreateObjectMapping: 0.064917 ms MarkObjects: 2.435792 ms  DeleteObjects: 0.161958 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -227,921 +227,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 609799.646938 seconds.
-  path: Assets/Plugins/Demigiant/DemiLib/Core
-  artifactKey: Guid(03513cf143bb144409fbb3a51ec77b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Demigiant/DemiLib/Core using Guid(03513cf143bb144409fbb3a51ec77b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'dd5f86558c3ef5bbc2567ef382e12aaf') in 0.000838 seconds
+  Time since last request: 616201.311504 seconds.
+  path: Assets/Player.physicMaterial
+  artifactKey: Guid(4a6e28b3f06954a419177a1c22ac0236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player.physicMaterial using Guid(4a6e28b3f06954a419177a1c22ac0236) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dae8b57530d57644dc2a49f761f53d4d') in 0.005588 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x17f4d7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.343 seconds
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-2025-05-01 20:29:17.677 Unity[11190:10332110] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
-xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Failed to sync packages list
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
- .  / :MoveNext ()
-System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
- .  :  ()
- .⁪/ :MoveNext ()
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
- .⁪:  ()
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.491 seconds
-Domain Reload Profiling: 834ms
-	BeginReloadAssembly (87ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (211ms)
-		LoadAssemblies (156ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (87ms)
-			TypeCache.Refresh (76ms)
-				TypeCache.ScanAssembly (68ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (492ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (320ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (30ms)
-			ProcessInitializeOnLoadAttributes (247ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
-Unloading 3287 Unused Serialized files (Serialized files now loaded: 0)
-Release of invalid GC handle native callstack: 
- #0 GetStacktrace(int)
- #1 ScriptingGCHandle::Release() const
- #2 ScriptingGCHandle::ReleaseAndClear()
- #3 UploadHandlerRaw::~UploadHandlerRaw()
- #4 UploadHandler::Release()
- #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
- #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
- #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
- #8 BackgroundJobQueue::ExecuteMainThreadJobs()
- #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
- #10 UnloadUnusedAssetsImmediate(bool, bool)
- #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
- #12 _dispatch_client_callout
- #13 _dispatch_async_and_wait_invoke
- #14 _dispatch_client_callout
- #15 _dispatch_main_queue_drain
- #16 _dispatch_main_queue_callback_4CF
- #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #18 __CFRunLoopRun
- #19 CFRunLoopRunSpecific
- #20 RunCurrentEventLoopInMode
- #21 ReceiveNextEventCommon
- #22 _BlockUntilNextEventMatchingListInModeWithFilter
- #23 _DPSNextEvent
- #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #25 -[NSApplication run]
- #26 NSApplicationMain
- #27 EditorMain(int, char const**)
- #28 main
- #29 start
-Unloading 46 unused Assets / (120.7 KB). Loaded Objects now: 3812.
-Memory consumption went from 136.4 MB to 136.3 MB.
-Total: 2.806375 ms (FindLiveObjects: 0.143416 ms CreateObjectMapping: 0.058417 ms MarkObjects: 2.467750 ms  DeleteObjects: 0.136375 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:DemiEditor:  -> 9713a9ebd7b71f042b3f988bdcfde787
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor-firstpass:  -> 23c2b7ec28c59d5ca69f596615a98fdc
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp-firstpass:  -> b26c67f6a15d994bd0760e04fc84091b
-  custom:scripting/precompiled-assembly-types:DOTweenProEditor:  -> 51bc1a80d96a2a35af34dfc86b4db341
-  custom:scripting/precompiled-assembly-types:DOTween:  -> 41770a3e10244ae0a34e714162bbdba6
-  custom:scripting/precompiled-assembly-types:DOTweenPro:  -> a663f20935f73026b0a02781a4652876
-  custom:scripting/precompiled-assembly-types:DOTweenEditor:  -> 1efdf497b099e4e6944f0dd7fb28c744
-  custom:scripting/precompiled-assembly-types:DemiLib:  -> 2d2fa88ff7102d8d3fb38715c5e5e089
-  custom:scripting/precompiled-assembly-types:DOTweenUpgradeManager:  -> 16e542c52fa73d4cbcd5cf54d161ea3b
-========================================================================
-Received Import Request.
-  Time since last request: 428.762292 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Motorcycles/Blizzard.prefab
-  artifactKey: Guid(dfdb7349c7eb01a42899344676678241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Motorcycles/Blizzard.prefab using Guid(dfdb7349c7eb01a42899344676678241) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '141aa93e994436f9ca801fe69270426a') in 0.246651 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Motorcycles/Massalia-20.prefab
-  artifactKey: Guid(8c04e85cfcf594a4fbf17ff1b4029cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Motorcycles/Massalia-20.prefab using Guid(8c04e85cfcf594a4fbf17ff1b4029cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a60173ad33914f9eb946047be7ae36cd') in 0.006343 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Motorcycles/Emma-283.prefab
-  artifactKey: Guid(7ceb2b0e50608874180d01a38206211a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Motorcycles/Emma-283.prefab using Guid(7ceb2b0e50608874180d01a38206211a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'abfac2ea823869c4b1bd71bf02a496a7') in 0.223408 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 35
-========================================================================
-Received Import Request.
-  Time since last request: 5.067697 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Alasia.prefab
-  artifactKey: Guid(07e9de8db64a49b43866a5a9aa4427a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Alasia.prefab using Guid(07e9de8db64a49b43866a5a9aa4427a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f16461d91fbd98a8a26dbe52a30209f0') in 0.008899 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Enyo.prefab
-  artifactKey: Guid(39cb28908d3a93445bd13bc42453501d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Enyo.prefab using Guid(39cb28908d3a93445bd13bc42453501d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f5265d4cb7499cc4ca9a0507331bf0d8') in 0.005338 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Hadar.prefab
-  artifactKey: Guid(dc4c5957553882741855bdf17c5c2425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Hadar.prefab using Guid(dc4c5957553882741855bdf17c5c2425) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '43e164eda1b0fea9fd8b2afd7799a8e7') in 0.005362 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Sparta.prefab
-  artifactKey: Guid(6209472b687b8ab46a792d8bf5fc154e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Sparta.prefab using Guid(6209472b687b8ab46a792d8bf5fc154e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4a31e1c9a9c7c188ed1dddfb26344901') in 0.007778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Ixchel.prefab
-  artifactKey: Guid(06096cd5b8da6914d980ec7d21a057f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Ixchel.prefab using Guid(06096cd5b8da6914d980ec7d21a057f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b66c244ae23c38dafd7efce5e2cdcbb8') in 0.005665 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Arcturus.prefab
-  artifactKey: Guid(3ad81c49948a62b4aa4f9345f62603a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Arcturus.prefab using Guid(3ad81c49948a62b4aa4f9345f62603a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '6cdf9c079cd0df33f6224fad310e2679') in 0.005852 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Artemis.prefab
-  artifactKey: Guid(9cfb979f01ae70c40bed586f9a5da349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Artemis.prefab using Guid(9cfb979f01ae70c40bed586f9a5da349) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c328f61f9c8c700a7d5bac04bc5cbdf2') in 0.007604 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000033 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Atlas.prefab
-  artifactKey: Guid(f6f37847864f2fb48b928f00988699ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Atlas.prefab using Guid(f6f37847864f2fb48b928f00988699ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  path: Assets/Sa Mạc.prefab
+  artifactKey: Guid(bf355b64b92af4b82bfe7aba2765b9a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sa Mạc.prefab using Guid(bf355b64b92af4b82bfe7aba2765b9a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '859fab5d5739b808d3c011bfd01a3166') in 0.005649 seconds
+ -> (artifact id: '12f9a6ec6e5e158b8220ecb5216a65e2') in 1.072496 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Ixion.prefab
-  artifactKey: Guid(475443443f6c2ca4798cb001df6b91eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Ixion.prefab using Guid(475443443f6c2ca4798cb001df6b91eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'db9900a17939b9f53984b63a1e65cf95') in 0.005470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 54
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Ceres.prefab
-  artifactKey: Guid(8ceb8b10cc9bf954d9e1b1d3136cd665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Ceres.prefab using Guid(8ceb8b10cc9bf954d9e1b1d3136cd665) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '758989bee211f7aeb5d50c282f8a5f02') in 0.004646 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Arion.prefab
-  artifactKey: Guid(65a58daf15869a6429df652a4ae00776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Arion.prefab using Guid(65a58daf15869a6429df652a4ae00776) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '761d82aded8fdae8bd4c619b6390fe60') in 0.004981 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Pulsar.prefab
-  artifactKey: Guid(4f90c69e860b76d459f72e9c149310f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Pulsar.prefab using Guid(4f90c69e860b76d459f72e9c149310f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'd26264b1374e3afeb736e83ec9514b72') in 0.004893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Azzurro.prefab
-  artifactKey: Guid(24f1655bf31f95a47aabf44efdf19760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Azzurro.prefab using Guid(24f1655bf31f95a47aabf44efdf19760) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'd2e013754e6f347c6df99ad0c28131ed') in 0.004693 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Cybele-65.prefab
-  artifactKey: Guid(0c17cdf046321064cbc1f18012fa3f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Cybele-65.prefab using Guid(0c17cdf046321064cbc1f18012fa3f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'db5fb06948089dfa50ba9a5c081d3df9') in 0.004767 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/P-Run.prefab
-  artifactKey: Guid(ae4f93db43fb98d4ca1ffdb60c7fd035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/P-Run.prefab using Guid(ae4f93db43fb98d4ca1ffdb60c7fd035) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '8d6d1ed2ade0248c1ae6a1c1b36b95b9') in 0.005013 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Fulmine.prefab
-  artifactKey: Guid(6177ccd5996011a48878911fd2d9bbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Fulmine.prefab using Guid(6177ccd5996011a48878911fd2d9bbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7e3d9976380f4e7031a401d2fbf75310') in 0.006192 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Janus.prefab
-  artifactKey: Guid(0a68ae8889e508e4a85a3695141f65cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Janus.prefab using Guid(0a68ae8889e508e4a85a3695141f65cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '434dd6d8f61e7552e6b8216c85421887') in 0.005087 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Khepri.prefab
-  artifactKey: Guid(dd38996769ae6034ea4d1279f77571fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Khepri.prefab using Guid(dd38996769ae6034ea4d1279f77571fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b0e014a16610240ce63475904e2899f0') in 0.007938 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Nero.prefab
-  artifactKey: Guid(b96dfee7a90eb6f4ea7c279d27b050bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Nero.prefab using Guid(b96dfee7a90eb6f4ea7c279d27b050bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1bdd77395de78d9499691e4dc21506de') in 0.007355 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Pegaso.prefab
-  artifactKey: Guid(df7833017e05a054ba28491e7b51116e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Pegaso.prefab using Guid(df7833017e05a054ba28491e7b51116e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f301f20f6177021bf4239d948d7e15e7') in 0.004999 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Equinox.prefab
-  artifactKey: Guid(3307c1ea95c3395418b50349a1f165d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Equinox.prefab using Guid(3307c1ea95c3395418b50349a1f165d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e557de333ce0523b9f930d556e8e77d1') in 0.005462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Persephone.prefab
-  artifactKey: Guid(039e92102de38634899dbb231e3295de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Persephone.prefab using Guid(039e92102de38634899dbb231e3295de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '199eaf458dca4ed9d1c5b843a3d4a8cf') in 0.005679 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Vanth.prefab
-  artifactKey: Guid(b082a5ad8952dec4aa03e49a68e5bd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Vanth.prefab using Guid(b082a5ad8952dec4aa03e49a68e5bd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'cc23d44999fbeed6f30466a4b703b4a9') in 0.005324 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Mirach.prefab
-  artifactKey: Guid(f52f6e30e1cba4747a271ee5fd00d820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Mirach.prefab using Guid(f52f6e30e1cba4747a271ee5fd00d820) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2382f42873de14a7daf579db1cf5877a') in 0.004924 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Ignis.prefab
-  artifactKey: Guid(1783a7257474eff4795800d4860f132e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Ignis.prefab using Guid(1783a7257474eff4795800d4860f132e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e18dabdad2ab0f121ca25fc3e828e094') in 0.005524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Fireburst.prefab
-  artifactKey: Guid(416cd7953b52eb44eade2813b1318b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Fireburst.prefab using Guid(416cd7953b52eb44eade2813b1318b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '6e650086582c66a316099986690f6c5d') in 0.005304 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Aurora-94.prefab
-  artifactKey: Guid(b1dd01382d4a7204b8a6b42789bad024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Aurora-94.prefab using Guid(b1dd01382d4a7204b8a6b42789bad024) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2bfef91b0354f87c4bef1c9e48bfc9d4') in 0.006589 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Nemean.prefab
-  artifactKey: Guid(2317a45f2d5cd1042bb858aeb90a0b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Nemean.prefab using Guid(2317a45f2d5cd1042bb858aeb90a0b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9a47246dd416d8fe9fe6b53f7a037b1d') in 0.006424 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Electra.prefab
-  artifactKey: Guid(603259ba6b2bc8d418f6819e2e69fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Electra.prefab using Guid(603259ba6b2bc8d418f6819e2e69fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5f22ae503a117e4b104ae1d6f8bbed88') in 0.006033 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Kuiper.prefab
-  artifactKey: Guid(b5b1534114a60ce4c9b0f4c1d446e8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Kuiper.prefab using Guid(b5b1534114a60ce4c9b0f4c1d446e8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a927f7135450560d1d9bb0379fd84292') in 0.007534 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Vesper.prefab
-  artifactKey: Guid(5824a9593bfbc114badbf7423f30720f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Vesper.prefab using Guid(5824a9593bfbc114badbf7423f30720f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c0e46c8f8fd5912799b8758d1a9c3001') in 0.006945 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Centauri.prefab
-  artifactKey: Guid(58e037e774df45b449b6ab5e6982ecd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Centauri.prefab using Guid(58e037e774df45b449b6ab5e6982ecd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'dc55f01418a037867d3e23e51d2b6b21') in 0.006293 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Doumu.prefab
-  artifactKey: Guid(9f01f4b9ec4677d4a9ece2649d9b3834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Doumu.prefab using Guid(9f01f4b9ec4677d4a9ece2649d9b3834) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '908d628b91a2626aa7d6875f545237ee') in 0.005796 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/M2-9.prefab
-  artifactKey: Guid(7016798be7465114eaa901514cd8ab0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/M2-9.prefab using Guid(7016798be7465114eaa901514cd8ab0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ac479cd5eea0d4df12958c770243ec1a') in 0.006689 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Phaethon.prefab
-  artifactKey: Guid(a9679bbfacaf5664597501bd4db88e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land/Racing/R Class/Phaethon.prefab using Guid(a9679bbfacaf5664597501bd4db88e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'aa309539640a9bb470a2cdeae2ea31fa') in 0.006910 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 21.590719 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Apollo.prefab
-  artifactKey: Guid(e26f64165b43bbd409ad7633ceebba03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Apollo.prefab using Guid(e26f64165b43bbd409ad7633ceebba03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4dfbc759cb93e8cf6f40353d2f7c06ad') in 0.007704 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 35
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Enceladus.prefab
-  artifactKey: Guid(e2d344cc2a2559d448cbf4aaad1cee64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Enceladus.prefab using Guid(e2d344cc2a2559d448cbf4aaad1cee64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '3d4c3dbc3816a3b49e0279105d1e2da1') in 0.005933 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Zeus.prefab
-  artifactKey: Guid(e3f0a366e7b34ea4d9a509f670c3ebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Zeus.prefab using Guid(e3f0a366e7b34ea4d9a509f670c3ebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5fc5616a1c87697be7f13288035af5fd') in 0.006139 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Athena.prefab
-  artifactKey: Guid(dbe73efad92451f4e94d756df1cf36c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Athena.prefab using Guid(dbe73efad92451f4e94d756df1cf36c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2db4dee2768f5edcbd53b9aa8569bf33') in 0.007331 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Hecate.prefab
-  artifactKey: Guid(8017f1ee147d82040b2ff0208bb98c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Hecate.prefab using Guid(8017f1ee147d82040b2ff0208bb98c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7825a9ccf873ff76d72e7eb3dd7b79c3') in 0.010117 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Menoetius.prefab
-  artifactKey: Guid(4c4d75c177fa6f34ca9055a1613a9a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Space/Menoetius.prefab using Guid(4c4d75c177fa6f34ca9055a1613a9a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5b94e514eaa16392da8c5f897b886ea7') in 0.007899 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 3.928930 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Elpis.prefab
-  artifactKey: Guid(42b3363fb828b844db7f8f32d87db567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Elpis.prefab using Guid(42b3363fb828b844db7f8f32d87db567) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c93c9e165200d03799412549b5252472') in 0.007943 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Proteus.prefab
-  artifactKey: Guid(1d6c53e93f144a545bd71eeb4e430b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Proteus.prefab using Guid(1d6c53e93f144a545bd71eeb4e430b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2b1d45ab5233018fb2248d77add18cce') in 0.008687 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Eurybia.prefab
-  artifactKey: Guid(9bb9fcecea8258a43a8f833313df5bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Eurybia.prefab using Guid(9bb9fcecea8258a43a8f833313df5bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9547c649fc94b4c1e2ab8f97535c0caf') in 0.007507 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 32
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Oceanus.prefab
-  artifactKey: Guid(49cb86c12a474084da099159fe9bccc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Oceanus.prefab using Guid(49cb86c12a474084da099159fe9bccc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f0d37be35314e6b74707dc1cb2ba1cb1') in 0.007036 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Nashira.prefab
-  artifactKey: Guid(4cedb04efb7781b4bba265fa4cc182af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Water/Nashira.prefab using Guid(4cedb04efb7781b4bba265fa4cc182af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a4ca47dedc6342fea2d3f2da21134494') in 0.012934 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 67
-========================================================================
-Received Import Request.
-  Time since last request: 2.291289 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Aglaea.prefab
-  artifactKey: Guid(d654b7b2e2eebe846aebcb70e8938cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Aglaea.prefab using Guid(d654b7b2e2eebe846aebcb70e8938cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '6ddf63da147735fbf61ba3868722bcd4') in 0.007194 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 63
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Harmonia.prefab
-  artifactKey: Guid(a4335a53f678c1e4585c5aa900b803e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Harmonia.prefab using Guid(a4335a53f678c1e4585c5aa900b803e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '125c8c2c5f7748381d49d43e27cb8c4d') in 0.005193 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Wild-2.prefab
-  artifactKey: Guid(56fe943d74b01bd4fa61caca5400630d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Wild-2.prefab using Guid(56fe943d74b01bd4fa61caca5400630d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'db81efafd8f6a13e2f005aa49d430bd3') in 0.005178 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 71
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Wezen.prefab
-  artifactKey: Guid(7984180cef70832469ac87cf29c4c813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Wezen.prefab using Guid(7984180cef70832469ac87cf29c4c813) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1171495d1753e018e5e15ff958741db8') in 0.005306 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Doris-48.prefab
-  artifactKey: Guid(854308eef46b3e64c879e41a4166d05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Doris-48.prefab using Guid(854308eef46b3e64c879e41a4166d05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '09b23962b532ecf37f445550233c13e3') in 0.004626 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Diwo.prefab
-  artifactKey: Guid(097245349e9b4974281a945b2d4ef301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Diwo.prefab using Guid(097245349e9b4974281a945b2d4ef301) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '06ccc56128435eed017a404e331d5170') in 0.003969 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Osa-Mayor.prefab
-  artifactKey: Guid(c1a538373f6c54e4987c86c9432ccdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Osa-Mayor.prefab using Guid(c1a538373f6c54e4987c86c9432ccdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9e0441c34406c054e98a1eb73ea61523') in 0.005231 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 68
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Calypso.prefab
-  artifactKey: Guid(7625e8e68dfebf947a312891c293c9c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Calypso.prefab using Guid(7625e8e68dfebf947a312891c293c9c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '239653f8227a801695fdf273f41df74d') in 0.007603 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 68
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Falcon.prefab
-  artifactKey: Guid(7c4a447bbf9738b458dc822ac11ba545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Falcon.prefab using Guid(7c4a447bbf9738b458dc822ac11ba545) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '679a705e339be7cbbd45abc6bd178f3d') in 0.007939 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Hatysa.prefab
-  artifactKey: Guid(6ee4ad6598560ad46b7a4ab7a8e1b9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Hatysa.prefab using Guid(6ee4ad6598560ad46b7a4ab7a8e1b9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f6d12c212aba62e3b8ae2a5121206eb4') in 0.008001 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Sentinel.prefab
-  artifactKey: Guid(6aba2d1983f7dde42b25d8636caa3493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Sentinel.prefab using Guid(6aba2d1983f7dde42b25d8636caa3493) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c6c05b96e5ecf39b714ef0f881326425') in 0.015765 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 97
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Alauda-702.prefab
-  artifactKey: Guid(b8276452b20d06041a9042b3c96a9a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Alauda-702.prefab using Guid(b8276452b20d06041a9042b3c96a9a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '94ee81d2679c1e9a2a309e0952c2877e') in 0.006210 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 98
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Hypnos.prefab
-  artifactKey: Guid(6b8510eca1322e04582b9ece4853ce29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Hypnos.prefab using Guid(6b8510eca1322e04582b9ece4853ce29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b92c3833867df844c310c658a0f3ff10') in 0.004983 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 82
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Baidi.prefab
-  artifactKey: Guid(2526878d1d95c2b45899c89a5f55a82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Baidi.prefab using Guid(2526878d1d95c2b45899c89a5f55a82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9c3eb9d17df5c007e7118681ea9b5b4f') in 0.004275 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 65
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Oizys.prefab
-  artifactKey: Guid(a85da395767327b4b8e36eff73a19256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (With Colliders)/Air/Oizys.prefab using Guid(a85da395767327b4b8e36eff73a19256) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '3b27e29b400c84037d9b8857f24f6ab7') in 0.004376 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 51
-========================================================================
-Received Import Request.
-  Time since last request: 9.371589 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Cone.prefab
-  artifactKey: Guid(8491efb01ab02b344a36c40d9b82eb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Cone.prefab using Guid(8491efb01ab02b344a36c40d9b82eb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ea2a5900d37f711ebd30fbd9d898dc9f') in 0.044272 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Parking_Disabled_Slot.prefab
-  artifactKey: Guid(7eea191e9d4fe144dbb4a33f379fe073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Parking_Disabled_Slot.prefab using Guid(7eea191e9d4fe144dbb4a33f379fe073) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f991e1fb13c9e7646f713281e3d0397a') in 0.007988 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 82
-========================================================================
-Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Decoration_Bush_Single.prefab
-  artifactKey: Guid(2669a760f201618469233d53293745da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Decoration_Bush_Single.prefab using Guid(2669a760f201618469233d53293745da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'fb3f32cfd342dc473d31213c919b34b8') in 0.004766 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Pine_Snow.prefab
-  artifactKey: Guid(c84fe2aba162ce043b05bae5253a31da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Pine_Snow.prefab using Guid(c84fe2aba162ce043b05bae5253a31da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '53186230063e7356607bf1d62489a1fe') in 0.004182 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Wall.prefab
-  artifactKey: Guid(104dda3ba56647b44831ed368e2544d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Wall.prefab using Guid(104dda3ba56647b44831ed368e2544d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '164b2151da330fd4b7d62a1ab7e2264e') in 0.004590 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Road_Blank.prefab
-  artifactKey: Guid(860f2b94c3d61254a925091fcac1848e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Road_Blank.prefab using Guid(860f2b94c3d61254a925091fcac1848e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5fe99ed62df118559a5ebeb582aad7a8') in 0.004031 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Decoration_Grass_Center.prefab
-  artifactKey: Guid(cb7c9b1d0644dfc4bbbafd4cbd1efe11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Decoration_Grass_Center.prefab using Guid(cb7c9b1d0644dfc4bbbafd4cbd1efe11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a1fac1c8d63615dbfb13421fa0d03862') in 0.004893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Lamppost_Single.prefab
-  artifactKey: Guid(0c5c62ca87ee5084187d9a287a203932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Lamppost_Single.prefab using Guid(0c5c62ca87ee5084187d9a287a203932) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'dc3b5ed1ddc6abe1bf8614bb9cc7a543') in 0.065123 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Sidewalk_Single.prefab
-  artifactKey: Guid(a306946950e57d14d8ffd9213ca7ca3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Sidewalk_Single.prefab using Guid(a306946950e57d14d8ffd9213ca7ca3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '6aa1ec999dabd8bd24147953835200cd') in 0.004871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Decoration_Bush_Right.prefab
-  artifactKey: Guid(ef01248b6e0b78041bc134d3dc621142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Decoration_Bush_Right.prefab using Guid(ef01248b6e0b78041bc134d3dc621142) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f8a4c4016142e43c69c09f55b1296e55') in 0.004326 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Ramp.prefab
-  artifactKey: Guid(60adb09f629bc5d49b4a0264ea706260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Parking Zone/Ramp.prefab using Guid(60adb09f629bc5d49b4a0264ea706260) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f90b56ddc660e6442c2dd2eb38024853') in 0.003969 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 2.648633 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Racing Track/Finish.prefab
-  artifactKey: Guid(e557aca569a386d4fb9a63daf9497509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Racing Track/Finish.prefab using Guid(e557aca569a386d4fb9a63daf9497509) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '09a6ba018684d65c790238a2c940d42a') in 0.008458 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Racing Track/Nature.prefab
-  artifactKey: Guid(d0b621fb44e29e54792335981aa65b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Racing Track/Nature.prefab using Guid(d0b621fb44e29e54792335981aa65b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7da5e16651590452d567c9734a473eb4') in 0.019423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
-========================================================================
-Received Import Request.
-  Time since last request: 0.000613 seconds.
-  path: Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Racing Track/Track.prefab
-  artifactKey: Guid(3a1e5891889a2b24f8aa958b03bbc1e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ARCADE - Ultimate Vehicles Pack/Environment/Assets/Prefabs/Racing Track/Track.prefab using Guid(3a1e5891889a2b24f8aa958b03bbc1e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a352873b730e985d9ad3462fc65eee61') in 0.012657 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 60
+Number of asset objects unloaded after import = 2917
