@@ -67,6 +67,7 @@
   <ItemGroup>
     <None Include="Assets/BEDRILL/Track_Environment_Free/Readme.txt" />
     <None Include="Assets/POLYGON - Particle FX v1.0/PolygonParticles/Materials/SHARED BY LUXURYPANDA.txt" />
+    <None Include="Assets/BrokenVector/LowPolyTreePack/README.txt" />
     <None Include="Assets/POLYGON - Particle FX v1.0/_www.unityassetcollection.com.txt" />
   </ItemGroup>
   <ItemGroup>
