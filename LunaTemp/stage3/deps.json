@@ -1,0 +1,21 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "/Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/LunaTemp/stage3/processed-scripts/Assets/Scripts/AICarRigidbodyController.cs",
+      "/Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/LunaTemp/stage3/processed-scripts/Assets/Scripts/CheckpointManager.cs"
+    ],
+    [
+      "/Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/LunaTemp/stage3/processed-scripts/Assets/Scripts/PlayerCarController.cs"
+    ],
+    [
+      "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
