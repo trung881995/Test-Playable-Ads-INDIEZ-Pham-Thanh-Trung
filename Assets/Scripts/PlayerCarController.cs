@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerCarController : MonoBehaviour
 {
-
     [Header("Movement Settings")]
     public float moveSpeed = 10f;
     public float smoothTime = 0.2f;
@@ -18,47 +17,36 @@ public class PlayerCarController : MonoBehaviour
     public float groundCheckDistance = 1f;
     public LayerMask groundLayer;
 
-    private Vector3 lastPosition;
-    private Vector3 velocity=Vector3.zero;
+    private Vector3 velocity = Vector3.zero;
+    private Vector3 moveDirection = Vector3.zero;
 
     private float screenCenterX;
     private float targetTurn = 0f;
-    private bool isGrounded = false;
+    private float turnAmount = 0f;
     private bool isDragging = false;
-    
-
-
-
+    private bool isCollision = false;
+    private float timeStopping = 0f;
     void Start()
     {
-        //lastPosition = transform.position;
         screenCenterX = Screen.width / 2f;
-        //rb.centerOfMass = new Vector3(0, -1f, 0); // Hạ trọng tâm xuống
     }
 
-   
     void Update()
     {
+        
         HandleInput();
-        //rb.AddForce(Vector3.down * 300f * Time.fixedDeltaTime, ForceMode.Acceleration);
 
-        // === Tính vận tốc bằng tay ===
-        //velocity = (transform.position - lastPosition) / Time.fixedDeltaTime;
-        //lastPosition = transform.position;
+        
 
-        // === Ground check bằng raycast ===
-        //isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance, groundLayer);
-        //Debug.DrawRay(transform.position, Vector3.down * groundCheckDistance, isGrounded ? Color.green : Color.red);
-
-        // Không di chuyển nếu không chạm đất
-        // if (!isGrounded) return;
-
-        // --- Quay xe dựa trên input chuột ---
-        float turnAmount = targetTurn * turnSpeed * Time.deltaTime;
+        
+        if(!isCollision)
+        {
+            // --- Quay xe dựa trên input chuột ---
+            turnAmount = targetTurn * turnSpeed * Time.deltaTime;
             transform.Rotate(Vector3.up, turnAmount);
 
-            // === Xác định hướng di chuyển (lùi nếu kẹt) ===
-            Vector3 moveDir =transform.forward;
+            // === Xác định hướng di chuyển ===
+            moveDirection = transform.forward;
             float moveStep = moveSpeed * Time.deltaTime;
 
             // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
@@ -66,17 +54,53 @@ public class PlayerCarController : MonoBehaviour
             {
                 Vector3 driftOffset = transform.right * Mathf.Sign(turnAmount) * driftIntensity;
                 transform.position += driftOffset * Time.deltaTime;
-                Debug.Log(" Drift giả lập!");
+                Debug.Log("Drift giả lập!");
             }
 
-        // === Di chuyển chính ===
-        //transform.position += moveDir * moveStep;
-        transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDir * moveStep, ref velocity, smoothTime*Time.deltaTime);
+            // === Di chuyển chính (áp dụng SmoothDamp) ===
+            transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref velocity, smoothTime * Time.deltaTime);
+        }
+        else
+        {
+            // === Phát hiện kẹt xe ===
+            if (timeStopping >0.8f)
+            {
+                
+                timeStopping -= Time.deltaTime;
+            }
+            else if(timeStopping>0)
+            {
+                //isCollision = false;
+                // === Xác định hướng lui ===
+                moveDirection = -transform.forward;
+                float moveStep = moveSpeed * Time.deltaTime;
+                // === lui` xe (áp dụng SmoothDamp) ===
+                transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref velocity, smoothTime * Time.deltaTime);
+                timeStopping -= Time.deltaTime;
+            }
+            else
+            {
+                isCollision = false;
+                timeStopping = 0f;
+            }
+        }
 
-
-
+        
     }
 
+    // ==== CHỈNH HƯỚNG KHI VA CHẠM ====
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.layer==6)
+        {
+            timeStopping = 2f;
+            isCollision = true;
+
+            Debug.Log("va cham voi tuong !!!");
+        }
+        
+    }
+    
     void HandleInput()
     {
 #if UNITY_EDITOR || UNITY_STANDALONE
@@ -89,24 +113,13 @@ public class PlayerCarController : MonoBehaviour
             float percent = Mathf.Clamp(-delta / screenCenterX, -1f, 1f);
             targetTurn = percent * maxTurnAngle;
         }
-        else
-        {
-            //targetTurn = 0f;
-        }
 #else
-        // Mobile
         if (Input.touchCount > 0)
         {
             float delta = Input.GetTouch(0).position.x - screenCenterX;
             float percent = Mathf.Clamp(-delta / screenCenterX, -1f, 1f);
             targetTurn = percent * maxTurnAngle;
         }
-        else
-        {
-            //targetTurn = 0f;
-        }
 #endif
     }
-
-    
 }
