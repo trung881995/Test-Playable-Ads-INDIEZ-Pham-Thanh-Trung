@@ -1,6 +1,6 @@
 if ( TRACE ) { TRACE( JSON.parse( '["AICarController#init","AICarController#Start","AICarController#Update","AICarController#OnTriggerEnter","CameraSequence#init","CameraSequence#Start","CameraSequence#CameraSequenceRoutine","CameraSequence#Flash","CheckpointManager#TotalCheckpoints#get","CheckpointManager#GetCheckpoint","PlayerCarController#init","PlayerCarController#Start","PlayerCarController#Update","PlayerCarController#FixedUpdate","PlayerCarController#OnCollisionEnter","PlayerCarController#OnTriggerEnter","PlayerCarController#HandleInput","SmoothFollowCamera#init","SmoothFollowCamera#Start","SmoothFollowCamera#LateUpdate"]' ) ); }
 /**
- * @version 1.0.9256.6353
+ * @version 1.0.9256.7253
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
