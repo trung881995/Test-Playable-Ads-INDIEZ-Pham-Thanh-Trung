@@ -36,12 +36,14 @@ public class PlayerCarController : MonoBehaviour
     private Vector3 moveVelocity = Vector3.zero;
     private Rigidbody rb;
 
-    private float speedUpTime;
+    public float speedUpTime { set; get; }
     void Start()
     {
         screenCenterX = Screen.width / 2f;
         rb = GetComponent<Rigidbody>();
         lastPosition = transform.position;
+
+        UIManager.Instance.StartBarFill();
         //transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * moveSpeed * Time.deltaTime, ref moveVelocity, smoothTime * Time.deltaTime);
     }
 
@@ -188,21 +190,30 @@ public class PlayerCarController : MonoBehaviour
     {
         if (other.gameObject.layer == 9)
         {
-            speedUpTime = 5;
-            moveSpeed += 3000;
+            UIManager.Instance.StopBarFill();
+            UIManager.Instance.startBarFill(0);
         }
-        else if((other.gameObject.layer == 10))
+        
+    }
+    public void speedUp()
+    {
+        var mapType = GameManager.Instance.mapType;
+        switch (mapType)
         {
-            speedUpTime = 6;
-            moveSpeed += 4000;
-        }
-        else if((other.gameObject.layer == 11))
-        {
-            speedUpTime = 7;
-            moveSpeed += 5000;
+            case MapType.Summer:
+                speedUpTime = 5;
+                moveSpeed += 2000;
+                break;
+            case MapType.Rainy:
+                speedUpTime = 6;
+                moveSpeed += 3000;
+                break;
+            case MapType.Winter:
+                speedUpTime = 7;
+                moveSpeed += 4000;
+                break;
         }
     }
-    
     /* private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == 8)

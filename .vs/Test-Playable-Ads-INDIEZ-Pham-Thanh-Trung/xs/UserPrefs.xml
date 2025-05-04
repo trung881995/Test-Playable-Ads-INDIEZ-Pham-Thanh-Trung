@@ -6,8 +6,8 @@
       <File FileName="Assets/Scripts/CheckpointManager.cs" Line="7" Column="22" />
       <File FileName="Assets/Scripts/AICarController.cs" Line="140" Column="27" />
       <File FileName="Assets/Scripts/CameraSequence.cs" Line="65" Column="30" />
-      <File FileName="Assets/Scripts/UIManager.cs" Line="40" Column="31" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="7" Column="19" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="58" Column="31" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="106" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

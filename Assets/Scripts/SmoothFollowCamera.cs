@@ -14,6 +14,8 @@ public class SmoothFollowCamera : MonoBehaviour
 
     void Start()
     {
+        UIManager.Instance.startCountDownRoutine();
+
         // Đặt vị trí và xoay camera đúng lúc bắt đầu để tránh nhảy hình
         if (target != null)
         {
