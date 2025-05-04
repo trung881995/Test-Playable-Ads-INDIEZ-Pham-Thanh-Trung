@@ -15582,7 +15582,7 @@
                     },
                     {
                         "name": "LerpAngle",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "EllipseClampTo",
@@ -23327,11 +23327,7 @@
                         "excluded": false
                     },
                     {
-                        "name": "OnTriggerStay",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnTriggerExit",
+                        "name": "OnTriggerEnter",
                         "excluded": false
                     }
                 ]
@@ -23776,7 +23772,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             }

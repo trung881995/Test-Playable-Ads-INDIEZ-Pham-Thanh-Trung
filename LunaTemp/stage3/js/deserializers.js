@@ -933,16 +933,16 @@ Deserializers["Luna.Unity.DTO.UnityEngine.Components.SphereCollider"] = function
 Deserializers["PlayerCarController"] = function (request, data, root) {
   var i526 = root || request.c( 'PlayerCarController' )
   var i527 = data
-  i526.moveForce = i527[0]
-  i526.maxSpeed = i527[1]
-  i526.turnSpeed = i527[2]
-  i526.maxTurnAngle = i527[3]
-  i526.checkpointRadius = i527[4]
-  i526.driftThreshold = i527[5]
-  i526.driftForce = i527[6]
-  i526.obstacleDetectionRange = i527[7]
-  i526.avoidanceForce = i527[8]
-  i526.obstacleLayers = UnityEngine.LayerMask.FromIntegerValue( i527[9] )
+  i526.moveSpeed = i527[0]
+  i526.smoothTime = i527[1]
+  i526.maxSpeed = i527[2]
+  i526.turnSpeed = i527[3]
+  i526.maxTurnAngle = i527[4]
+  i526.checkpointRadius = i527[5]
+  i526.slowTurnThreshold = i527[6]
+  i526.driftIntensity = i527[7]
+  i526.groundCheckDistance = i527[8]
+  i526.groundLayer = UnityEngine.LayerMask.FromIntegerValue( i527[9] )
   request.r(i527[10], i527[11], 0, i526, 'checkpointManager')
   request.r(i527[12], i527[13], 0, i526, 'Arrow')
   return i526
@@ -1445,7 +1445,7 @@ Deserializers.productName = "INDIEZ";
 
 Deserializers.lunaInitializationTime = "04/29/2025 09:21:16";
 
-Deserializers.lunaDaysRunning = "4.8";
+Deserializers.lunaDaysRunning = "5.0";
 
 Deserializers.lunaVersion = "6.3.0";
 
@@ -1475,9 +1475,9 @@ Deserializers.isAntiAliasingEnabled = "False";
 
 Deserializers.isRuntimeAnalysisEnabledForCode = "False";
 
-Deserializers.runtimeAnalysisExcludedClassesCount = "1810";
+Deserializers.runtimeAnalysisExcludedClassesCount = "1795";
 
-Deserializers.runtimeAnalysisExcludedMethodsCount = "3010";
+Deserializers.runtimeAnalysisExcludedMethodsCount = "3082";
 
 Deserializers.runtimeAnalysisExcludedModules = "physics2d, reflection, prefabs, mecanim-wasm";
 
@@ -1501,7 +1501,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "0330374c-b5d6-4fd6-a34e-b7828071350e";
+Deserializers.buildID = "32df3fe5-f2bc-47ae-90cd-68181ce0ee07";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["Cinemachine","CinemachineCore","InitializeModule"],["Cinemachine","CinemachineStoryboard","InitializeModule"],["Cinemachine","CinemachineImpulseManager","InitializeModule"],["Cinemachine","UpdateTracker","InitializeModule"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[],[],[]];
 

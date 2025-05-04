@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["AICarController#init","AICarController#Start","AICarController#Update","CheckpointManager#TotalCheckpoints#get","CheckpointManager#GetCheckpoint","PlayerCarController#init","PlayerCarController#Start","PlayerCarController#Update","PlayerCarController#FixedUpdate","PlayerCarController#OnCollisionEnter","PlayerCarController#OnTriggerStay","PlayerCarController#OnTriggerExit","PlayerCarController#HandleInput","SmoothFollowCamera#init","SmoothFollowCamera#Start","SmoothFollowCamera#LateUpdate"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["AICarController#init","AICarController#Start","AICarController#Update","CheckpointManager#TotalCheckpoints#get","CheckpointManager#GetCheckpoint","PlayerCarController#init","PlayerCarController#Start","PlayerCarController#Update","PlayerCarController#FixedUpdate","PlayerCarController#OnCollisionEnter","PlayerCarController#OnTriggerEnter","PlayerCarController#HandleInput","SmoothFollowCamera#init","SmoothFollowCamera#Start","SmoothFollowCamera#LateUpdate"]' ) ); }
 /**
- * @version 1.0.9255.22884
+ * @version 1.0.9255.30685
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -193,24 +193,22 @@ if ( TRACE ) { TRACE( "CheckpointManager#GetCheckpoint", this ); }
     Bridge.define("PlayerCarController", {
         inherits: [UnityEngine.MonoBehaviour],
         fields: {
-            moveForce: 0,
+            moveSpeed: 0,
+            smoothTime: 0,
             maxSpeed: 0,
             turnSpeed: 0,
             maxTurnAngle: 0,
             checkpointRadius: 0,
-            driftThreshold: 0,
-            driftForce: 0,
-            obstacleDetectionRange: 0,
-            avoidanceForce: 0,
-            obstacleLayers: null,
-            rb: null,
+            slowTurnThreshold: 0,
+            driftIntensity: 0,
+            groundCheckDistance: 0,
+            groundLayer: null,
             moveDirection: null,
             screenCenterX: 0,
             targetTurn: 0,
             turnAmount: 0,
             isDragging: false,
             isCollision: false,
-            isOnGround: false,
             timeStopping: 0,
             currentCheckpointIndex: 0,
             checkpointManager: null,
@@ -223,26 +221,25 @@ if ( TRACE ) { TRACE( "CheckpointManager#GetCheckpoint", this ); }
             init: function () {
 if ( TRACE ) { TRACE( "PlayerCarController#init", this ); }
 
-                this.obstacleLayers = new UnityEngine.LayerMask();
+                this.groundLayer = new UnityEngine.LayerMask();
                 this.moveDirection = new UnityEngine.Vector3();
                 this.lastPosition = new UnityEngine.Vector3();
                 this.velocity = new UnityEngine.Vector3();
                 this.moveVelocity = new UnityEngine.Vector3();
-                this.moveForce = 1000.0;
+                this.moveSpeed = 10.0;
+                this.smoothTime = 0.2;
                 this.maxSpeed = 20.0;
-                this.turnSpeed = 5.0;
+                this.turnSpeed = 100.0;
                 this.maxTurnAngle = 45.0;
                 this.checkpointRadius = 10.0;
-                this.driftThreshold = 15.0;
-                this.driftForce = 300.0;
-                this.obstacleDetectionRange = 10.0;
-                this.avoidanceForce = 1000.0;
+                this.slowTurnThreshold = 30.0;
+                this.driftIntensity = 0.5;
+                this.groundCheckDistance = 1.0;
                 this.moveDirection = pc.Vec3.ZERO.clone();
                 this.targetTurn = 0.0;
                 this.turnAmount = 0.0;
                 this.isDragging = false;
                 this.isCollision = false;
-                this.isOnGround = false;
                 this.timeStopping = 0.0;
                 this.currentCheckpointIndex = 0;
                 this.velocity = pc.Vec3.ZERO.clone();
@@ -255,8 +252,9 @@ if ( TRACE ) { TRACE( "PlayerCarController#init", this ); }
 if ( TRACE ) { TRACE( "PlayerCarController#Start", this ); }
 
                 this.screenCenterX = UnityEngine.Screen.width / 2.0;
-                this.rb = this.GetComponent(UnityEngine.Rigidbody);
+
                 this.lastPosition = this.transform.position.$clone();
+                //transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * moveSpeed * Time.deltaTime, ref moveVelocity, smoothTime * Time.deltaTime);
             },
             /*PlayerCarController.Start end.*/
 
@@ -286,20 +284,44 @@ if ( TRACE ) { TRACE( "PlayerCarController#Update", this ); }
 
                 // Cập nhật rotation (chỉ hướng, giữ lại trục XArrow.transform.eulerAngles.x quay đều)
                 this.Arrow.transform.rotation = new pc.Quat().setFromEulerAngles_Unity( this.Arrow.transform.eulerAngles.x, targetRotation.getPositiveEulerAngles().y, this.Arrow.transform.eulerAngles.z );
-                if (!this.isCollision && this.isOnGround) {
-                    /* 
-                    Vector3 targetDir2 = (target.position - transform.position).normalized;
+                if (!this.isCollision) {
+
+                    // Tính hướng tới mục tiêu
+                    var targetDir2 = (target.position.$clone().sub( this.transform.position )).clone().normalize().$clone();
+
+                    // Tạo rotation mục tiêu
+                    var targetRotation2 = new pc.Quat().lookRotation( targetDir2, pc.Vec3.RIGHT.clone() );
+
+                    // Lấy rotation hiện tại
+                    var currentRotation = this.transform.rotation.$clone();
+
+                    // Giữ lại các giá trị trục Y và Z, chỉ quay trục X mượt
+                    var smoothRotation = new pc.Quat().setFromEulerAngles_Unity( UnityEngine.Mathf.LerpAngle(currentRotation.getPositiveEulerAngles().x, targetRotation2.getPositiveEulerAngles().x, UnityEngine.Time.deltaTime * 100.0), currentRotation.getPositiveEulerAngles().y, currentRotation.getPositiveEulerAngles().z );
+
+                    // Áp dụng rotation mới
+                    this.transform.rotation = smoothRotation.$clone();
 
 
-                    // Tạo rotation mới hướng về tường
-                    Quaternion targetRotation2 = Quaternion.LookRotation(targetDir, Vector3.right);
-
-                    // Cập nhật rotation (chỉ hướng, giữ lại trục X quay đều)
-                    transform.rotation = Quaternion.Euler(targetRotation2.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
-                    */
                     // --- Quay xe dựa trên input chuột ---
                     this.turnAmount = this.targetTurn * this.turnSpeed * UnityEngine.Time.deltaTime;
                     this.transform.Rotate$1(pc.Vec3.UP.clone(), this.turnAmount);
+
+                    // === Xác định hướng di chuyển ===
+                    this.moveDirection = this.transform.forward.$clone();
+                    var moveStep = this.moveSpeed * UnityEngine.Time.deltaTime;
+
+                    // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
+                    if (Math.abs(this.turnAmount) > this.slowTurnThreshold && this.velocity.length() > 5.0) {
+                        var driftOffset = this.transform.right.$clone().clone().scale( (this.turnAmount === 0 ? 1 : Math.sign(this.turnAmount)) ).clone().scale( this.driftIntensity );
+                        this.transform.position = this.transform.position.$clone().add( driftOffset.$clone().clone().scale( UnityEngine.Time.deltaTime ) );
+                        UnityEngine.Debug.Log$1("Drift gi\u1ea3 l\u1eadp!");
+                    }
+
+                    // === Di chuyển chính (áp dụng SmoothDamp) ===
+                    var pos = this.transform.position.$clone();
+                    pos.y = this.checkpointManager.GetCheckpoint(((this.currentCheckpointIndex + 1) | 0)).position.y - 1.0;
+                    this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), pos.$clone().add( this.moveDirection.$clone().clone().scale( moveStep ) ), Bridge.ref(this, "moveVelocity"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
+
 
 
                     // === Kiểm tra qua checkpoint ===
@@ -311,11 +333,29 @@ if ( TRACE ) { TRACE( "PlayerCarController#Update", this ); }
                     }
                     /* 
                     var pos = transform.position;
-                    pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex).position.y-1f;
+                    pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex+1).position.y-1f;
                     transform.position = pos;
                     */
                 } else {
+                    // === Phát hiện kẹt xe ===
+                    if (this.timeStopping > 1.0) {
 
+                        this.timeStopping -= UnityEngine.Time.deltaTime;
+                    } else if (this.timeStopping > 0) {
+                        //isCollision = false;
+                        // === Xác định hướng lui ===
+                        this.moveDirection = this.transform.forward.$clone().scale( -1 );
+                        var moveStep1 = this.moveSpeed * UnityEngine.Time.deltaTime;
+                        // === lui` xe (áp dụng SmoothDamp) ===
+
+
+                        this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( this.moveDirection.$clone().clone().scale( moveStep1 ) ), Bridge.ref(this, "moveVelocity"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
+                        this.timeStopping -= UnityEngine.Time.deltaTime;
+                    } else {
+                        this.isCollision = false;
+                        this.moveVelocity = pc.Vec3.ZERO.clone();
+                        this.timeStopping = 0.0;
+                    }
                 }
 
 
@@ -326,39 +366,7 @@ if ( TRACE ) { TRACE( "PlayerCarController#Update", this ); }
             FixedUpdate: function () {
 if ( TRACE ) { TRACE( "PlayerCarController#FixedUpdate", this ); }
 
-                this.rb.AddForce$1(pc.Vec3.DOWN.clone().clone().scale( 800.0 ).clone().scale( UnityEngine.Time.fixedDeltaTime ), UnityEngine.ForceMode.Acceleration);
-                if (this.isOnGround) {
-                    if (!this.isCollision) {
-                        // --- Drift nếu rẽ mạnh ---
-                        if (Math.abs(this.targetTurn) > this.driftThreshold / this.maxTurnAngle) {
-                            var driftDir = this.transform.right.$clone().clone().scale( (this.targetTurn === 0 ? 1 : Math.sign(this.targetTurn)) );
-                            this.rb.AddForce$1(driftDir.$clone().clone().scale( this.driftForce ).clone().scale( UnityEngine.Time.fixedDeltaTime ), UnityEngine.ForceMode.Acceleration);
-                        }
-
-                        // --- Di chuyển về phía trước nếu chưa quá tốc độ ---
-                        if (this.rb.velocity.length() < this.maxSpeed) {
-                            this.rb.AddForce$1(this.transform.forward.$clone().clone().scale( this.moveForce ).clone().scale( UnityEngine.Time.fixedDeltaTime ), UnityEngine.ForceMode.Acceleration);
-                        }
-                    } else {
-                        // === Phát hiện kẹt xe ===
-                        if (this.timeStopping > 1.0) {
-
-                            this.timeStopping -= UnityEngine.Time.fixedDeltaTime;
-                        } else if (this.timeStopping > 0) {
-                            // --- Di chuyển về phía sau nếu chưa quá tốc độ ---
-                            if (this.rb.velocity.length() < this.maxSpeed) {
-                                this.rb.AddForce$1(this.transform.forward.$clone().scale( -1 ).clone().scale( this.moveForce ).clone().scale( UnityEngine.Time.fixedDeltaTime ), UnityEngine.ForceMode.Acceleration);
-                            }
-                            this.timeStopping -= UnityEngine.Time.fixedDeltaTime;
-                        } else {
-                            this.isCollision = false;
-                            this.moveVelocity = pc.Vec3.ZERO.clone();
-                            this.timeStopping = 0.0;
-                        }
-                    }
-                }
-
-
+                //rb.AddForce(Vector3.down * 800f * Time.fixedDeltaTime, ForceMode.Acceleration);
             },
             /*PlayerCarController.FixedUpdate end.*/
 
@@ -378,27 +386,16 @@ if ( TRACE ) { TRACE( "PlayerCarController#OnCollisionEnter", this ); }
             },
             /*PlayerCarController.OnCollisionEnter end.*/
 
-            /*PlayerCarController.OnTriggerStay start.*/
-            OnTriggerStay: function (other) {
-if ( TRACE ) { TRACE( "PlayerCarController#OnTriggerStay", this ); }
+            /*PlayerCarController.OnTriggerEnter start.*/
+            OnTriggerEnter: function (other) {
+if ( TRACE ) { TRACE( "PlayerCarController#OnTriggerEnter", this ); }
 
                 if (other.gameObject.layer === 7) {
-                    this.isOnGround = true;
-                    UnityEngine.Debug.Log$1("on ground !!!");
+
+
                 }
             },
-            /*PlayerCarController.OnTriggerStay end.*/
-
-            /*PlayerCarController.OnTriggerExit start.*/
-            OnTriggerExit: function (other) {
-if ( TRACE ) { TRACE( "PlayerCarController#OnTriggerExit", this ); }
-
-                if (other.gameObject.layer === 7) {
-                    this.isOnGround = false;
-                    UnityEngine.Debug.Log$1("exit ground !!!");
-                }
-            },
-            /*PlayerCarController.OnTriggerExit end.*/
+            /*PlayerCarController.OnTriggerEnter end.*/
 
             /*PlayerCarController.HandleInput start.*/
             HandleInput: function () {
@@ -487,7 +484,7 @@ if ( TRACE ) { TRACE( "SmoothFollowCamera#LateUpdate", this ); }
     /*CheckpointManager end.*/
 
     /*PlayerCarController start.*/
-    $m("PlayerCarController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"FixedUpdate","t":8,"sn":"FixedUpdate","rt":$n[0].Void},{"a":1,"n":"HandleInput","t":8,"sn":"HandleInput","rt":$n[0].Void},{"a":1,"n":"OnCollisionEnter","t":8,"pi":[{"n":"collision","pt":$n[1].Collision,"ps":0}],"sn":"OnCollisionEnter","rt":$n[0].Void,"p":[$n[1].Collision]},{"a":1,"n":"OnTriggerExit","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerExit","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":1,"n":"OnTriggerStay","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerStay","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"Arrow","t":4,"rt":$n[1].Transform,"sn":"Arrow"},{"a":2,"n":"avoidanceForce","t":4,"rt":$n[0].Single,"sn":"avoidanceForce","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"checkpointManager","t":4,"rt":CheckpointManager,"sn":"checkpointManager"},{"a":2,"n":"checkpointRadius","t":4,"rt":$n[0].Single,"sn":"checkpointRadius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"currentCheckpointIndex","t":4,"rt":$n[0].Int32,"sn":"currentCheckpointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"driftForce","t":4,"rt":$n[0].Single,"sn":"driftForce","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Drift Settings")],"a":2,"n":"driftThreshold","t":4,"rt":$n[0].Single,"sn":"driftThreshold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isCollision","t":4,"rt":$n[0].Boolean,"sn":"isCollision","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isDragging","t":4,"rt":$n[0].Boolean,"sn":"isDragging","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isOnGround","t":4,"rt":$n[0].Boolean,"sn":"isOnGround","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"lastPosition","t":4,"rt":$n[1].Vector3,"sn":"lastPosition"},{"a":2,"n":"maxSpeed","t":4,"rt":$n[0].Single,"sn":"maxSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"maxTurnAngle","t":4,"rt":$n[0].Single,"sn":"maxTurnAngle","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveDirection","t":4,"rt":$n[1].Vector3,"sn":"moveDirection"},{"at":[new UnityEngine.HeaderAttribute("Movement Settings")],"a":2,"n":"moveForce","t":4,"rt":$n[0].Single,"sn":"moveForce","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveVelocity","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity"},{"at":[new UnityEngine.HeaderAttribute("Obstacle Avoidance")],"a":2,"n":"obstacleDetectionRange","t":4,"rt":$n[0].Single,"sn":"obstacleDetectionRange","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"obstacleLayers","t":4,"rt":$n[1].LayerMask,"sn":"obstacleLayers"},{"a":1,"n":"rb","t":4,"rt":$n[1].Rigidbody,"sn":"rb"},{"a":1,"n":"screenCenterX","t":4,"rt":$n[0].Single,"sn":"screenCenterX","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"targetTurn","t":4,"rt":$n[0].Single,"sn":"targetTurn","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"timeStopping","t":4,"rt":$n[0].Single,"sn":"timeStopping","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnAmount","t":4,"rt":$n[0].Single,"sn":"turnAmount","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"turnSpeed","t":4,"rt":$n[0].Single,"sn":"turnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"velocity","t":4,"rt":$n[1].Vector3,"sn":"velocity"}]}; }, $n);
+    $m("PlayerCarController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"FixedUpdate","t":8,"sn":"FixedUpdate","rt":$n[0].Void},{"a":1,"n":"HandleInput","t":8,"sn":"HandleInput","rt":$n[0].Void},{"a":1,"n":"OnCollisionEnter","t":8,"pi":[{"n":"collision","pt":$n[1].Collision,"ps":0}],"sn":"OnCollisionEnter","rt":$n[0].Void,"p":[$n[1].Collision]},{"a":1,"n":"OnTriggerEnter","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerEnter","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"Arrow","t":4,"rt":$n[1].Transform,"sn":"Arrow"},{"a":2,"n":"checkpointManager","t":4,"rt":CheckpointManager,"sn":"checkpointManager"},{"a":2,"n":"checkpointRadius","t":4,"rt":$n[0].Single,"sn":"checkpointRadius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"currentCheckpointIndex","t":4,"rt":$n[0].Int32,"sn":"currentCheckpointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"driftIntensity","t":4,"rt":$n[0].Single,"sn":"driftIntensity","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Ground Check")],"a":2,"n":"groundCheckDistance","t":4,"rt":$n[0].Single,"sn":"groundCheckDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"groundLayer","t":4,"rt":$n[1].LayerMask,"sn":"groundLayer"},{"a":1,"n":"isCollision","t":4,"rt":$n[0].Boolean,"sn":"isCollision","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isDragging","t":4,"rt":$n[0].Boolean,"sn":"isDragging","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"lastPosition","t":4,"rt":$n[1].Vector3,"sn":"lastPosition"},{"a":2,"n":"maxSpeed","t":4,"rt":$n[0].Single,"sn":"maxSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"maxTurnAngle","t":4,"rt":$n[0].Single,"sn":"maxTurnAngle","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveDirection","t":4,"rt":$n[1].Vector3,"sn":"moveDirection"},{"at":[new UnityEngine.HeaderAttribute("Movement Settings")],"a":2,"n":"moveSpeed","t":4,"rt":$n[0].Single,"sn":"moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveVelocity","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity"},{"a":1,"n":"screenCenterX","t":4,"rt":$n[0].Single,"sn":"screenCenterX","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Drift Settings")],"a":2,"n":"slowTurnThreshold","t":4,"rt":$n[0].Single,"sn":"slowTurnThreshold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"smoothTime","t":4,"rt":$n[0].Single,"sn":"smoothTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"targetTurn","t":4,"rt":$n[0].Single,"sn":"targetTurn","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"timeStopping","t":4,"rt":$n[0].Single,"sn":"timeStopping","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnAmount","t":4,"rt":$n[0].Single,"sn":"turnAmount","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"turnSpeed","t":4,"rt":$n[0].Single,"sn":"turnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"velocity","t":4,"rt":$n[1].Vector3,"sn":"velocity"}]}; }, $n);
     /*PlayerCarController end.*/
 
     /*SmoothFollowCamera start.*/

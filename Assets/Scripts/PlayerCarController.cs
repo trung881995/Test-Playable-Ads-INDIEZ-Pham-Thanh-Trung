@@ -34,123 +34,151 @@ public class PlayerCarController : MonoBehaviour
     private Vector3 lastPosition;
     private Vector3 velocity = Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
+    private Rigidbody rb;
     void Start()
     {
         screenCenterX = Screen.width / 2f;
-        
+        rb = GetComponent<Rigidbody>();
         lastPosition = transform.position;
+        //transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * moveSpeed * Time.deltaTime, ref moveVelocity, smoothTime * Time.deltaTime);
     }
 
     void Update()
     {
-        
-        HandleInput();
-
-        // === Tính vận tốc bằng tay ===
-        velocity = (transform.position - lastPosition) / Time.deltaTime;
-        lastPosition = transform.position;
-
-        // === Lấy checkpoint tiếp theo ===
-        Transform target = checkpointManager.GetCheckpoint(currentCheckpointIndex);
-        if (target == null) return;
-
-        Vector3 targetDir = (target.position - Arrow.transform.position).normalized;
-        
-        //Arrow.transform.LookAt(target);
-
-        // Tạo rotation mới hướng về tường
-        Quaternion targetRotation = Quaternion.LookRotation(targetDir, Vector3.up);
-
-        // Cập nhật rotation (chỉ hướng, giữ lại trục XArrow.transform.eulerAngles.x quay đều)
-        Arrow.transform.rotation = Quaternion.Euler(Arrow.transform.eulerAngles.x, targetRotation.eulerAngles.y, Arrow.transform.eulerAngles.z);
-        if (!isCollision)
+        if(transform.position.y>0.2f)
         {
-            /*
-            Vector3 targetDir2 = (target.position - transform.position).normalized;
-
-
-            // Tạo rotation mới hướng về tường
-            Quaternion targetRotation2 = Quaternion.LookRotation(targetDir, Vector3.right);
-
-            // Cập nhật rotation (chỉ hướng, giữ lại trục X quay đều)
-            transform.rotation = Quaternion.Euler(targetRotation2.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
-            */
-            // --- Quay xe dựa trên input chuột ---
-            turnAmount = targetTurn * turnSpeed * Time.deltaTime;
-            transform.Rotate(Vector3.up, turnAmount);
-
-            // === Xác định hướng di chuyển ===
-            moveDirection = transform.forward;
-            float moveStep = moveSpeed * Time.deltaTime;
-
-            // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
-            if (Mathf.Abs(turnAmount) > slowTurnThreshold && velocity.magnitude > 5f)
-            {
-                Vector3 driftOffset = transform.right * Mathf.Sign(turnAmount) * driftIntensity;
-                transform.position += driftOffset * Time.deltaTime;
-                Debug.Log("Drift giả lập!");
-            }
-
-            // === Di chuyển chính (áp dụng SmoothDamp) ===
-
-            RaycastHit hit;
-            Vector3 groundNormal = Vector3.up; // Mặc định nếu không chạm đất
-
-            if (Physics.Raycast(transform.position, Vector3.down, out hit, 1.5f))
-            {
-                groundNormal = hit.normal;
-            }
-
-            Vector3 projectedDirection = Vector3.ProjectOnPlane(moveDirection, groundNormal).normalized;
-            Vector3 targetPosition = transform.position + projectedDirection * moveStep;
-
-            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref moveVelocity, smoothTime * Time.deltaTime);
-
-
-            // === Kiểm tra qua checkpoint ===
-            if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
-            {
-                currentCheckpointIndex++;
-                if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
-                    currentCheckpointIndex = 0;
-            }
-           /*
-            var pos = transform.position;
-            pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex).position.y-1f;
-            transform.position = pos;
-           */
+            rb.freezeRotation = false;
         }
         else
         {
-            // === Phát hiện kẹt xe ===
-            if (timeStopping >1f)
-            {
-                
-                timeStopping -= Time.deltaTime;
-            }
-            else if(timeStopping>0)
-            {
-                //isCollision = false;
-                // === Xác định hướng lui ===
-                moveDirection = -transform.forward;
-                float moveStep = moveSpeed * Time.deltaTime;
-                // === lui` xe (áp dụng SmoothDamp) ===
+            rb.freezeRotation = true;
+        }
+        HandleInput();
+        
+            // === Tính vận tốc bằng tay ===
+            velocity = (transform.position - lastPosition) / Time.deltaTime;
+            lastPosition = transform.position;
 
+            // === Lấy checkpoint tiếp theo ===
+            Transform target = checkpointManager.GetCheckpoint(currentCheckpointIndex);
+            if (target == null) return;
+
+        // Hướng từ Arrow tới target
+        Vector3 targetDir = (target.position - Arrow.transform.position).normalized;
+
+        // Tính góc quay mục tiêu
+        Quaternion targetRotation = Quaternion.LookRotation(targetDir, Vector3.up);
+
+        // Giữ lại trục X và Z hiện tại, chỉ quay mượt trục Y
+        float rotationSpeed = 180f; // độ/giây, chỉnh tốc độ quay tùy ý
+
+        // Tạo một rotation hiện tại chỉ chứa trục Y
+        Quaternion currentRotation = Quaternion.Euler(0f, Arrow.transform.eulerAngles.y, 0f);
+        Quaternion targetYRotation = Quaternion.Euler(0f, targetRotation.eulerAngles.y, 0f);
+
+        // Quay mượt từ current đến target theo trục Y
+        Quaternion smoothRotation = Quaternion.RotateTowards(currentRotation, targetYRotation, rotationSpeed * Time.deltaTime);
+
+        // Áp dụng rotation giữ nguyên trục X và Z gốc
+        Arrow.transform.rotation = Quaternion.Euler(
+            Arrow.transform.eulerAngles.x,
+            smoothRotation.eulerAngles.y,
+            Arrow.transform.eulerAngles.z
+        );
+
+        if (!isCollision)
+            {
+
+                // Tính hướng tới mục tiêu
+                Vector3 targetDir2 = (target.position - transform.position).normalized;
+
+                // Tạo rotation mục tiêu
+                Quaternion targetRotation2 = Quaternion.LookRotation(targetDir2, Vector3.right);
+
+                // Lấy rotation hiện tại
+                Quaternion rotation = transform.rotation;
+
+                // Giữ lại các giá trị trục Y và Z, chỉ quay trục X mượt
+                Quaternion rotationSmooth = Quaternion.Euler(
+                    Mathf.LerpAngle(rotation.eulerAngles.x, targetRotation2.eulerAngles.x, Time.deltaTime * 100f),
+                    rotation.eulerAngles.y,
+                    rotation.eulerAngles.z
+                );
+
+                // Áp dụng rotation mới
+                transform.rotation = rotationSmooth;
+
+
+                // --- Quay xe dựa trên input chuột ---
+                turnAmount = targetTurn * turnSpeed * Time.deltaTime;
+                transform.Rotate(Vector3.up, turnAmount);
+
+                // === Xác định hướng di chuyển ===
+                moveDirection = transform.forward;
+                float moveStep = moveSpeed * Time.deltaTime;
+
+                // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
+                if (Mathf.Abs(turnAmount) > slowTurnThreshold && velocity.magnitude > 5f)
+                {
+                    Vector3 driftOffset = transform.right * Mathf.Sign(turnAmount) * driftIntensity;
+                    transform.position += driftOffset * Time.deltaTime;
+                    Debug.Log("Drift giả lập!");
+                }
+
+            // === Di chuyển chính (áp dụng SmoothDamp) ===
+            var pos = transform.position;
+            pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex + 1).position.y -1.3f;
+            transform.position = Vector3.SmoothDamp(transform.position, pos + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
                 
-                transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
-                timeStopping -= Time.deltaTime;
+
+
+                // === Kiểm tra qua checkpoint ===
+                if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+                {
+                    currentCheckpointIndex++;
+                    if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                        currentCheckpointIndex = 0;
+                }
+                /*
+                 var pos = transform.position;
+                 pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex+1).position.y-1f;
+                 transform.position = pos;
+                */
             }
             else
             {
-                isCollision = false;
-                moveVelocity = Vector3.zero;
-                timeStopping = 0f;
+                // === Phát hiện kẹt xe ===
+                if (timeStopping > 1f)
+                {
+
+                    timeStopping -= Time.deltaTime;
+                }
+                else if (timeStopping > 0)
+                {
+                    //isCollision = false;
+                    // === Xác định hướng lui ===
+                    moveDirection = -transform.forward;
+                    float moveStep = moveSpeed * Time.deltaTime;
+                    // === lui` xe (áp dụng SmoothDamp) ===
+
+
+                    transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
+                    timeStopping -= Time.deltaTime;
+                }
+                else
+                {
+                    isCollision = false;
+                    moveVelocity = Vector3.zero;
+                    timeStopping = 0f;
+                }
             }
-        }
-
-        
+            
+       
     }
-
+    private void FixedUpdate()
+    {
+        //rb.AddForce(Vector3.down * 800f * Time.fixedDeltaTime, ForceMode.Acceleration);
+    }
     // ==== CHỈNH HƯỚNG KHI VA CHẠM ====
     private void OnCollisionEnter(Collision collision)
     {
@@ -165,6 +193,15 @@ public class PlayerCarController : MonoBehaviour
         
         
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 7)
+        {
+
+           
+        }
+    }
+    
     /* private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == 8)
