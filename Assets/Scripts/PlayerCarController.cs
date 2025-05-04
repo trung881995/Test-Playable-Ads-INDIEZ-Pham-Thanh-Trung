@@ -8,6 +8,7 @@ public class PlayerCarController : MonoBehaviour
     public float maxSpeed = 20f;
     public float turnSpeed = 100f;
     public float maxTurnAngle = 45f;
+    public float checkpointRadius = 10f;
 
     [Header("Drift Settings")]
     public float slowTurnThreshold = 30f;
@@ -17,7 +18,7 @@ public class PlayerCarController : MonoBehaviour
     public float groundCheckDistance = 1f;
     public LayerMask groundLayer;
 
-    private Vector3 velocity = Vector3.zero;
+    
     private Vector3 moveDirection = Vector3.zero;
 
     private float screenCenterX;
@@ -26,9 +27,18 @@ public class PlayerCarController : MonoBehaviour
     private bool isDragging = false;
     private bool isCollision = false;
     private float timeStopping = 0f;
+    private int currentCheckpointIndex = 0;
+
+    public CheckpointManager checkpointManager;
+    public Transform Arrow;
+    private Vector3 lastPosition;
+    private Vector3 velocity = Vector3.zero;
+    private Vector3 moveVelocity = Vector3.zero;
     void Start()
     {
         screenCenterX = Screen.width / 2f;
+        
+        lastPosition = transform.position;
     }
 
     void Update()
@@ -36,11 +46,35 @@ public class PlayerCarController : MonoBehaviour
         
         HandleInput();
 
-        
+        // === Tính vận tốc bằng tay ===
+        velocity = (transform.position - lastPosition) / Time.deltaTime;
+        lastPosition = transform.position;
 
+        // === Lấy checkpoint tiếp theo ===
+        Transform target = checkpointManager.GetCheckpoint(currentCheckpointIndex);
+        if (target == null) return;
+
+        Vector3 targetDir = (target.position - Arrow.transform.position).normalized;
         
-        if(!isCollision)
+        //Arrow.transform.LookAt(target);
+
+        // Tạo rotation mới hướng về tường
+        Quaternion targetRotation = Quaternion.LookRotation(targetDir, Vector3.up);
+
+        // Cập nhật rotation (chỉ hướng, giữ lại trục XArrow.transform.eulerAngles.x quay đều)
+        Arrow.transform.rotation = Quaternion.Euler(Arrow.transform.eulerAngles.x, targetRotation.eulerAngles.y, Arrow.transform.eulerAngles.z);
+        if (!isCollision)
         {
+            /*
+            Vector3 targetDir2 = (target.position - transform.position).normalized;
+
+
+            // Tạo rotation mới hướng về tường
+            Quaternion targetRotation2 = Quaternion.LookRotation(targetDir, Vector3.right);
+
+            // Cập nhật rotation (chỉ hướng, giữ lại trục X quay đều)
+            transform.rotation = Quaternion.Euler(targetRotation2.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
+            */
             // --- Quay xe dựa trên input chuột ---
             turnAmount = targetTurn * turnSpeed * Time.deltaTime;
             transform.Rotate(Vector3.up, turnAmount);
@@ -58,12 +92,38 @@ public class PlayerCarController : MonoBehaviour
             }
 
             // === Di chuyển chính (áp dụng SmoothDamp) ===
-            transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref velocity, smoothTime * Time.deltaTime);
+
+            RaycastHit hit;
+            Vector3 groundNormal = Vector3.up; // Mặc định nếu không chạm đất
+
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, 1.5f))
+            {
+                groundNormal = hit.normal;
+            }
+
+            Vector3 projectedDirection = Vector3.ProjectOnPlane(moveDirection, groundNormal).normalized;
+            Vector3 targetPosition = transform.position + projectedDirection * moveStep;
+
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref moveVelocity, smoothTime * Time.deltaTime);
+
+
+            // === Kiểm tra qua checkpoint ===
+            if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+            {
+                currentCheckpointIndex++;
+                if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                    currentCheckpointIndex = 0;
+            }
+           /*
+            var pos = transform.position;
+            pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex).position.y-1f;
+            transform.position = pos;
+           */
         }
         else
         {
             // === Phát hiện kẹt xe ===
-            if (timeStopping >0.8f)
+            if (timeStopping >1f)
             {
                 
                 timeStopping -= Time.deltaTime;
@@ -75,12 +135,15 @@ public class PlayerCarController : MonoBehaviour
                 moveDirection = -transform.forward;
                 float moveStep = moveSpeed * Time.deltaTime;
                 // === lui` xe (áp dụng SmoothDamp) ===
-                transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref velocity, smoothTime * Time.deltaTime);
+
+                
+                transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
                 timeStopping -= Time.deltaTime;
             }
             else
             {
                 isCollision = false;
+                moveVelocity = Vector3.zero;
                 timeStopping = 0f;
             }
         }
@@ -94,13 +157,25 @@ public class PlayerCarController : MonoBehaviour
         if(collision.gameObject.layer==6)
         {
             timeStopping = 2f;
+            moveVelocity = Vector3.zero;
             isCollision = true;
 
             Debug.Log("va cham voi tuong !!!");
         }
         
+        
     }
-    
+    /* private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 8)
+        { 
+            GameObject _target=new GameObject();
+            _target.transform.position  = new Vector3(other.gameObject.transform.position.x, other.gameObject.transform.position.y - 3f, other.gameObject.transform.position.z);
+            transform.LookAt(_target.transform);
+            Debug.Log("tren mat dat !!!");
+        }
+    }
+   */
     void HandleInput()
     {
 #if UNITY_EDITOR || UNITY_STANDALONE
