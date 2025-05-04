@@ -13,10 +13,10 @@ TagManager:
   - UI
   - Obstacle
   - Ground
-  - SpecialCheckPoint
-  - 
-  - 
-  - 
+  - CheckPoint
+  - YellowSpeedUp
+  - BlueSpeedUp
+  - RedSpeedUp
   - 
   - 
   - 

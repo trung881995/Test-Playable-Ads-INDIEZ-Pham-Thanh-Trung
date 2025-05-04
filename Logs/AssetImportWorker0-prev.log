@@ -1,0 +1,1665 @@
+Unity Editor version:    2022.3.61f1 (6c53ebaf375d)
+Branch:                  2022.3/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.3.2 (Build 24D81)
+Darwin version:          24.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57929
+Successfully changed project path to: /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
+/Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8419870784]  Target information:
+
+Player connection [8419870784]  * "[IP] 192.168.2.18 [Port] 0 [Flags] 2 [Guid] 3595664376 [EditorId] 3595664376 [Version] 1048832 [Id] OSXEditor(0,192.168.2.18) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8419870784] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8419870784] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 11.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.61f1 (6c53ebaf375d)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 (high power)
+Metal devices available: 1
+0: Apple M2 (high power)
+Using device Apple M2 (high power)
+Initializing Metal device caps: Apple M2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56154
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006113 seconds.
+- Loaded All Assemblies, in  0.244 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+2025-05-04 19:27:34.798 Unity[62154:15504799] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 81 ms
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.309 seconds
+Domain Reload Profiling: 553ms
+	BeginReloadAssembly (76ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (78ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (100ms)
+			TypeCache.Refresh (99ms)
+				TypeCache.ScanAssembly (89ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (310ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (281ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (194ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (59ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.413 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-04 19:27:36.147 Unity[62154:15504799] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.473 seconds
+Domain Reload Profiling: 886ms
+	BeginReloadAssembly (77ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (287ms)
+		LoadAssemblies (202ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (113ms)
+				TypeCache.ScanAssembly (98ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (473ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (368ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (297ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3278 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (122.4 KB). Loaded Objects now: 3772.
+Memory consumption went from 135.1 MB to 135.0 MB.
+Total: 2.799375 ms (FindLiveObjects: 0.113958 ms CreateObjectMapping: 0.046167 ms MarkObjects: 2.501167 ms  DeleteObjects: 0.137583 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 781784.478968 seconds.
+  path: Assets/snowflake.png
+  artifactKey: Guid(4b9aa4b1abe2a4a6b8952b66845f7252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/snowflake.png using Guid(4b9aa4b1abe2a4a6b8952b66845f7252) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '60e1deec4ab9689efa4e5c68bb5148d2') in 0.036961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AlterunaCars
+  artifactKey: Guid(2958e21ca1b6241f684e229f2430aeca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AlterunaCars using Guid(2958e21ca1b6241f684e229f2430aeca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c82f527d68af97e8103962de5ecfc0d5') in 0.000161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(27ba3c2a4072942b0a463a6a00dc5787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(27ba3c2a4072942b0a463a6a00dc5787) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ec86d860aca169167f5cbf0889030246') in 0.174708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 18.582393 seconds.
+  path: Assets/LowPoly Racing Cars Package
+  artifactKey: Guid(86c2fdf67fd8b4c2ba06fd4b417876dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package using Guid(86c2fdf67fd8b4c2ba06fd4b417876dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '45e1dd8abc9909a72e998bc1feb8ba97') in 0.000317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.372304 seconds.
+  path: Assets/LowPoly Racing Cars Package/Scene
+  artifactKey: Guid(e8259da7b2436ec429894b4b9f56f58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Scene using Guid(e8259da7b2436ec429894b4b9f56f58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8b660c12799ed2651b57406e5defd3c4') in 0.000455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.784183 seconds.
+  path: Assets/LowPoly Racing Cars Package/Scene/Demo_Scene_Racing_cars.unity
+  artifactKey: Guid(42e85b69e694d5f4483d5af7ac67eac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Scene/Demo_Scene_Racing_cars.unity using Guid(42e85b69e694d5f4483d5af7ac67eac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7b4b3dce43e88287f2cc8f5f049b15df') in 0.000422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.641012 seconds.
+  path: Assets/Environmental Race Track Pack
+  artifactKey: Guid(a5b58372b46b0434e930832660be0863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack using Guid(a5b58372b46b0434e930832660be0863) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0f22eaf3bccbe3016c9a7e877468c283') in 0.000420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.600309 seconds.
+  path: Assets/Environmental Race Track Pack/Scenes
+  artifactKey: Guid(1eae87758c592894ba1308affeb3e45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack/Scenes using Guid(1eae87758c592894ba1308affeb3e45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f1d02260b6e8dc4d4e26d3bc21564002') in 0.000408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.582667 seconds.
+  path: Assets/Environmental Race Track Pack/Scenes/OvalDisplayScene.unity
+  artifactKey: Guid(233665a73b3957049a1d38686468e293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack/Scenes/OvalDisplayScene.unity using Guid(233665a73b3957049a1d38686468e293) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0854cd9e9a9c4854b9e634aeeb9b41db') in 0.000538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.844293 seconds.
+  path: Assets/Environmental Race Track Pack/Scenes/F8DisplayScene.unity
+  artifactKey: Guid(7e9f9e0e673e07d45af9a81c875ab701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack/Scenes/F8DisplayScene.unity using Guid(7e9f9e0e673e07d45af9a81c875ab701) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '53aeb92b402c217f5a67ebdee702acd9') in 0.000568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.003966 seconds.
+  path: Assets/Environmental Race Track Pack/Scenes/F1TrackDisplayScene.unity
+  artifactKey: Guid(113f72dcb05e28844a3ed8043e7a81af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack/Scenes/F1TrackDisplayScene.unity using Guid(113f72dcb05e28844a3ed8043e7a81af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '45ac43df0739449bcf201878b4b1a2b1') in 0.000522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.484006 seconds.
+  path: Assets/Environmental Race Track Pack/Scenes/CoastalTrackDisplayScene.unity
+  artifactKey: Guid(874740ade97b7494d96c0fffb1c1c6f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack/Scenes/CoastalTrackDisplayScene.unity using Guid(874740ade97b7494d96c0fffb1c1c6f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7467e32c8ddb7de94187c3dcd51f2917') in 0.000574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x30c39f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.300 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-04 19:30:53.886 Unity[62154:15504799] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.749 seconds
+Domain Reload Profiling: 1049ms
+	BeginReloadAssembly (116ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (160ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (750ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (350ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (31ms)
+			ProcessInitializeOnLoadAttributes (277ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Unloading 3267 Unused Serialized files (Serialized files now loaded: 0)
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 17 unused Assets / (100.2 KB). Loaded Objects now: 3831.
+Memory consumption went from 136.5 MB to 136.4 MB.
+Total: 2.961625 ms (FindLiveObjects: 0.143750 ms CreateObjectMapping: 0.059791 ms MarkObjects: 2.693292 ms  DeleteObjects: 0.064167 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 849.286944 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs
+  artifactKey: Guid(fb5c1b720c196ee47a62155b4c07623f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs using Guid(fb5c1b720c196ee47a62155b4c07623f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ab9f0a8d0ca5eb5d41c50552ee9cfe92') in 0.007577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.750630 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars
+  artifactKey: Guid(b69e532dc497203498ee9a474bb6f28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars using Guid(b69e532dc497203498ee9a474bb6f28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2c07cf26d648a555337fcbf64832020b') in 0.000559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.062419 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars/Car_01.prefab
+  artifactKey: Guid(c0903c9d7aa78c545be397239538f0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars/Car_01.prefab using Guid(c0903c9d7aa78c545be397239538f0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd137133b28c25651284c0abbff4c3002') in 0.088028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars/Car_05.prefab
+  artifactKey: Guid(c29751a2fed42bb45abadbf439ad2546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars/Car_05.prefab using Guid(c29751a2fed42bb45abadbf439ad2546) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0d1ad90be3869ac26b7dc2438842330b') in 0.013791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 77
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars/Car_03.prefab
+  artifactKey: Guid(ff82c998b02c1aa489e814e8f00461db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars/Car_03.prefab using Guid(ff82c998b02c1aa489e814e8f00461db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c2038a40e2ab27db7d6b51a724e8c4ea') in 0.008574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars/Car_07.prefab
+  artifactKey: Guid(91b9a78b9d72c5a44985301cd0e76740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Demo _Cars/Car_07.prefab using Guid(91b9a78b9d72c5a44985301cd0e76740) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd63dead4a8a46cf326a24895d0abf04c') in 0.009611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 11.974734 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature
+  artifactKey: Guid(2898043a4baa1ee448a0bb32c31d3efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature using Guid(2898043a4baa1ee448a0bb32c31d3efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd99681685f8cddb292f9fcd538075436') in 0.000829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.130672 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other
+  artifactKey: Guid(ef6480b7dfc3c0743bba4f0c39be9ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other using Guid(ef6480b7dfc3c0743bba4f0c39be9ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aa55148de61bdd1c5eeb65e03e9a7074') in 0.000424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.070055 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/birdsnest.prefab
+  artifactKey: Guid(be05be80d98686847b1b0e150eb6db10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/birdsnest.prefab using Guid(be05be80d98686847b1b0e150eb6db10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '64f9746f4f6e59e496018b26b6fe2625') in 0.007391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_09.prefab
+  artifactKey: Guid(011ea99a57e5ac74a80dc20930a7b6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_09.prefab using Guid(011ea99a57e5ac74a80dc20930a7b6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b33007afa0b47ce4d4258780c94a2668') in 0.004285 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_04.prefab
+  artifactKey: Guid(029eb3f7b3b9c584abb3bb0f84c234b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_04.prefab using Guid(029eb3f7b3b9c584abb3bb0f84c234b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '647bafd4a0776021c7b8975b391166df') in 0.004528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_brown_00.prefab
+  artifactKey: Guid(ae9aa8a031b32a8479f5aa0726e505c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_brown_00.prefab using Guid(ae9aa8a031b32a8479f5aa0726e505c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8a1aa9f67844515996ef09c76a9a6d79') in 0.004700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_Blue_01.prefab
+  artifactKey: Guid(36f90c9d1fb02314ebb40b3de43be7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_Blue_01.prefab using Guid(36f90c9d1fb02314ebb40b3de43be7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '43497946d482c872a83087c5271dfb76') in 0.004200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_brown_01.prefab
+  artifactKey: Guid(694bfbf99742d5e4db4961c0d2c873da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_brown_01.prefab using Guid(694bfbf99742d5e4db4961c0d2c873da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ca01f5af009bf14112911d2a42227d77') in 0.003453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Cloud_a_02.prefab
+  artifactKey: Guid(4d1a96313000c044aa411601fc0aab6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Cloud_a_02.prefab using Guid(4d1a96313000c044aa411601fc0aab6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6dd3d1cc394f97b6e7d1ac8d133de5fc') in 0.005121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_brown_05.prefab
+  artifactKey: Guid(78c62a967ef51b643a6bae67cb73a5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_brown_05.prefab using Guid(78c62a967ef51b643a6bae67cb73a5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0499912536248a46b4d6e0c9aeb5cf83') in 0.005042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/lake_flower_3.prefab
+  artifactKey: Guid(f9521cfcc90e54c4bab0af6e420910a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/lake_flower_3.prefab using Guid(f9521cfcc90e54c4bab0af6e420910a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '72678f956931bd38b998e90adc96bf97') in 0.004071 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_02.prefab
+  artifactKey: Guid(0ad68236937a17045919475fe66eb8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_02.prefab using Guid(0ad68236937a17045919475fe66eb8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '73429918bfb555e5aef1f979c7afaa12') in 0.004434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_05.prefab
+  artifactKey: Guid(730c510d3dc59c444835fb703a5571c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_05.prefab using Guid(730c510d3dc59c444835fb703a5571c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c7b6d35797bdd92a87e5751f151e99e1') in 0.004263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_Blue_00.prefab
+  artifactKey: Guid(e8917f9bd130b4241805537a2f52d5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_Blue_00.prefab using Guid(e8917f9bd130b4241805537a2f52d5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd6e2c955dddb96406a58035bea4d817f') in 0.004341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Cloud_a_01.prefab
+  artifactKey: Guid(dc38d7647f73c4341900b255f1223244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Cloud_a_01.prefab using Guid(dc38d7647f73c4341900b255f1223244) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fbe571d18639ff24343a030e98591cf6') in 0.006605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Cloud_b_00.prefab
+  artifactKey: Guid(5c3cc7b3cbc594340b7c3406cbeb74ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Cloud_b_00.prefab using Guid(5c3cc7b3cbc594340b7c3406cbeb74ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b30cd9827ce4fefdca15ff6630590c29') in 0.005102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Cloud_a_00.prefab
+  artifactKey: Guid(efc5d45cf79ada4499fa98f5857201b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Cloud_a_00.prefab using Guid(efc5d45cf79ada4499fa98f5857201b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6c2708398297ef1f80824ab867a831c3') in 0.004251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/lake_00.prefab
+  artifactKey: Guid(6876c33134888564a95b26c7c31a9e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/lake_00.prefab using Guid(6876c33134888564a95b26c7c31a9e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '928349e66ff6318ddcea079ceb0a3254') in 0.006099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/leaf_02.prefab
+  artifactKey: Guid(25826dc2c4b8b3148b8de58550447e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/leaf_02.prefab using Guid(25826dc2c4b8b3148b8de58550447e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd66c7db08417ba18b4454f1130a044a1') in 0.005862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_00.prefab
+  artifactKey: Guid(08a47c6d4ce53214e9e25093382befc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/branch_00.prefab using Guid(08a47c6d4ce53214e9e25093382befc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e2b9980c5d9363dcb4f1a4f9b213b941') in 0.005158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/cactus_02.prefab
+  artifactKey: Guid(63ab66e2d1f5ee54480817885c8bb63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/cactus_02.prefab using Guid(63ab66e2d1f5ee54480817885c8bb63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'debf5ae2ee5905a03d4f945c677c1822') in 0.004496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/flower_1.prefab
+  artifactKey: Guid(5655ee221c934954dbfb9e146224b86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/flower_1.prefab using Guid(5655ee221c934954dbfb9e146224b86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '167055804bcd79d6516f7c709e17008d') in 0.007816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/cactus_00.prefab
+  artifactKey: Guid(6bc938541281c114c97512bbd65f009e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/cactus_00.prefab using Guid(6bc938541281c114c97512bbd65f009e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '23a6939a5d3035adfa1df804f14c999d') in 0.004288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_brown_02.prefab
+  artifactKey: Guid(1fbf96340c2a49d4db3290027dc1d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_brown_02.prefab using Guid(1fbf96340c2a49d4db3290027dc1d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '15363607ed0eb2cd257d99d880d93808') in 0.003890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.763480 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_Deathcup_00.prefab
+  artifactKey: Guid(ecfbfc2673fc6ff4288ad0249eb2c004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_Deathcup_00.prefab using Guid(ecfbfc2673fc6ff4288ad0249eb2c004) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '441bea1a590415283aae3f8b445c4bbd') in 0.005848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_Purple_00.prefab
+  artifactKey: Guid(31de58f70e6819545aab541c3ff06f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_Purple_00.prefab using Guid(31de58f70e6819545aab541c3ff06f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c24d7236351235f5d1fb50731a8deaf5') in 0.004113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_red_03.prefab
+  artifactKey: Guid(b3ed0d0b16024f94ca81f8ed20573117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_red_03.prefab using Guid(b3ed0d0b16024f94ca81f8ed20573117) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e44ed058651a2ec5e2b36856cdf73aee') in 0.004988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/old_tree_branch_008.prefab
+  artifactKey: Guid(1a2516e11b0cad1498b3f65838c8bf54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/old_tree_branch_008.prefab using Guid(1a2516e11b0cad1498b3f65838c8bf54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5fe8b7088e0f170c8485775e1258104b') in 0.009626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/reed_02.prefab
+  artifactKey: Guid(deae009d152005345a314596e2b69953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/reed_02.prefab using Guid(deae009d152005345a314596e2b69953) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2b36978849da82c6d0512a4246ad4b25') in 0.003685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_red_02.prefab
+  artifactKey: Guid(ae06e70fb093c7c43bae89b32d416908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_red_02.prefab using Guid(ae06e70fb093c7c43bae89b32d416908) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd04de2db87046bdd3aca0d7c59f7d965') in 0.004952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/reed_00.prefab
+  artifactKey: Guid(21168c2dbe40b13449874db19ecf186f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/reed_00.prefab using Guid(21168c2dbe40b13449874db19ecf186f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd6d92561c50321939effdb4d00e4acd0') in 0.003342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/reed_01.prefab
+  artifactKey: Guid(c95972b1b938ecd48b1dc549e1825cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/reed_01.prefab using Guid(c95972b1b938ecd48b1dc549e1825cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '02fa34c3c4c718034b3b957f11f56463') in 0.002796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_gray_01.prefab
+  artifactKey: Guid(658647c5cba2aba4c98feada4164570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Mushroom_gray_01.prefab using Guid(658647c5cba2aba4c98feada4164570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ed59ed53884f4576ca5c5b9d994e5dfd') in 0.005662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Wheat_00.prefab
+  artifactKey: Guid(d73adaee522ac0b41a6c949b7cada70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Wheat_00.prefab using Guid(d73adaee522ac0b41a6c949b7cada70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '71442e744fc0b96290999a3326d5a193') in 0.003526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/old_tree_branch_007.prefab
+  artifactKey: Guid(20c95279251d8b34cbb4d426c9a807aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/old_tree_branch_007.prefab using Guid(20c95279251d8b34cbb4d426c9a807aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '67db114b86b9e8fa9dd677c2eb1287fd') in 0.005092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Wheat_01.prefab
+  artifactKey: Guid(a10598bc020aeb04a94bd720f4cd05fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Nature/Other/Wheat_01.prefab using Guid(a10598bc020aeb04a94bd720f4cd05fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f57d0b5283c5e279fa75d123181f8f3b') in 0.003860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 158.312559 seconds.
+  path: Assets/Environmental Race Track Pack/Prefabs/coastalTrack.prefab
+  artifactKey: Guid(7d76ac986883f6e47b38d02e17432708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack/Prefabs/coastalTrack.prefab using Guid(7d76ac986883f6e47b38d02e17432708) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2a4aa9bee0af515978ec2a57d902dc74') in 0.646229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Environmental Race Track Pack/Prefabs/The_Figure_Of_Eight.prefab
+  artifactKey: Guid(30c719a3acc71094aacf1e6d29516faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack/Prefabs/The_Figure_Of_Eight.prefab using Guid(30c719a3acc71094aacf1e6d29516faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '48258f7210352597c57e16490c2aa042') in 0.327286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 11.037529 seconds.
+  path: Assets/Environmental Race Track Pack/Prefabs
+  artifactKey: Guid(22713c175ef3b5546a9cb362ed868ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environmental Race Track Pack/Prefabs using Guid(22713c175ef3b5546a9cb362ed868ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a41ec2e06d8e8ccf5fd9a36df00c879a') in 0.000687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 274.897305 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6feb99f21cf5547b68a24b14d01fd34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6feb99f21cf5547b68a24b14d01fd34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '58ccc689b0e78e5b7582f8f1c6df1509') in 0.002304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.040412 seconds.
+  path: Assets/Scenes/PlayableAdsScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayableAdsScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'db36758b1a8148546ca51b7fe196a88e') in 0.002247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 20.890356 seconds.
+  path: Assets/Scenes/PlayableAds2.unity
+  artifactKey: Guid(d99655a6efea449c79d7eff81f393b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayableAds2.unity using Guid(d99655a6efea449c79d7eff81f393b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5810c43ee8f5a04299f1ca1334edc7c9') in 0.000613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.381561 seconds.
+  path: Assets/Scenes/PlayableAdsScene2.unity
+  artifactKey: Guid(d99655a6efea449c79d7eff81f393b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayableAdsScene2.unity using Guid(d99655a6efea449c79d7eff81f393b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'af2e2565a259fea31f8bdb8779f4ce46') in 0.000283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 42.382299 seconds.
+  path: Assets/Scenes/PlayableAdsScene2.unity
+  artifactKey: Guid(d99655a6efea449c79d7eff81f393b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayableAdsScene2.unity using Guid(d99655a6efea449c79d7eff81f393b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4c2c9ee2e01924a3cd75ae0dcbc14eff') in 0.000886 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 240.356129 seconds.
+  path: Assets/SVC_Luna.asset
+  artifactKey: Guid(0e5b5ff43062e4a90b7a93b8b7ca8d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SVC_Luna.asset using Guid(0e5b5ff43062e4a90b7a93b8b7ca8d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0cc4623b825cf72a6e9beafffd2721da') in 0.013737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.735317 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track
+  artifactKey: Guid(ed660e2935e2d564993b9656e4fe360a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track using Guid(ed660e2935e2d564993b9656e4fe360a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4165df94a8896a717f662308c7f481ae') in 0.000868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.091813 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Bend_Left.prefab
+  artifactKey: Guid(04ce22ac523172b42b13d94280c48148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Bend_Left.prefab using Guid(04ce22ac523172b42b13d94280c48148) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e6e16ab7e892aaaa72401883932a0637') in 0.025068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_left_Mid.prefab
+  artifactKey: Guid(bf51647ed710c734286fb47d53be4df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_left_Mid.prefab using Guid(bf51647ed710c734286fb47d53be4df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '66536ea64c8f841a2292fe6fbb87dfc7') in 0.004717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_StartGrid.prefab
+  artifactKey: Guid(5bbc05b9205fdda489abbf183c04ef9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_StartGrid.prefab using Guid(5bbc05b9205fdda489abbf183c04ef9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dfb58a3f1c972da983ce9ad8f380633a') in 0.005270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Right_Mid.prefab
+  artifactKey: Guid(47bffd7d6fbe9c24fbcc7758347916c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Right_Mid.prefab using Guid(47bffd7d6fbe9c24fbcc7758347916c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '47b279e37283e6839244f6570a466085') in 0.006723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Right_High.prefab
+  artifactKey: Guid(948adecce12aa4842add9d455f38a3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Right_High.prefab using Guid(948adecce12aa4842add9d455f38a3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0efbb5dc866142f64a205ce8b82c812b') in 0.006555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Straight.prefab
+  artifactKey: Guid(1cfbe33a22bb24341981ef91d2994a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Straight.prefab using Guid(1cfbe33a22bb24341981ef91d2994a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9f126a7ed1122368a23419110cbc5ad0') in 0.003960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Finish.prefab
+  artifactKey: Guid(fd9744c1c746f70408ec75d9faf7897a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_Finish.prefab using Guid(fd9744c1c746f70408ec75d9faf7897a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8495d329179924ff77935c25aabb0611') in 0.007285 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_left_High.prefab
+  artifactKey: Guid(20287b7b915b19a4ea6c7192d67016dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_left_High.prefab using Guid(20287b7b915b19a4ea6c7192d67016dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2e0303056b8e2c8d056e09b1a043c26d') in 0.004740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_left_low.prefab
+  artifactKey: Guid(a4337980d4625784b9b0ae25306ed406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Track/Track_left_low.prefab using Guid(a4337980d4625784b9b0ae25306ed406) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'eb89598874e2041f16f74372206ec4d0') in 0.003444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 13.044495 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top
+  artifactKey: Guid(60d89bbed03800749b7e8c3a30e53350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top using Guid(60d89bbed03800749b7e8c3a30e53350) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '747b0ac4e81ae0e0de34438dcce9aad2') in 0.000584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022373 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Black_Engine_Intake_top_1.prefab
+  artifactKey: Guid(46fb7a3e7cadfd244b794a192faaf749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Black_Engine_Intake_top_1.prefab using Guid(46fb7a3e7cadfd244b794a192faaf749) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f15250e2d8eea515b11506fcfa6bc4d5') in 0.007891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Black_Engine_Intake_top_7.prefab
+  artifactKey: Guid(4434376da1698c044bb0272b370e100c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Black_Engine_Intake_top_7.prefab using Guid(4434376da1698c044bb0272b370e100c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '32e3a62c27760887e8242ec1e6916f4f') in 0.004137 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Candy_Engine_Intake_top_7.prefab
+  artifactKey: Guid(179604ed2f9452045b5c0688c26b4142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Candy_Engine_Intake_top_7.prefab using Guid(179604ed2f9452045b5c0688c26b4142) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0c109b5791b336ae84e14d83b7981995') in 0.004387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Green_Engine_Intake_top_4.prefab
+  artifactKey: Guid(e3e0a6f90276997448005200cc2bb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Green_Engine_Intake_top_4.prefab using Guid(e3e0a6f90276997448005200cc2bb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '77fe0c050eacbd451d0022c3bd8c384d') in 0.004019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/IceCream_Engine_Intake_top_4.prefab
+  artifactKey: Guid(4856b83aedcb5104eb1f0c253c6434d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/IceCream_Engine_Intake_top_4.prefab using Guid(4856b83aedcb5104eb1f0c253c6434d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f241f990f460c72246a57b6df169c894') in 0.003905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Green_Engine_Intake_top_2.prefab
+  artifactKey: Guid(8ac0e13d7dc83f446a19c3612e9dbf52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Green_Engine_Intake_top_2.prefab using Guid(8ac0e13d7dc83f446a19c3612e9dbf52) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9c0546a43f53eef81ac02e8b90c1cc2b') in 0.007043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_3.prefab
+  artifactKey: Guid(8eadda4b031655a46b0379586aea0f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_3.prefab using Guid(8eadda4b031655a46b0379586aea0f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '90b43131effac5f897e265ba1af5b68f') in 0.005452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_5.prefab
+  artifactKey: Guid(7d0b4e756a6bc5145ae9bed6dc1838e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_5.prefab using Guid(7d0b4e756a6bc5145ae9bed6dc1838e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'edbbcf3f2023b47d7d015f9151101eac') in 0.003814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Candy_Engine_Intake_top_1.prefab
+  artifactKey: Guid(57da6ed363522264c8f72d8010676e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Candy_Engine_Intake_top_1.prefab using Guid(57da6ed363522264c8f72d8010676e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4aacdf73d981972ad8dc5b71f8e8a0c9') in 0.004406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Flame_Engine_Intake_top_6.prefab
+  artifactKey: Guid(ef06b39566bb8644b923ad52d0268e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Flame_Engine_Intake_top_6.prefab using Guid(ef06b39566bb8644b923ad52d0268e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f6542103c764e6ef8b8e9a27bba0fd9d') in 0.004110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Flame_Engine_Intake_top_5.prefab
+  artifactKey: Guid(22b7074130fa1864fa0882d4d913096c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Flame_Engine_Intake_top_5.prefab using Guid(22b7074130fa1864fa0882d4d913096c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b8929a8733e2c1f66b9a8dba62da33fa') in 0.003638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_2.prefab
+  artifactKey: Guid(7c8b1f6f6d9e12540a86e6e68ff5e06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_2.prefab using Guid(7c8b1f6f6d9e12540a86e6e68ff5e06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd2d932afeefad13788a1acaf51977e0a') in 0.004339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_7.prefab
+  artifactKey: Guid(c6bd7a96da4ddc54a96c8335d706f86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_7.prefab using Guid(c6bd7a96da4ddc54a96c8335d706f86b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'eefb068f13471daaa1bd0bdc5ba209ba') in 0.004776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/IceCream_Engine_Intake_top_1.prefab
+  artifactKey: Guid(fe1d86a879a2d334e8dea513e9b04f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/IceCream_Engine_Intake_top_1.prefab using Guid(fe1d86a879a2d334e8dea513e9b04f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6619bd8b0eb564e637c25a0c0efa9e68') in 0.003871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_6.prefab
+  artifactKey: Guid(91975dfa7958a934fb1a9e785150eb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_6.prefab using Guid(91975dfa7958a934fb1a9e785150eb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '83b00a785bc5d828cca67d8e49df0cb9') in 0.004149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Green_Engine_Intake_top_5.prefab
+  artifactKey: Guid(2c1c797a8d9d1554b98274ed29c60a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Green_Engine_Intake_top_5.prefab using Guid(2c1c797a8d9d1554b98274ed29c60a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3ff28e0dad9e206a96de0f916bfbd9f4') in 0.004087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Candy_Engine_Intake_top_4.prefab
+  artifactKey: Guid(5bbfce3b90a1bf84a8ee509bd1076b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Candy_Engine_Intake_top_4.prefab using Guid(5bbfce3b90a1bf84a8ee509bd1076b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c619ada16b82603846fbe6ed0dd3b430') in 0.005759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Gray_Engine_Intake_top_1.prefab
+  artifactKey: Guid(c10102f8d9152c9439e2d5879e87f5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Gray_Engine_Intake_top_1.prefab using Guid(c10102f8d9152c9439e2d5879e87f5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2afa53595f3a369c463201b8754c1a9a') in 0.005242 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Black_Engine_Intake_top_3.prefab
+  artifactKey: Guid(77852a37a5483db49bed93720699f49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Black_Engine_Intake_top_3.prefab using Guid(77852a37a5483db49bed93720699f49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e426351fe5c04094dfd73ddf1c3d76fa') in 0.004252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Green_Engine_Intake_top_3.prefab
+  artifactKey: Guid(b41aa5c871c91a249bb9f89b3903d45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Green_Engine_Intake_top_3.prefab using Guid(b41aa5c871c91a249bb9f89b3903d45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4c245f355ebb438eca647d0cc30a5d9d') in 0.007838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Flame_Engine_Intake_top_7.prefab
+  artifactKey: Guid(57caedf908ec52044bd6cc4ca3c51c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Flame_Engine_Intake_top_7.prefab using Guid(57caedf908ec52044bd6cc4ca3c51c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '922115d66aa9de396ea20175f9b2f68e') in 0.003101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_1.prefab
+  artifactKey: Guid(f9fc4f9fdafd46d478eca608fc7f03dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Bloodred_Engine_Intake_top_1.prefab using Guid(f9fc4f9fdafd46d478eca608fc7f03dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e2f371ff9fa18d5e5c243c2827e15f03') in 0.004329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Flame_Engine_Intake_top_1.prefab
+  artifactKey: Guid(9bb8f37aa083c32469d430f1238d9421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Flame_Engine_Intake_top_1.prefab using Guid(9bb8f37aa083c32469d430f1238d9421) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a8d9d12b240c918fbc84f2e17c76b559') in 0.004488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.567694 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/IceCream_Engine_Intake_top_5.prefab
+  artifactKey: Guid(a9ef309691d62184bb7b3f8ae7344c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/IceCream_Engine_Intake_top_5.prefab using Guid(a9ef309691d62184bb7b3f8ae7344c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '128a7a9c3b91caa76a7c290525918b35') in 0.006057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Neonblue_Engine_Intake_top_3.prefab
+  artifactKey: Guid(5e5e962d84f7e454aaf4b2aa768dfb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Neonblue_Engine_Intake_top_3.prefab using Guid(5e5e962d84f7e454aaf4b2aa768dfb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e2b1d31b50b17160eb96559841d0a27c') in 0.003900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Neonblue_Engine_Intake_top_2.prefab
+  artifactKey: Guid(076878877233db04496b3c4bdc331394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Neonblue_Engine_Intake_top_2.prefab using Guid(076878877233db04496b3c4bdc331394) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7a8419d8c41c7111dd20472f5ce4d0f7') in 0.004160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Pink_Engine_Intake_top_1.prefab
+  artifactKey: Guid(a652acb137dfba74d8cb63eadb1d7629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Pink_Engine_Intake_top_1.prefab using Guid(a652acb137dfba74d8cb63eadb1d7629) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '99350ece6a96ffb66dfd5a07c9ad3521') in 0.004573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Pink_Engine_Intake_top_5.prefab
+  artifactKey: Guid(f4f5ec9cd17850b47ad9184685a5d1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Pink_Engine_Intake_top_5.prefab using Guid(f4f5ec9cd17850b47ad9184685a5d1cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c3ad345221018408ebcfa19c6b092c9e') in 0.004403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Red_Engine_Intake_top_1.prefab
+  artifactKey: Guid(23aba9c6f5271ea41a5a984b4f469098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Red_Engine_Intake_top_1.prefab using Guid(23aba9c6f5271ea41a5a984b4f469098) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '04a1ad27e4d3c7ef18ea9bd87a380f4c') in 0.004169 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Neonblue_Engine_Intake_top_1.prefab
+  artifactKey: Guid(7b3c0d90ab0c2fc4b93c6ad6480e0af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Neonblue_Engine_Intake_top_1.prefab using Guid(7b3c0d90ab0c2fc4b93c6ad6480e0af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a1c6059d80740915207897e1f4a26d85') in 0.004907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Pink_Engine_Intake_top_3.prefab
+  artifactKey: Guid(5e0c3f7d626da3a4c9240ad85ffcd463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Pink_Engine_Intake_top_3.prefab using Guid(5e0c3f7d626da3a4c9240ad85ffcd463) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '69045da986bcc45625278182ec1b52a5') in 0.003870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Red_Engine_Intake_top_6.prefab
+  artifactKey: Guid(822c1d67b9af07f48afd14a4ebe186a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Red_Engine_Intake_top_6.prefab using Guid(822c1d67b9af07f48afd14a4ebe186a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3cd1d436e549e279103161a47015e7dd') in 0.004619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Red_Engine_Intake_top_4.prefab
+  artifactKey: Guid(3de6d42b50471d343b1fe7d53823a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Red_Engine_Intake_top_4.prefab using Guid(3de6d42b50471d343b1fe7d53823a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a804d415bab60363c26873afc7d5fef3') in 0.003926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Red_Engine_Intake_top_7.prefab
+  artifactKey: Guid(56b1dc47e99454441966288d706ac2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Red_Engine_Intake_top_7.prefab using Guid(56b1dc47e99454441966288d706ac2ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bde9d331dbaa470454c7e0a99e5b816d') in 0.004189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Yellow_Engine_Intake_top_4.prefab
+  artifactKey: Guid(63e50cc40745f0f4a95bd41e6e6c0d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Yellow_Engine_Intake_top_4.prefab using Guid(63e50cc40745f0f4a95bd41e6e6c0d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8c200fb243a4a2b93235bc80981e0c84') in 0.003617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/White_Engine_Intake_top_4.prefab
+  artifactKey: Guid(7659131c45cc3614989b69069c40c995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/White_Engine_Intake_top_4.prefab using Guid(7659131c45cc3614989b69069c40c995) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6cfc06f08343d74849fe0d26306b67d3') in 0.003649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/White_Engine_Intake_top_3.prefab
+  artifactKey: Guid(83150fc07b40a7f4eb66ad2a10563a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/White_Engine_Intake_top_3.prefab using Guid(83150fc07b40a7f4eb66ad2a10563a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3f809ae71d93fc8a0487b02c0a25d481') in 0.004744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Yellow_Engine_Intake_top_6.prefab
+  artifactKey: Guid(67b4674e7ac5a6e4593a04b90959db83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Yellow_Engine_Intake_top_6.prefab using Guid(67b4674e7ac5a6e4593a04b90959db83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0c99362e2c351ab8b2cf371ed6e711bc') in 0.004903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/White_Engine_Intake_top_1.prefab
+  artifactKey: Guid(bd69c307093a53347ac14ad5262acc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/White_Engine_Intake_top_1.prefab using Guid(bd69c307093a53347ac14ad5262acc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '041399262898e871f85bf288068699a8') in 0.003700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Yellow_Engine_Intake_top_7.prefab
+  artifactKey: Guid(7d22510c7ccd1034ab1bdc01f393e4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Yellow_Engine_Intake_top_7.prefab using Guid(7d22510c7ccd1034ab1bdc01f393e4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e8401326fb9b2175778bc19e4f9cddc3') in 0.003988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/White_Engine_Intake_top_5.prefab
+  artifactKey: Guid(77b1655a004416d4f8c64ff4d4cec145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/White_Engine_Intake_top_5.prefab using Guid(77b1655a004416d4f8c64ff4d4cec145) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f43bd3a2f11fc529e2d4f241483cc882') in 0.006250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Pink_Engine_Intake_top_2.prefab
+  artifactKey: Guid(c596125b78f01ca43a6573e4f7f99f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Racing Cars Package/Prefabs/Engine_Intake_Top/Pink_Engine_Intake_top_2.prefab using Guid(c596125b78f01ca43a6573e4f7f99f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '335d40862d8c18ba338864c8249e5b16') in 0.004355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 78.868904 seconds.
+  path: Assets/ARCADE - Ultimate Vehicles Pack
+  artifactKey: Guid(6fa31ce04fe45bc48bf52b3d79d4fd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARCADE - Ultimate Vehicles Pack using Guid(6fa31ce04fe45bc48bf52b3d79d4fd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7e32bed9bb9ecb21013cef10ce7b778b') in 0.001953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.155838 seconds.
+  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)
+  artifactKey: Guid(afd746cb2dd0f4c4aa3a5c043403c1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only) using Guid(afd746cb2dd0f4c4aa3a5c043403c1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5c3282800b77e1551072fe100fc76a79') in 0.000621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.773778 seconds.
+  path: Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land
+  artifactKey: Guid(fcef477812296f542aeaed2b8d9c97ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARCADE - Ultimate Vehicles Pack/Prefabs (Meshes Only)/Land using Guid(fcef477812296f542aeaed2b8d9c97ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0cd4d87ff5759297dbe6c0f6df7a0b7b') in 0.000391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.173874 seconds.
+  path: Assets/ARCADE - Ultimate Vehicles Pack/Scenes
+  artifactKey: Guid(d5c64621eea2d174aa579eedb918aa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARCADE - Ultimate Vehicles Pack/Scenes using Guid(d5c64621eea2d174aa579eedb918aa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c0ff938a6ff9d8ae2cd0256c234d4c70') in 0.000397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.741138 seconds.
+  path: Assets/ARCADE - Ultimate Vehicles Pack/Scenes/Parking Zone.unity
+  artifactKey: Guid(66ddfd2478766554db1547bec99e2742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARCADE - Ultimate Vehicles Pack/Scenes/Parking Zone.unity using Guid(66ddfd2478766554db1547bec99e2742) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ede83befd28e92a8b5fe31fec5035116') in 0.000639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.217262 seconds.
+  path: Assets/ARCADE - Ultimate Vehicles Pack/Scenes/Racing Track.unity
+  artifactKey: Guid(22706be70641cbb4c8ea91281d8840f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARCADE - Ultimate Vehicles Pack/Scenes/Racing Track.unity using Guid(22706be70641cbb4c8ea91281d8840f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e98684682c860c78ae873403b98aa226') in 0.000487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 14.914162 seconds.
+  path: Assets/ARCADE - Ultimate Vehicles Pack/Scenes/Desert.unity
+  artifactKey: Guid(aa93a35cba4b359429880eed24dcbc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARCADE - Ultimate Vehicles Pack/Scenes/Desert.unity using Guid(aa93a35cba4b359429880eed24dcbc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'af533c63327a77c5bf46ed8032ed6bfa') in 0.000673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.683482 seconds.
+  path: Assets/BEDRILL
+  artifactKey: Guid(a0cf86b99228b43739c2668a82886cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL using Guid(a0cf86b99228b43739c2668a82886cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f67ff42be751c90a370ea694afcfde32') in 0.000470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.996987 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free
+  artifactKey: Guid(bf7a0267b025d4709bbe4c5f83109670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free using Guid(bf7a0267b025d4709bbe4c5f83109670) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '198f203fc430d1b78eaaf6c1a45e52ef') in 0.001959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.630938 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs
+  artifactKey: Guid(265684f584731c948854c5b6c2a6bcc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs using Guid(265684f584731c948854c5b6c2a6bcc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2f6548efb0b207f072f1aba342e2f8c5') in 0.000552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.047479 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Arch_01_free_obs.prefab
+  artifactKey: Guid(63f7e3a5ea486a9438b4cd3142c7dc92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Arch_01_free_obs.prefab using Guid(63f7e3a5ea486a9438b4cd3142c7dc92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4756769f06edebcae3a7f73d1a33c18e') in 0.022880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Traffic_light_free_obs.prefab
+  artifactKey: Guid(99c5fe0ab7d0f8045a119a49343475d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Traffic_light_free_obs.prefab using Guid(99c5fe0ab7d0f8045a119a49343475d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c306a06ccedd3578186a2fafa473d22b') in 0.005273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Barrier_free_obs.prefab
+  artifactKey: Guid(f26c4802677a5194091851e89ded1f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Barrier_free_obs.prefab using Guid(f26c4802677a5194091851e89ded1f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2a3bf5e58632005eecdff93a7d2ec65e') in 0.003874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Sign_free_obs.prefab
+  artifactKey: Guid(fca05fc86b15f0d4da25ed7793db4384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Sign_free_obs.prefab using Guid(fca05fc86b15f0d4da25ed7793db4384) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '35678d187749487e5b71fce2a0b55269') in 0.003540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Tire_free_obs.prefab
+  artifactKey: Guid(0a9f73a18c612c34a9773c0dd0fae0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Tire_free_obs.prefab using Guid(0a9f73a18c612c34a9773c0dd0fae0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7d620e00fe707be8b31ba3d172afdf94') in 0.005217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Pole_light_free_obs.prefab
+  artifactKey: Guid(5a8f39913d8079645914b07628ae2049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Pole_light_free_obs.prefab using Guid(5a8f39913d8079645914b07628ae2049) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7697dce7910aabdd2667444a4b453aec') in 0.004059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Cone_free_obs.prefab
+  artifactKey: Guid(b6e6982b772a1bc46b88d93db630bee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Cone_free_obs.prefab using Guid(b6e6982b772a1bc46b88d93db630bee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'daeda2ce03fd4708f8ab5a5729c3a2fc') in 0.004681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/BEDRILL/Track_Environment_Free/Prefabs/Tribune_free_obs.prefab
+  artifactKey: Guid(d83bf5421fa587548b541193382273ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BEDRILL/Track_Environment_Free/Prefabs/Tribune_free_obs.prefab using Guid(d83bf5421fa587548b541193382273ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '85d397bfa0ac5e296e7306792a7102cc') in 0.004859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 28.706342 seconds.
+  path: Assets/Scenes/PlayableAdsScene2.unity
+  artifactKey: Guid(d99655a6efea449c79d7eff81f393b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/PlayableAdsScene2.unity using Guid(d99655a6efea449c79d7eff81f393b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f0155f8f27f3906bf276c861269b0dbb') in 0.000816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

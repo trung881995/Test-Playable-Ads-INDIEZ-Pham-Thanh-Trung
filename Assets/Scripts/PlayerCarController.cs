@@ -35,6 +35,8 @@ public class PlayerCarController : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
     private Rigidbody rb;
+
+    private float speedUpTime;
     void Start()
     {
         screenCenterX = Screen.width / 2f;
@@ -45,6 +47,7 @@ public class PlayerCarController : MonoBehaviour
 
     void Update()
     {
+        /*
         if(transform.position.y>0.2f)
         {
             rb.freezeRotation = false;
@@ -52,6 +55,17 @@ public class PlayerCarController : MonoBehaviour
         else
         {
             rb.freezeRotation = true;
+        }
+        */
+
+        if(speedUpTime>0)
+        {
+            speedUpTime -= Time.deltaTime;
+        }
+        else
+        {
+            moveSpeed = 10000f;
+            speedUpTime = 0;
         }
         HandleInput();
         
@@ -88,27 +102,6 @@ public class PlayerCarController : MonoBehaviour
 
         if (!isCollision)
             {
-
-                // Tính hướng tới mục tiêu
-                Vector3 targetDir2 = (target.position - transform.position).normalized;
-
-                // Tạo rotation mục tiêu
-                Quaternion targetRotation2 = Quaternion.LookRotation(targetDir2, Vector3.right);
-
-                // Lấy rotation hiện tại
-                Quaternion rotation = transform.rotation;
-
-                // Giữ lại các giá trị trục Y và Z, chỉ quay trục X mượt
-                Quaternion rotationSmooth = Quaternion.Euler(
-                    Mathf.LerpAngle(rotation.eulerAngles.x, targetRotation2.eulerAngles.x, Time.deltaTime * 100f),
-                    rotation.eulerAngles.y,
-                    rotation.eulerAngles.z
-                );
-
-                // Áp dụng rotation mới
-                transform.rotation = rotationSmooth;
-
-
                 // --- Quay xe dựa trên input chuột ---
                 turnAmount = targetTurn * turnSpeed * Time.deltaTime;
                 transform.Rotate(Vector3.up, turnAmount);
@@ -126,9 +119,7 @@ public class PlayerCarController : MonoBehaviour
                 }
 
             // === Di chuyển chính (áp dụng SmoothDamp) ===
-            var pos = transform.position;
-            pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex + 1).position.y -1.3f;
-            transform.position = Vector3.SmoothDamp(transform.position, pos + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
+            transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
                 
 
 
@@ -195,10 +186,20 @@ public class PlayerCarController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 7)
+        if (other.gameObject.layer == 9)
         {
-
-           
+            speedUpTime = 5;
+            moveSpeed += 3000;
+        }
+        else if((other.gameObject.layer == 10))
+        {
+            speedUpTime = 6;
+            moveSpeed += 4000;
+        }
+        else if((other.gameObject.layer == 11))
+        {
+            speedUpTime = 7;
+            moveSpeed += 5000;
         }
     }
     
