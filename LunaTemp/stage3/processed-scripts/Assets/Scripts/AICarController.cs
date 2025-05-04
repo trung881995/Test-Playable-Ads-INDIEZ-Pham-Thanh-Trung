@@ -18,7 +18,7 @@ public class AICarController : MonoBehaviour
     public float avoidanceStrength = 3f;
     public LayerMask obstacleLayers;
 
-    private CheckpointManager checkpointManager;
+    public CheckpointManager checkpointManager;
     private int currentCheckpointIndex = 0;
 
     private Vector3 lastPosition;
@@ -26,14 +26,25 @@ public class AICarController : MonoBehaviour
     private Vector3 moveVelocity = Vector3.zero;
     private float timeStopping = 0f;
 
+    private float speedUpTime;
     void Start()
     {
-        checkpointManager = FindObjectOfType<CheckpointManager>();
+        //checkpointManager = FindObjectOfType<CheckpointManager>();
         lastPosition = transform.position;
     }
 
     void Update()
     {
+        if (speedUpTime > 0)
+        {
+            speedUpTime -= Time.deltaTime;
+        }
+        else
+        {
+            moveSpeed = 10000f;
+            speedUpTime = 0;
+        }
+
         // === Tính vận tốc bằng tay ===
         velocity = (transform.position - lastPosition) / Time.deltaTime;
         lastPosition = transform.position;
@@ -71,7 +82,7 @@ public class AICarController : MonoBehaviour
         //transform.position += moveDir * moveStep;
         //var moveVelocity = Vector3.zero;
         transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDir * moveStep, ref moveVelocity, smoothTime*Time.deltaTime );
-
+/*
         // === Kiểm tra qua checkpoint ===
         if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
         {
@@ -79,7 +90,7 @@ public class AICarController : MonoBehaviour
             if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
                 currentCheckpointIndex = 0;
         }
-
+*/
         // === Né vật cản bằng Raycast 3 hướng ===
         RaycastHit hit;
         Vector3[] directions = {
@@ -103,5 +114,30 @@ public class AICarController : MonoBehaviour
         Debug.DrawRay(transform.position, directions[0] * obstacleDetectionRange, Color.red);
         Debug.DrawRay(transform.position, directions[1] * obstacleDetectionRange, Color.yellow);
         Debug.DrawRay(transform.position, directions[2] * obstacleDetectionRange, Color.yellow);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer==8)
+        {
+            // === Kiểm tra qua checkpoint ===
+            currentCheckpointIndex++;
+            if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                currentCheckpointIndex = 0;
+        }
+        else if (other.gameObject.layer == 9)
+        {
+            speedUpTime = 5;
+            moveSpeed += 3000;
+        }
+        else if ((other.gameObject.layer == 10))
+        {
+            speedUpTime = 6;
+            moveSpeed += 4000;
+        }
+        else if ((other.gameObject.layer == 11))
+        {
+            speedUpTime = 7;
+            moveSpeed += 5000;
+        }
     }
 }

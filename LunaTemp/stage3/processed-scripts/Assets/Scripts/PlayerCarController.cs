@@ -35,6 +35,8 @@ public class PlayerCarController : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
     private Rigidbody rb;
+
+    private float speedUpTime;
     void Start()
     {
         screenCenterX = Screen.width / 2f;
@@ -55,6 +57,16 @@ public class PlayerCarController : MonoBehaviour
             rb.freezeRotation = true;
         }
         */
+
+        if(speedUpTime>0)
+        {
+            speedUpTime -= Time.deltaTime;
+        }
+        else
+        {
+            moveSpeed = 10000f;
+            speedUpTime = 0;
+        }
         HandleInput();
         
             // === Tính vận tốc bằng tay ===
@@ -174,10 +186,20 @@ public class PlayerCarController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 7)
+        if (other.gameObject.layer == 9)
         {
-
-           
+            speedUpTime = 5;
+            moveSpeed += 3000;
+        }
+        else if((other.gameObject.layer == 10))
+        {
+            speedUpTime = 6;
+            moveSpeed += 4000;
+        }
+        else if((other.gameObject.layer == 11))
+        {
+            speedUpTime = 7;
+            moveSpeed += 5000;
         }
     }
     
