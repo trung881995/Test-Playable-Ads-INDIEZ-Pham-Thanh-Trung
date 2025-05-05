@@ -136,6 +136,7 @@ public class UIManager : MonoBehaviour
         string[] countdownValues = { "3", "2", "1", "GO!" };
         //OnLapCompleted();
         //yield return new WaitForSeconds(2f);
+        countdownText.gameObject.SetActive(false);
         foreach (string value in countdownValues)
         {
             countdownText.text = value;
@@ -248,7 +249,10 @@ public class UIManager : MonoBehaviour
         setupMenu();
         Menu.SetActive(true);
         Scene.SetActive(false);
-        
+        StopBarFill();
+        barFill.localScale = new Vector3(0f, 1f, 1f);
+        currentLap = 0;
+
     }
     private void ShowRoundText(string message)
     {

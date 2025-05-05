@@ -42,7 +42,9 @@ public class PlayerCarController : MonoBehaviour
     {
         screenCenterX = Screen.width / 2f;
         UIManager.Instance.StartBarFill();
-        UIManager.Instance.currentLap = 0;
+        
+        //UIManager.Instance.StopBarFill();
+        
         moveDirection = Vector3.zero;
         targetTurn = 0f;
         turnAmount = 0f;

@@ -82,6 +82,7 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
     <None Include="Assets/POLYGON - Particle FX v1.0/PolygonParticles/Materials/SHARED BY LUXURYPANDA.txt" />
+    <None Include="Assets/Car Engine Sound - Rotary x8 Free/Assets/Audio/Read Me.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
@@ -89,6 +90,7 @@
     <None Include="Assets/BrokenVector/LowPolyTreePack/README.txt" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/POLYGON - Particle FX v1.0/_www.unityassetcollection.com.txt" />
+    <None Include="Assets/Car Engine Sound - Rotary x8 Free/Documentation/Read Me.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/Environmental Race Track Pack/RaceTrackPack_Documentation.txt" />

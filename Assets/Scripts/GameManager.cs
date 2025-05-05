@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     private GameObject currentSeasonEffect=null;
     public GameObject[] speedUpEffectArray;
     private GameObject currentSpeedUpEffect=null;
-    public MeshRenderer mapRenderer;
+    public Renderer mapRenderer;
     public Material[] seasonMaterialArray;
 
     public GameObject[] playerCarArray;
