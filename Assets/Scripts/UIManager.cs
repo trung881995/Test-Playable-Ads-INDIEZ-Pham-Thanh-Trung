@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class UIManager : MonoBehaviour
     public int currentCarIndex { set; get; }
 
     public TextMeshProUGUI countdownText;
+    
     public float timeBetweenCounts = 1f;
     private Color[] rainbowColors = new Color[]
     {
@@ -32,7 +34,17 @@ public class UIManager : MonoBehaviour
 
     public PlayerCarController playerCarController;
 
+    public TextMeshProUGUI roundText; // Kéo từ Inspector vào
+    public int totalLaps = 3;
+    public int currentLap { set; get; } = 0;
+
+
     public static UIManager Instance = null;
+
+    public Button startBtn;
+    public Button retryBtn;
+    public Button nextBtn;
+
     private void Awake()
     {
         if (Instance == null)
@@ -44,18 +56,36 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnEnable()
+    {
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        setupMenu();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Cars[currentCarIndex].transform.RotateAround(Cars[currentCarIndex].transform.position, Cars[currentCarIndex].transform.up, -100f*Time.deltaTime);
     }
-
+    public void setupMenu()
+    {
+        if (GameManager.Instance.mapType == MapType.Undefined)
+        {
+            startBtn.gameObject.SetActive(true);
+            retryBtn.gameObject.SetActive(false);
+            nextBtn.gameObject.SetActive(false);
+        }
+        else
+        {
+            startBtn.gameObject.SetActive(false);
+            retryBtn.gameObject.SetActive(true);
+            nextBtn.gameObject.SetActive(true);
+        }
+    }
     public void onRightArrowBtnClick()
     {
         Cars[currentCarIndex].SetActive(false);
@@ -74,12 +104,33 @@ public class UIManager : MonoBehaviour
     }
     public void onStartBtnClick()
     {
+        playerCarController.transform.localPosition = Vector3.zero;
+        cameraSequence.gameObject.transform.localPosition = Vector3.zero;
+        for (int i = 0; i < GameManager.Instance.carAIArray.Length; i++)
+        {
+            GameManager.Instance.carAIArray[i].transform.localPosition = Vector3.zero;
+        }
+        GameManager.Instance.mapType = MapType.Summer;
+        GameManager.Instance.setupScene();
+        Menu.SetActive(false);
+        Scene.SetActive(true);
+        
+        cameraSequence.enabled = true;
+    }
+    public void onNextMapBtnClick()
+    {
+        var currentMapType = (int)GameManager.Instance.mapType;
+        if (currentMapType < 3)
+            currentMapType += 1;
+        else
+            currentMapType = 1;
+
+        GameManager.Instance.mapType = (MapType)currentMapType;
         GameManager.Instance.setupScene();
         Menu.SetActive(false);
         Scene.SetActive(true);
         cameraSequence.enabled = true;
     }
-
     public void startCountDownRoutine()
     {
         StartCoroutine(CountdownRoutine());
@@ -88,7 +139,8 @@ public class UIManager : MonoBehaviour
     private IEnumerator CountdownRoutine()
     {
         string[] countdownValues = { "3", "2", "1", "GO!" };
-
+        //OnLapCompleted();
+        //yield return new WaitForSeconds(2f);
         foreach (string value in countdownValues)
         {
             countdownText.text = value;
@@ -120,6 +172,8 @@ public class UIManager : MonoBehaviour
         countdownText.gameObject.SetActive(false);
         Debug.Log("Race Start!");
         // Gọi sự kiện bắt đầu game ở đây
+        
+       
         GameManager.Instance.startGame();
 
     }
@@ -130,9 +184,9 @@ public class UIManager : MonoBehaviour
     public void startBarFill(float fillDuration)
     {
         // Scale X từ 0 đến 1
-        barFill.localScale = new Vector3(0f, 1f, 1f);
+        //barFill.localScale = new Vector3(0f, 1f, 1f);
 
-        barFill.DOScaleX(1f, fillDuration).SetEase(Ease.Linear).OnComplete(() =>
+       barTween= barFill.DOScaleX(1f, fillDuration).SetEase(Ease.Linear).OnComplete(() =>
         {
             OnBarFull();
         });
@@ -144,6 +198,7 @@ public class UIManager : MonoBehaviour
             barTween.Kill(); // Dừng tween hiện tại
             barTween = null;
         }
+        //barFill.localScale = new Vector3(0f, 1f, 1f);
     }
 
         void OnBarFull()
@@ -160,4 +215,43 @@ public class UIManager : MonoBehaviour
         });
     }
 
+    public void OnLapCompleted()
+    {
+        currentLap++;
+
+        if (currentLap <= totalLaps)
+        {
+            ShowRoundText($"ROUND {currentLap}");
+        }
+        else
+        {
+            ShowRoundText("FINISH!");
+
+            StartCoroutine(endGame());
+        }
+    }
+    IEnumerator endGame()
+    {
+        //Ban phao hoa
+        //
+        yield return new WaitForSeconds(3f);
+        setupMenu();
+        Menu.SetActive(true);
+        Scene.SetActive(false);
+        
+    }
+    private void ShowRoundText(string message)
+    {
+        roundText.text = message;
+        roundText.alpha = 0;
+        roundText.transform.localScale = Vector3.zero;
+
+        Sequence seq = DOTween.Sequence();
+        seq.Append(roundText.DOFade(1, 0.3f));
+        seq.Join(roundText.transform.DOScale(1f, 0.3f).SetEase(Ease.OutBack));
+        seq.AppendInterval(1.5f);
+        seq.Append(roundText.DOFade(0, 0.3f));
+        seq.Join(roundText.transform.DOScale(0f, 0.3f));
+    }
+    
 }

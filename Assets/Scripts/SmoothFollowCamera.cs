@@ -12,7 +12,7 @@ public class SmoothFollowCamera : MonoBehaviour
     public float followSpeed = 5f;      // Tốc độ theo sau
     public float rotationSpeed = 5f;    // Tốc độ xoay
 
-    void Start()
+    private void OnEnable()
     {
         UIManager.Instance.startCountDownRoutine();
 
@@ -22,6 +22,10 @@ public class SmoothFollowCamera : MonoBehaviour
             transform.position = target.TransformPoint(offset);
             transform.LookAt(target);
         }
+    }
+    void Start()
+    {
+        
     }
 
     void LateUpdate()

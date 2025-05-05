@@ -14,9 +14,9 @@ TagManager:
   - Obstacle
   - Ground
   - CheckPoint
-  - YellowSpeedUp
-  - BlueSpeedUp
-  - RedSpeedUp
+  - SpeedUp
+  - Destination
+  - OBSCheckPoint
   - 
   - 
   - 

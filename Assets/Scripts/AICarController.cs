@@ -26,11 +26,17 @@ public class AICarController : MonoBehaviour
     private Vector3 moveVelocity = Vector3.zero;
     private float timeStopping = 0f;
 
-    private float speedUpTime;
+    private float speedUpTime=0f;
+
+    private int currentLap=0;
+    private void OnEnable()
+    {
+        setup();
+    }
     void Start()
     {
-        //checkpointManager = FindObjectOfType<CheckpointManager>();
-        lastPosition = transform.position;
+      
+        
     }
 
     void Update()
@@ -115,29 +121,55 @@ public class AICarController : MonoBehaviour
         Debug.DrawRay(transform.position, directions[1] * obstacleDetectionRange, Color.yellow);
         Debug.DrawRay(transform.position, directions[2] * obstacleDetectionRange, Color.yellow);
     }
+    private void setup()
+    {
+        currentCheckpointIndex = 0;
+        velocity = Vector3.zero;
+        moveVelocity = Vector3.zero;
+        timeStopping = 0f;
+        speedUpTime = 0f;
+        currentLap = 0;
+        lastPosition = transform.position;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.layer==8)
         {
-            // === Kiểm tra qua checkpoint ===
-            currentCheckpointIndex++;
-            if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
-                currentCheckpointIndex = 0;
+            if(other.gameObject.transform==checkpointManager.GetCheckpoint(currentCheckpointIndex))
+            {
+                // === Kiểm tra qua checkpoint ===
+                currentCheckpointIndex++;
+                if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                {
+                    if (currentLap < UIManager.Instance.totalLaps)
+                    {
+                        currentCheckpointIndex = 0;
+                        currentLap++;
+                    }
+                    else
+                    {
+                        this.enabled = false;
+                    }
+
+                }
+            }
+            
+                
         }
         else if (other.gameObject.layer == 9)
         {
             speedUpTime = 5;
-            moveSpeed += 3000;
+            moveSpeed += 2500;
         }
         else if ((other.gameObject.layer == 10))
         {
             speedUpTime = 6;
-            moveSpeed += 4000;
+            moveSpeed += 3000;
         }
         else if ((other.gameObject.layer == 11))
         {
             speedUpTime = 7;
-            moveSpeed += 5000;
+            moveSpeed += 3500;
         }
     }
 }
