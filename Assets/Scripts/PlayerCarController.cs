@@ -14,11 +14,7 @@ public class PlayerCarController : MonoBehaviour
     public float slowTurnThreshold = 30f;
     public float driftIntensity = 0.5f;
 
-    [Header("Ground Check")]
-    public float groundCheckDistance = 1f;
-    public LayerMask groundLayer;
-
-    
+   
     private Vector3 moveDirection = Vector3.zero;
 
     private float screenCenterX;
@@ -34,8 +30,9 @@ public class PlayerCarController : MonoBehaviour
     //private Vector3 lastPosition;
     private Vector3 velocity = Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
+    private Vector3 moveVelocity2 = Vector3.zero;
     //private Rigidbody rb;
-    
+
     public float speedUpTime { set; get; }
     private void OnEnable()
     {
@@ -76,7 +73,7 @@ public class PlayerCarController : MonoBehaviour
         }
         else
         {
-            moveSpeed = 10000f;
+            moveSpeed = 7000f;
             speedUpTime = 0;
         }
         HandleInput();
@@ -130,9 +127,9 @@ public class PlayerCarController : MonoBehaviour
 
             // === Di chuyển chính (áp dụng SmoothDamp) ===
             transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
-            if(transform.position.y>0.05f)
+            if(transform.position.y>0.03f)
             {
-                transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * 0.05f*50f*Time.deltaTime, ref moveVelocity, smoothTime * Time.deltaTime);
+                transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * 0.03f*50f*Time.deltaTime, ref moveVelocity2, smoothTime * Time.deltaTime);
             }
             // === Tính vận tốc ===
             velocity = moveVelocity;
@@ -239,7 +236,7 @@ public class PlayerCarController : MonoBehaviour
         else if (other.gameObject.layer == 9)
         {
             UIManager.Instance.StopBarFill();
-            UIManager.Instance.startBarFill(1f);
+            UIManager.Instance.startBarFill(0.1f);
         }
        
         

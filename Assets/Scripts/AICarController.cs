@@ -24,6 +24,7 @@ public class AICarController : MonoBehaviour
     private Vector3 lastPosition;
     private Vector3 velocity=Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
+    private Vector3 moveVelocity2 = Vector3.zero;
     private float timeStopping = 0f;
 
     private float speedUpTime=0f;
@@ -47,7 +48,7 @@ public class AICarController : MonoBehaviour
         }
         else
         {
-            moveSpeed = 10000f;
+            moveSpeed = 7000f;
             speedUpTime = 0;
         }
 
@@ -88,15 +89,19 @@ public class AICarController : MonoBehaviour
         //transform.position += moveDir * moveStep;
         //var moveVelocity = Vector3.zero;
         transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDir * moveStep, ref moveVelocity, smoothTime*Time.deltaTime );
-/*
-        // === Kiểm tra qua checkpoint ===
-        if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+        if (transform.position.y > 0.03f)
         {
-            currentCheckpointIndex++;
-            if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
-                currentCheckpointIndex = 0;
+            transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * 0.03f * 50f * Time.deltaTime, ref moveVelocity2, smoothTime * Time.deltaTime);
         }
-*/
+        /*      
+                // === Kiểm tra qua checkpoint ===
+                if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+                {
+                    currentCheckpointIndex++;
+                    if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                        currentCheckpointIndex = 0;
+                }
+        */
         // === Né vật cản bằng Raycast 3 hướng ===
         RaycastHit hit;
         Vector3[] directions = {
@@ -158,18 +163,28 @@ public class AICarController : MonoBehaviour
         }
         else if (other.gameObject.layer == 9)
         {
-            speedUpTime = 5;
-            moveSpeed += 2500;
+            speedUp();
         }
-        else if ((other.gameObject.layer == 10))
+        
+    }
+
+    public void speedUp()
+    {
+        var mapType = GameManager.Instance.mapType;
+        switch (mapType)
         {
-            speedUpTime = 6;
-            moveSpeed += 3000;
-        }
-        else if ((other.gameObject.layer == 11))
-        {
-            speedUpTime = 7;
-            moveSpeed += 3500;
+            case MapType.Summer:
+                speedUpTime = 5;
+                moveSpeed += 2500;
+                break;
+            case MapType.Rainy:
+                speedUpTime = 6;
+                moveSpeed += 3000;
+                break;
+            case MapType.Winter:
+                speedUpTime = 7;
+                moveSpeed += 3500;
+                break;
         }
     }
 }

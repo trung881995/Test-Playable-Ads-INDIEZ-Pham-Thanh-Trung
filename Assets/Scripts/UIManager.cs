@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
     public float fillDuration = 5f; // thời gian để thanh bar scale đầy
     public float shrinkDuration = 5f; // thời gian thu nhỏ lại
     private Tween barTween;
-
+    private bool isTweenScaleToZero = false;
     public PlayerCarController playerCarController;
 
     public TextMeshProUGUI roundText; // Kéo từ Inspector vào
@@ -104,12 +104,7 @@ public class UIManager : MonoBehaviour
     }
     public void onStartBtnClick()
     {
-        playerCarController.transform.localPosition = Vector3.zero;
-        cameraSequence.gameObject.transform.localPosition = Vector3.zero;
-        for (int i = 0; i < GameManager.Instance.carAIArray.Length; i++)
-        {
-            GameManager.Instance.carAIArray[i].transform.localPosition = Vector3.zero;
-        }
+        
         GameManager.Instance.mapType = MapType.Summer;
         GameManager.Instance.setupScene();
         Menu.SetActive(false);
@@ -185,15 +180,19 @@ public class UIManager : MonoBehaviour
     {
         // Scale X từ 0 đến 1
         //barFill.localScale = new Vector3(0f, 1f, 1f);
-
+        isTweenScaleToZero = false;
        barTween= barFill.DOScaleX(1f, fillDuration).SetEase(Ease.Linear).OnComplete(() =>
         {
-            OnBarFull();
+            if(barTween!=null)
+            {
+                OnBarFull();
+            }
+           
         });
     }
     public void StopBarFill()
     {
-        if (barTween != null && barTween.IsActive())
+        if (!isTweenScaleToZero&& barTween != null && barTween.IsActive())
         {
             barTween.Kill(); // Dừng tween hiện tại
             barTween = null;
@@ -203,11 +202,13 @@ public class UIManager : MonoBehaviour
 
         void OnBarFull()
     {
+        
+        isTweenScaleToZero = true;
         // Tăng tốc độ xe
         playerCarController.speedUp();
 
         // Scale nhỏ lại (về 0)
-        barFill.DOScaleX(0f, shrinkDuration).SetEase(Ease.OutQuad).OnComplete(() =>
+        barTween=barFill.DOScaleX(0f, shrinkDuration).SetEase(Ease.OutQuad).OnComplete(() =>
         {
             
             // Lặp lại
@@ -235,6 +236,15 @@ public class UIManager : MonoBehaviour
         //Ban phao hoa
         //
         yield return new WaitForSeconds(3f);
+        playerCarController.transform.localPosition = Vector3.zero;
+        playerCarController.transform.localRotation = Quaternion.Euler(0,0,0);
+        cameraSequence.gameObject.transform.localPosition = Vector3.zero;
+        cameraSequence.gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        for (int i = 0; i < GameManager.Instance.carAIArray.Length; i++)
+        {
+            GameManager.Instance.carAIArray[i].transform.localPosition = Vector3.zero;
+            GameManager.Instance.carAIArray[i].transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
         setupMenu();
         Menu.SetActive(true);
         Scene.SetActive(false);
