@@ -4,10 +4,10 @@ using UnityEngine;
 
 public enum MapType
 {
-    Undefined,
-    Summer,
-    Rainy,
-    Winter
+    Undefined=0,
+    Summer=1,
+    Rainy=2,
+    Winter=3
 }
 public enum PlayerCarType
 {
@@ -31,13 +31,16 @@ public class GameManager : MonoBehaviour
     private GameObject currentSeasonEffect=null;
     public GameObject[] speedUpEffectArray;
     private GameObject currentSpeedUpEffect=null;
-    public MeshRenderer mapRenderer;
+    public Renderer mapRenderer;
     public Material[] seasonMaterialArray;
 
     public GameObject[] playerCarArray;
     public PlayerCarController playerCarController;
     public GameObject[] carAIArray;
 
+    public bool isEndGame { set; get; } = false;
+
+    public int currentMapType { set; get; } = 0;
     private void Awake()
     {
         if(Instance==null)
@@ -52,7 +55,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mapType = MapType.Summer;
+        
     }
 
     // Update is called once per frame
@@ -73,14 +76,21 @@ public class GameManager : MonoBehaviour
     }
     public void setupPlayer()
     {
+        for(int i=0;i<playerCarArray.Length;i++)
+        {
+            playerCarArray[i].SetActive(false);
+        }
         var index = UIManager.Instance.currentCarIndex;
         playerCarArray[index].SetActive(true);
     }
     public void setupCarAI(int _number)
     {
-        for(int i=0;i<_number;i++)
+        for(int i=0;i<carAIArray.Length;i++)
         {
-            carAIArray[i].SetActive(true);
+            if(i<_number)
+                carAIArray[i].SetActive(true);
+            else
+                carAIArray[i].SetActive(false);
         }
     }
     private void setupSeason()
@@ -165,5 +175,6 @@ public class GameManager : MonoBehaviour
         }
         playerCarController.enabled = true;
     }
-
+    
+    
 }

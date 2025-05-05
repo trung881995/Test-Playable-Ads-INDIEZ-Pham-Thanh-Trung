@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] carAIArray;
 
     public bool isEndGame { set; get; } = false;
+
+    public int currentMapType { set; get; } = 0;
     private void Awake()
     {
         if(Instance==null)

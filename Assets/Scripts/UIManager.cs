@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject fireworkGroup;
+    public GameObject fireworkStart;
+
     public GameObject[] Cars;
     public GameObject Menu;
     public GameObject Scene;
@@ -114,13 +117,13 @@ public class UIManager : MonoBehaviour
     }
     public void onNextMapBtnClick()
     {
-        var currentMapType = (int)GameManager.Instance.mapType;
-        if (currentMapType < 3)
-            currentMapType += 1;
+        
+        if (GameManager.Instance.currentMapType < 3)
+            GameManager.Instance.currentMapType += 1;
         else
-            currentMapType = 1;
+            GameManager.Instance.currentMapType = 1;
 
-        GameManager.Instance.mapType = (MapType)currentMapType;
+        GameManager.Instance.mapType = (MapType)GameManager.Instance.currentMapType;
         GameManager.Instance.setupScene();
         Menu.SetActive(false);
         Scene.SetActive(true);
@@ -167,11 +170,16 @@ public class UIManager : MonoBehaviour
 
         countdownText.gameObject.SetActive(false);
         Debug.Log("Race Start!");
-        // Gọi sự kiện bắt đầu game ở đây
-        
-       
-        GameManager.Instance.startGame();
 
+        //Ban phao hoa bat dau
+        fireworkStart.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        // Gọi sự kiện bắt đầu game ở đây
+
+
+        GameManager.Instance.startGame();
+        yield return new WaitForSeconds(1.5f);
+        fireworkStart.SetActive(false);
     }
     public void StartBarFill()
     {
@@ -179,6 +187,7 @@ public class UIManager : MonoBehaviour
     }
     public void startBarFill(float fillDuration)
     {
+        
         // Scale X từ 0 đến 1
         //barFill.localScale = new Vector3(0f, 1f, 1f);
         isTweenScaleToZero = false;
@@ -191,12 +200,14 @@ public class UIManager : MonoBehaviour
            
         });
     }
-    public void StopBarFill()
+    public void StopBarFill(bool isStartBarFill, float fillDuration)
     {
         if (!isTweenScaleToZero&& barTween != null && barTween.IsActive())
         {
             barTween.Kill(); // Dừng tween hiện tại
             barTween = null;
+            if(isStartBarFill)
+            startBarFill(fillDuration);
         }
         //barFill.localScale = new Vector3(0f, 1f, 1f);
     }
@@ -235,12 +246,14 @@ public class UIManager : MonoBehaviour
     IEnumerator endGame()
     {
         //Ban phao hoa
-        //
-        yield return new WaitForSeconds(3f);
+        fireworkGroup.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        fireworkGroup.SetActive(false);
         playerCarController.transform.localPosition = Vector3.zero;
         playerCarController.transform.localRotation = Quaternion.Euler(0,0,0);
         cameraSequence.gameObject.transform.localPosition = Vector3.zero;
         cameraSequence.gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        playerCarController.Arrow.localRotation = Quaternion.Euler(0, 0, 0);
         for (int i = 0; i < GameManager.Instance.carAIArray.Length; i++)
         {
             GameManager.Instance.carAIArray[i].transform.localPosition = Vector3.zero;
@@ -249,7 +262,7 @@ public class UIManager : MonoBehaviour
         setupMenu();
         Menu.SetActive(true);
         Scene.SetActive(false);
-        StopBarFill();
+        StopBarFill(false,0f);
         barFill.localScale = new Vector3(0f, 1f, 1f);
         currentLap = 0;
 

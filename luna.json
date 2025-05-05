@@ -4432,7 +4432,7 @@
             },
             {
                 "name": "UnityEngine.ParticleSystemStopBehavior",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.ParticleSystemSubEmitterProperties",
@@ -29061,6 +29061,18 @@
                     {
                         "name": "OnTriggerEnter",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "setup",
+                        "excluded": false
+                    },
+                    {
+                        "name": "speedUp",
+                        "excluded": false
                     }
                 ]
             },
@@ -29082,6 +29094,10 @@
                     },
                     {
                         "name": "Flash",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
                         "excluded": false
                     }
                 ]
@@ -29109,10 +29125,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "Start",
-                        "excluded": false
-                    },
-                    {
                         "name": "Update",
                         "excluded": false
                     },
@@ -29135,6 +29147,14 @@
                     {
                         "name": "speedUp",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "setup",
+                        "excluded": false
                     }
                 ]
             },
@@ -29152,6 +29172,10 @@
                     },
                     {
                         "name": "LateUpdate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
                         "excluded": false
                     }
                 ]
@@ -30783,6 +30807,30 @@
                     {
                         "name": "OnBarFull",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "setupMenu",
+                        "excluded": false
+                    },
+                    {
+                        "name": "onNextMapBtnClick",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnLapCompleted",
+                        "excluded": false
+                    },
+                    {
+                        "name": "endGame",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ShowRoundText",
+                        "excluded": false
                     }
                 ]
             },
@@ -32158,7 +32206,7 @@
                     },
                     {
                         "name": "Join",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Insert",
@@ -32166,7 +32214,7 @@
                     },
                     {
                         "name": "AppendInterval",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PrependInterval",
@@ -32492,7 +32540,7 @@
                     },
                     {
                         "name": "DoAppendInterval",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DoPrependInterval",

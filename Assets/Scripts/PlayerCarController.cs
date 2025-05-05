@@ -237,8 +237,8 @@ public class PlayerCarController : MonoBehaviour
         }
         else if (other.gameObject.layer == 9)
         {
-            UIManager.Instance.StopBarFill();
-            UIManager.Instance.startBarFill(0.1f);
+            UIManager.Instance.StopBarFill(true,0.1f);
+            //UIManager.Instance.startBarFill(0.1f);
         }
        
         

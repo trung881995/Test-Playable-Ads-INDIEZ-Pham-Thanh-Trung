@@ -13,9 +13,13 @@ public class CameraSequence : MonoBehaviour
     public float rotationSpeed = 50f;
     public CanvasGroup flashEffect; // UI Panel trắng full screen (alpha 0 -> 1 -> 0)
 
-    private void Start()
+    private void OnEnable()
     {
         StartCoroutine(CameraSequenceRoutine());
+    }
+    private void Start()
+    {
+        
     }
 
     IEnumerator CameraSequenceRoutine()
