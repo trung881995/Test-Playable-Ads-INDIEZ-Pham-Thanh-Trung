@@ -136,7 +136,7 @@ public class UIManager : MonoBehaviour
         string[] countdownValues = { "3", "2", "1", "GO!" };
         //OnLapCompleted();
         //yield return new WaitForSeconds(2f);
-        countdownText.gameObject.SetActive(false);
+        countdownText.gameObject.SetActive(true);
         foreach (string value in countdownValues)
         {
             countdownText.text = value;
