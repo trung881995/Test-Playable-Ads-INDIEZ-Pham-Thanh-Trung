@@ -556,7 +556,7 @@ MonoBehaviour:
   smoothTime: 100
   turnSpeed: 250
   checkpointRadius: 10
-  slowTurnThreshold: 30
+  slowTurnThreshold: 60
   driftIntensity: 0.5
   obstacleDetectionRange: 10
   avoidanceStrength: 3
@@ -2457,7 +2457,7 @@ MonoBehaviour:
   smoothTime: 100
   turnSpeed: 250
   checkpointRadius: 10
-  slowTurnThreshold: 30
+  slowTurnThreshold: 60
   driftIntensity: 0.5
   obstacleDetectionRange: 10
   avoidanceStrength: 3
@@ -2739,7 +2739,7 @@ MonoBehaviour:
   smoothTime: 100
   turnSpeed: 250
   checkpointRadius: 10
-  slowTurnThreshold: 30
+  slowTurnThreshold: 60
   driftIntensity: 0.5
   obstacleDetectionRange: 10
   avoidanceStrength: 3
@@ -13573,9 +13573,9 @@ MonoBehaviour:
   moveSpeed: 7000
   smoothTime: 100
   maxSpeed: 100
-  turnSpeed: 5
-  maxTurnAngle: 60
-  slowTurnThreshold: 30
+  turnSpeed: 3
+  maxTurnAngle: 90
+  slowTurnThreshold: 60
   driftIntensity: 0.5
   checkpointManager: {fileID: 511203117}
   Arrow: {fileID: 732715248}
@@ -15587,7 +15587,7 @@ MonoBehaviour:
   smoothTime: 100
   turnSpeed: 250
   checkpointRadius: 10
-  slowTurnThreshold: 30
+  slowTurnThreshold: 60
   driftIntensity: 0.5
   obstacleDetectionRange: 10
   avoidanceStrength: 3
@@ -18577,7 +18577,7 @@ MonoBehaviour:
   smoothTime: 100
   turnSpeed: 250
   checkpointRadius: 10
-  slowTurnThreshold: 30
+  slowTurnThreshold: 60
   driftIntensity: 0.5
   obstacleDetectionRange: 10
   avoidanceStrength: 3
