@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["AICarController#init","AICarController#OnEnable","AICarController#Start","AICarController#Update","AICarController#setup","AICarController#OnTriggerEnter","AICarController#speedUp","CameraSequence#init","CameraSequence#OnEnable","CameraSequence#Start","CameraSequence#CameraSequenceRoutine","CameraSequence#Flash","CheckpointManager#TotalCheckpoints#get","CheckpointManager#GetCheckpoint","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","GameManager#init","GameManager#Awake","GameManager#Start","GameManager#Update","GameManager#setupScene","GameManager#setupMap","GameManager#setupPlayer","GameManager#setupCarAI","GameManager#setupSeason","GameManager#startGame","PlayerCarController#init","PlayerCarController#OnEnable","PlayerCarController#setup","PlayerCarController#Update","PlayerCarController#FixedUpdate","PlayerCarController#OnCollisionEnter","PlayerCarController#OnTriggerEnter","PlayerCarController#speedUp","PlayerCarController#HandleInput","SmoothFollowCamera#init","SmoothFollowCamera#OnEnable","SmoothFollowCamera#Start","SmoothFollowCamera#LateUpdate","UIManager#init","UIManager#Awake","UIManager#OnEnable","UIManager#Start","UIManager#Update","UIManager#setupMenu","UIManager#onRightArrowBtnClick","UIManager#onLeftArrowBtnClick","UIManager#onStartBtnClick","UIManager#onNextMapBtnClick","UIManager#startCountDownRoutine","UIManager#CountdownRoutine","UIManager#StartBarFill","UIManager#startBarFill","UIManager#StopBarFill","UIManager#OnBarFull","UIManager#OnLapCompleted","UIManager#endGame","UIManager#ShowRoundText"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["AICarController#init","AICarController#OnEnable","AICarController#Start","AICarController#Update","AICarController#setup","AICarController#startEffect","AICarController#rightDriftEffect","AICarController#leftDriftEffect","AICarController#OnTriggerEnter","AICarController#speedUp","CameraSequence#init","CameraSequence#OnEnable","CameraSequence#Start","CameraSequence#CameraSequenceRoutine","CameraSequence#Flash","CheckpointManager#TotalCheckpoints#get","CheckpointManager#GetCheckpoint","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","GameManager#init","GameManager#Awake","GameManager#Start","GameManager#Update","GameManager#setupScene","GameManager#setupMap","GameManager#setupPlayer","GameManager#setupCarAI","GameManager#setupSeason","GameManager#startGame","PlayerCarController#init","PlayerCarController#OnEnable","PlayerCarController#Start","PlayerCarController#setup","PlayerCarController#Update","PlayerCarController#startEffect","PlayerCarController#rightDriftEffect","PlayerCarController#leftDriftEffect","PlayerCarController#OnCollisionEnter","PlayerCarController#OnTriggerEnter","PlayerCarController#speedUp","PlayerCarController#HandleInput","SmoothFollowCamera#init","SmoothFollowCamera#OnEnable","SmoothFollowCamera#Start","SmoothFollowCamera#LateUpdate","UIManager#init","UIManager#Awake","UIManager#OnEnable","UIManager#Start","UIManager#Update","UIManager#setupMenu","UIManager#onRightArrowBtnClick","UIManager#onLeftArrowBtnClick","UIManager#onStartBtnClick","UIManager#onNextMapBtnClick","UIManager#startCountDownRoutine","UIManager#CountdownRoutine","UIManager#StartBarFill","UIManager#startBarFill","UIManager#StopBarFill","UIManager#OnBarFull","UIManager#OnLapCompleted","UIManager#endGame","UIManager#ShowRoundText"]' ) ); }
 /**
- * @version 1.0.9257.9926
+ * @version 1.0.9257.30667
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -23,12 +23,19 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
             obstacleLayers: null,
             checkpointManager: null,
             currentCheckpointIndex: 0,
+            SpeedUpEffect: null,
+            SmokeTrailEffect: null,
+            SmokeStartupEffect: null,
+            IdleEngineEffect: null,
+            RightDriftEffect: null,
+            LeftDriftEffect: null,
             lastPosition: null,
             velocity: null,
             moveVelocity: null,
             moveVelocity2: null,
             timeStopping: 0,
             speedUpTime: 0,
+            speedUpMoving: 0,
             currentLap: 0
         },
         ctors: {
@@ -63,7 +70,7 @@ if ( TRACE ) { TRACE( "AICarController#init", this ); }
             OnEnable: function () {
 if ( TRACE ) { TRACE( "AICarController#OnEnable", this ); }
 
-                this.setup();
+                //setup();
             },
             /*AICarController.OnEnable end.*/
 
@@ -81,93 +88,109 @@ if ( TRACE ) { TRACE( "AICarController#Start", this ); }
 if ( TRACE ) { TRACE( "AICarController#Update", this ); }
 
                 var $t;
-                if (this.speedUpTime > 0) {
-                    this.speedUpTime -= UnityEngine.Time.deltaTime;
-                } else {
-                    this.moveSpeed = 7000.0;
-                    this.speedUpTime = 0;
-                }
+                if (GameManager.Instance.isStartGame) {
+                    if (this.speedUpTime > 0) {
+                        this.speedUpTime -= UnityEngine.Time.deltaTime;
+                        this.SpeedUpEffect.SetActive(true);
+                    } else {
+                        this.speedUpMoving = 0.0;
+                        this.speedUpTime = 0.0;
+                        this.SpeedUpEffect.SetActive(false);
+                    }
 
-                // === Tính vận tốc bằng tay ===
-                this.velocity = (this.transform.position.$clone().sub( this.lastPosition )).scale( 1.0 / ( UnityEngine.Time.deltaTime ) );
-                this.lastPosition = this.transform.position.$clone();
+                    // === Tính vận tốc bằng tay ===
+                    this.velocity = (this.transform.position.$clone().sub( this.lastPosition )).scale( 1.0 / ( UnityEngine.Time.deltaTime ) );
+                    this.lastPosition = this.transform.position.$clone();
 
-                // === Phát hiện kẹt xe ===
-                if (this.velocity.length() < 1.0) {
-                    this.timeStopping += UnityEngine.Time.deltaTime;
-                } else {
-                    this.timeStopping = 0.0;
-                }
+                    // === Phát hiện kẹt xe ===
+                    if (this.velocity.length() < 1.0) {
+                        this.timeStopping += UnityEngine.Time.deltaTime;
+                    } else {
+                        this.timeStopping = 0.0;
+                    }
 
-                // === Lấy checkpoint tiếp theo ===
-                var target = this.checkpointManager.GetCheckpoint(this.currentCheckpointIndex);
-                if (UnityEngine.Component.op_Equality(target, null)) {
-                    return;
-                }
+                    // === Lấy checkpoint tiếp theo ===
+                    var target = this.checkpointManager.GetCheckpoint(this.currentCheckpointIndex);
+                    if (UnityEngine.Component.op_Equality(target, null)) {
+                        return;
+                    }
 
-                var targetDir = (target.position.$clone().sub( this.transform.position )).clone().normalize().$clone();
-                var angleToTarget = pc.Vec3.signedAngle( this.transform.forward, targetDir, pc.Vec3.UP.clone() );
+                    var targetDir = (target.position.$clone().sub( this.transform.position )).clone().normalize().$clone();
+                    var angleToTarget = pc.Vec3.signedAngle( this.transform.forward, targetDir, pc.Vec3.UP.clone() );
 
-                // === Quay mượt về hướng mục tiêu ===
-                var clampedTurn = Math.max(-this.turnSpeed * UnityEngine.Time.deltaTime, Math.min(angleToTarget, this.turnSpeed * UnityEngine.Time.deltaTime));
-                this.transform.rotation = new pc.Quat().setFromAxisAngle( pc.Vec3.UP.clone(), clampedTurn ).clone().mul( this.transform.rotation );
+                    // === Quay mượt về hướng mục tiêu ===
+                    var clampedTurn = Math.max(-this.turnSpeed * UnityEngine.Time.deltaTime, Math.min(angleToTarget, this.turnSpeed * UnityEngine.Time.deltaTime));
+                    this.transform.rotation = new pc.Quat().setFromAxisAngle( pc.Vec3.UP.clone(), clampedTurn ).clone().mul( this.transform.rotation );
 
-                // === Xác định hướng di chuyển (lùi nếu kẹt) ===
-                var moveDir = (this.timeStopping >= 1.5) ? this.transform.forward.$clone().scale( -1 ) : this.transform.forward.$clone();
-                var moveStep = this.moveSpeed * UnityEngine.Time.deltaTime;
+                    // === Xác định hướng di chuyển (lùi nếu kẹt) ===
+                    var moveDir = (this.timeStopping >= 1.5) ? this.transform.forward.$clone().scale( -1 ) : this.transform.forward.$clone();
+                    var moveStep = (this.moveSpeed + this.speedUpMoving) * UnityEngine.Time.deltaTime;
 
-                // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
-                if (Math.abs(angleToTarget) > this.slowTurnThreshold && this.velocity.length() > 5.0) {
-                    var driftOffset = this.transform.right.$clone().clone().scale( (angleToTarget === 0 ? 1 : Math.sign(angleToTarget)) ).clone().scale( this.driftIntensity );
-                    this.transform.position = this.transform.position.$clone().add( driftOffset.$clone().clone().scale( UnityEngine.Time.deltaTime ) );
-                    //Debug.Log(" Drift giả lập!");
-                }
+                    // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
+                    if (Math.abs(angleToTarget) > this.slowTurnThreshold && this.velocity.length() > 5.0) {
+                        if (angleToTarget > 0) {
+                            if (!this.RightDriftEffect.activeInHierarchy) {
+                                this.rightDriftEffect();
+                            }
+                        } else if (angleToTarget < 0) {
+                            if (!this.LeftDriftEffect.activeInHierarchy) {
+                                this.leftDriftEffect();
+                            }
+                        }
 
-                // === Di chuyển chính ===
-                //transform.position += moveDir * moveStep;
-                //var moveVelocity = Vector3.zero;
-                this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( moveDir.$clone().clone().scale( moveStep ) ), Bridge.ref(this, "moveVelocity"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
-                if (this.transform.position.y > 0.03) {
-                    this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( pc.Vec3.DOWN.clone().clone().scale( 0.03 ).clone().scale( 50.0 ).clone().scale( UnityEngine.Time.deltaTime ) ), Bridge.ref(this, "moveVelocity2"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
-                }
-                /* 
-                       // === Kiểm tra qua checkpoint ===
-                       if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
-                       {
-                           currentCheckpointIndex++;
-                           if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
-                               currentCheckpointIndex = 0;
-                       }
-                */
-                // === Né vật cản bằng Raycast 3 hướng ===
-                var hit = { v : new UnityEngine.RaycastHit() };
-                var directions = System.Array.init([
-                    this.transform.forward.$clone(), 
-                    new pc.Quat().setFromAxisAngle( pc.Vec3.UP.clone(), -30 ).transformVector( this.transform.forward ), 
-                    new pc.Quat().setFromAxisAngle( pc.Vec3.UP.clone(), 30 ).transformVector( this.transform.forward )
-                ], UnityEngine.Vector3);
+                        var driftOffset = this.transform.right.$clone().clone().scale( (angleToTarget === 0 ? 1 : Math.sign(angleToTarget)) ).clone().scale( this.driftIntensity );
+                        this.transform.position = this.transform.position.$clone().add( driftOffset.$clone().clone().scale( UnityEngine.Time.deltaTime ) );
+                        //Debug.Log(" Drift giả lập!");
+                    } else {
+                        this.RightDriftEffect.SetActive(false);
+                        this.LeftDriftEffect.SetActive(false);
+                    }
 
-                $t = Bridge.getEnumerator(directions);
-                try {
-                    while ($t.moveNext()) {
-                        var dir = $t.Current.$clone();
-                        if (UnityEngine.Physics.Raycast$3(this.transform.position, dir, hit, this.obstacleDetectionRange, UnityEngine.LayerMask.op_Implicit(this.obstacleLayers.$clone()))) {
-                            var avoidDir = new pc.Vec3().cross( pc.Vec3.UP.clone(), dir ).clone().normalize().$clone();
-                            this.transform.position = this.transform.position.$clone().add( avoidDir.$clone().clone().scale( this.avoidanceStrength ).clone().scale( UnityEngine.Time.deltaTime ) );
-                            UnityEngine.Debug.Log$1(" N\u00e9 v\u1eadt c\u1ea3n!");
-                            break;
+                    // === Di chuyển chính ===
+                    //transform.position += moveDir * moveStep;
+                    //var moveVelocity = Vector3.zero;
+                    this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( moveDir.$clone().clone().scale( moveStep ) ), Bridge.ref(this, "moveVelocity"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
+                    this.SmokeTrailEffect.SetActive(true);
+                    /* 
+                           // === Kiểm tra qua checkpoint ===
+                           if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+                           {
+                               currentCheckpointIndex++;
+                               if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                                   currentCheckpointIndex = 0;
+                           }
+                    */
+                    // === Né vật cản bằng Raycast 3 hướng ===
+                    var hit = { v : new UnityEngine.RaycastHit() };
+                    var directions = System.Array.init([
+                        this.transform.forward.$clone(), 
+                        new pc.Quat().setFromAxisAngle( pc.Vec3.UP.clone(), -30 ).transformVector( this.transform.forward ), 
+                        new pc.Quat().setFromAxisAngle( pc.Vec3.UP.clone(), 30 ).transformVector( this.transform.forward )
+                    ], UnityEngine.Vector3);
+
+                    $t = Bridge.getEnumerator(directions);
+                    try {
+                        while ($t.moveNext()) {
+                            var dir = $t.Current.$clone();
+                            if (UnityEngine.Physics.Raycast$3(this.transform.position, dir, hit, this.obstacleDetectionRange, UnityEngine.LayerMask.op_Implicit(this.obstacleLayers.$clone()))) {
+                                var avoidDir = new pc.Vec3().cross( pc.Vec3.UP.clone(), dir ).clone().normalize().$clone();
+                                this.transform.position = this.transform.position.$clone().add( avoidDir.$clone().clone().scale( this.avoidanceStrength ).clone().scale( UnityEngine.Time.deltaTime ) );
+                                UnityEngine.Debug.Log$1(" N\u00e9 v\u1eadt c\u1ea3n!");
+                                break;
+                            }
+                        }
+                    } finally {
+                        if (Bridge.is($t, System.IDisposable)) {
+                            $t.System$IDisposable$Dispose();
                         }
                     }
-                } finally {
-                    if (Bridge.is($t, System.IDisposable)) {
-                        $t.System$IDisposable$Dispose();
-                    }
+
+                    // === Debug Raycast ===
+                    UnityEngine.Debug.DrawRay$1(this.transform.position, directions[0].$clone().clone().scale( this.obstacleDetectionRange ), new pc.Color( 1, 0, 0, 1 ));
+                    UnityEngine.Debug.DrawRay$1(this.transform.position, directions[1].$clone().clone().scale( this.obstacleDetectionRange ), new pc.Color( 1, 1, 0, 1 ));
+                    UnityEngine.Debug.DrawRay$1(this.transform.position, directions[2].$clone().clone().scale( this.obstacleDetectionRange ), new pc.Color( 1, 1, 0, 1 ));
                 }
 
-                // === Debug Raycast ===
-                UnityEngine.Debug.DrawRay$1(this.transform.position, directions[0].$clone().clone().scale( this.obstacleDetectionRange ), new pc.Color( 1, 0, 0, 1 ));
-                UnityEngine.Debug.DrawRay$1(this.transform.position, directions[1].$clone().clone().scale( this.obstacleDetectionRange ), new pc.Color( 1, 1, 0, 1 ));
-                UnityEngine.Debug.DrawRay$1(this.transform.position, directions[2].$clone().clone().scale( this.obstacleDetectionRange ), new pc.Color( 1, 1, 0, 1 ));
             },
             /*AICarController.Update end.*/
 
@@ -175,15 +198,91 @@ if ( TRACE ) { TRACE( "AICarController#Update", this ); }
             setup: function () {
 if ( TRACE ) { TRACE( "AICarController#setup", this ); }
 
+                this.StartCoroutine$1(this.startEffect());
                 this.currentCheckpointIndex = 0;
                 this.velocity = pc.Vec3.ZERO.clone();
                 this.moveVelocity = pc.Vec3.ZERO.clone();
                 this.timeStopping = 0.0;
                 this.speedUpTime = 0.0;
                 this.currentLap = 0;
+                this.transform.localPosition = pc.Vec3.ZERO.clone();
+                this.transform.localRotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, 0 );
                 this.lastPosition = this.transform.position.$clone();
+
+                this.SmokeTrailEffect.SetActive(false);
             },
             /*AICarController.setup end.*/
+
+            /*AICarController.startEffect start.*/
+            startEffect: function () {
+if ( TRACE ) { TRACE( "AICarController#startEffect", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(0.5);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    this.IdleEngineEffect.SetActive(true);
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(0.3);
+                                        $step = 2;
+                                        return true;
+                                }
+                                case 2: {
+                                    this.SmokeStartupEffect.SetActive(true);
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(4.0);
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    this.SmokeStartupEffect.SetActive(false);
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*AICarController.startEffect end.*/
+
+            /*AICarController.rightDriftEffect start.*/
+            rightDriftEffect: function () {
+if ( TRACE ) { TRACE( "AICarController#rightDriftEffect", this ); }
+
+                this.RightDriftEffect.SetActive(true);
+                //LeftDriftEffect.SetActive(false);
+
+
+
+            },
+            /*AICarController.rightDriftEffect end.*/
+
+            /*AICarController.leftDriftEffect start.*/
+            leftDriftEffect: function () {
+if ( TRACE ) { TRACE( "AICarController#leftDriftEffect", this ); }
+
+                this.LeftDriftEffect.SetActive(true);
+                //LeftDriftEffect.SetActive(false);
+
+
+            },
+            /*AICarController.leftDriftEffect end.*/
 
             /*AICarController.OnTriggerEnter start.*/
             OnTriggerEnter: function (other) {
@@ -198,7 +297,7 @@ if ( TRACE ) { TRACE( "AICarController#OnTriggerEnter", this ); }
                                 this.currentCheckpointIndex = 0;
                                 this.currentLap = (this.currentLap + 1) | 0;
                             } else {
-                                this.enabled = false;
+                                this.IdleEngineEffect.SetActive(false);
                             }
 
                         }
@@ -220,15 +319,15 @@ if ( TRACE ) { TRACE( "AICarController#speedUp", this ); }
                 switch (mapType) {
                     case MapType.Summer: 
                         this.speedUpTime = 5;
-                        this.moveSpeed += 2500;
+                        this.speedUpMoving = 5000;
                         break;
                     case MapType.Rainy: 
                         this.speedUpTime = 6;
-                        this.moveSpeed += 3000;
+                        this.speedUpMoving = 6000;
                         break;
                     case MapType.Winter: 
                         this.speedUpTime = 7;
-                        this.moveSpeed += 3500;
+                        this.speedUpMoving = 7000;
                         break;
                 }
             },
@@ -3650,7 +3749,7 @@ if ( TRACE ) { TRACE( "DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathT
             playerCarArray: null,
             playerCarController: null,
             carAIArray: null,
-            isEndGame: false,
+            isStartGame: false,
             currentMapType: 0
         },
         ctors: {
@@ -3659,7 +3758,7 @@ if ( TRACE ) { TRACE( "GameManager#init", this ); }
 
                 this.mapType = MapType.Undefined;
                 this.playerCarType = PlayerCarType.Undefined;
-                this.isEndGame = false;
+                this.isStartGame = false;
                 this.currentMapType = 0;
             }
         },
@@ -3719,6 +3818,7 @@ if ( TRACE ) { TRACE( "GameManager#setupPlayer", this ); }
                 }
                 var index = UIManager.Instance.currentCarIndex;
                 this.playerCarArray[index].SetActive(true);
+                this.playerCarController.setup();
             },
             /*GameManager.setupPlayer end.*/
 
@@ -3729,9 +3829,11 @@ if ( TRACE ) { TRACE( "GameManager#setupCarAI", this ); }
                 for (var i = 0; i < this.carAIArray.length; i = (i + 1) | 0) {
                     if (i < _number) {
                         this.carAIArray[i].SetActive(true);
+                        this.carAIArray[i].GetComponent(AICarController).setup();
                     } else {
                         this.carAIArray[i].SetActive(false);
                     }
+
                 }
             },
             /*GameManager.setupCarAI end.*/
@@ -3797,14 +3899,22 @@ if ( TRACE ) { TRACE( "GameManager#setupSeason", this ); }
             startGame: function () {
 if ( TRACE ) { TRACE( "GameManager#startGame", this ); }
 
-                for (var i = 0; i < this.carAIArray.length; i = (i + 1) | 0) {
-                    if (this.carAIArray[i].activeInHierarchy) {
-                        this.carAIArray[i].GetComponent(AICarController).enabled = true;
-                    } else {
-                        break;
-                    }
+                UIManager.Instance.StartBarFill();
+                /* 
+                for (int i = 0; i < carAIArray.Length; i++)
+                {
+                   if(carAIArray[i].activeInHierarchy)
+                   {
+                       carAIArray[i].GetComponent<AICarController>().enabled=true;
+                   }
+                   else
+                   {
+                       break;
+                   }
                 }
-                this.playerCarController.enabled = true;
+                playerCarController.enabled = true;
+                */
+                this.isStartGame = true;
             },
             /*GameManager.startGame end.*/
 
@@ -3854,10 +3964,24 @@ if ( TRACE ) { TRACE( "GameManager#startGame", this ); }
             currentCheckpointIndex: 0,
             checkpointManager: null,
             Arrow: null,
+            SpeedUpEffect: null,
+            SmokeTrailEffect: null,
+            SmokeStartupEffect: null,
+            IdleEngineEffect: null,
+            RightDriftEffect: null,
+            LeftDriftEffect: null,
+            audioSource: null,
+            StartSound: null,
+            WiperSound: null,
+            IdleEngineSound: null,
+            DrivingSound: null,
+            SpeedupSound: null,
+            StopSound: null,
             velocity: null,
             moveVelocity: null,
             moveVelocity2: null,
-            speedUpTime: 0
+            speedUpTime: 0,
+            speedUpMoving: 0
         },
         ctors: {
             init: function () {
@@ -3891,16 +4015,28 @@ if ( TRACE ) { TRACE( "PlayerCarController#init", this ); }
             OnEnable: function () {
 if ( TRACE ) { TRACE( "PlayerCarController#OnEnable", this ); }
 
-                this.setup();
+                //setup();
             },
             /*PlayerCarController.OnEnable end.*/
+
+            /*PlayerCarController.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "PlayerCarController#Start", this ); }
+
+
+            },
+            /*PlayerCarController.Start end.*/
 
             /*PlayerCarController.setup start.*/
             setup: function () {
 if ( TRACE ) { TRACE( "PlayerCarController#setup", this ); }
 
+                this.StartCoroutine$1(this.startEffect());
+                //SpeedUpEffect.SetActive(false);
+                this.SmokeTrailEffect.SetActive(false);
+
                 this.screenCenterX = UnityEngine.Screen.width / 2.0;
-                UIManager.Instance.StartBarFill();
+
 
                 //UIManager.Instance.StopBarFill();
 
@@ -3913,6 +4049,9 @@ if ( TRACE ) { TRACE( "PlayerCarController#setup", this ); }
                 this.currentCheckpointIndex = 0;
                 this.velocity = pc.Vec3.ZERO.clone();
                 this.moveVelocity = pc.Vec3.ZERO.clone();
+                this.transform.localPosition = pc.Vec3.ZERO.clone();
+                this.transform.localRotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, 0 );
+                this.Arrow.localRotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, 0 );
             },
             /*PlayerCarController.setup end.*/
 
@@ -3920,125 +4059,229 @@ if ( TRACE ) { TRACE( "PlayerCarController#setup", this ); }
             Update: function () {
 if ( TRACE ) { TRACE( "PlayerCarController#Update", this ); }
 
-                /* 
-                if(transform.position.y>0.2f)
-                {
-                   rb.freezeRotation = false;
-                }
-                else
-                {
-                   rb.freezeRotation = true;
-                }
-                */
+                if (GameManager.Instance.isStartGame) {
+                    /* 
+                    if(transform.position.y>0.2f)
+                    {
+                    rb.freezeRotation = false;
+                    }
+                    else
+                    {
+                    rb.freezeRotation = true;
+                    }
+                    */
 
-                if (this.speedUpTime > 0) {
-                    this.speedUpTime -= UnityEngine.Time.deltaTime;
-                } else {
-                    this.moveSpeed = 7000.0;
-                    this.speedUpTime = 0;
-                }
-                this.HandleInput();
+                    if (this.speedUpTime > 0) {
+                        this.speedUpTime -= UnityEngine.Time.deltaTime;
+                        this.SpeedUpEffect.SetActive(true);
+
+                    } else if (this.speedUpTime < 0.0) {
+                        this.audioSource.Stop();
+                        this.audioSource.clip = this.DrivingSound;
+                        this.audioSource.Play();
+                        this.audioSource.loop = true;
 
 
-                //UIManager.Instance.setVelocity((int)velocity.magnitude);
-                // === Lấy checkpoint tiếp theo ===
-                var target = this.checkpointManager.GetCheckpoint(this.currentCheckpointIndex);
-                if (UnityEngine.Component.op_Equality(target, null)) {
-                    return;
-                }
+                        this.speedUpMoving = 0.0;
+                        this.speedUpTime = 0;
+                        this.SpeedUpEffect.SetActive(false);
+                    }
+                    this.HandleInput();
 
-                // Hướng từ Arrow tới target
-                var targetDir = (target.position.$clone().sub( this.Arrow.transform.position )).clone().normalize().$clone();
 
-                // Tính góc quay mục tiêu
-                var targetRotation = new pc.Quat().lookRotation( targetDir, pc.Vec3.UP.clone() );
-
-                // Giữ lại trục X và Z hiện tại, chỉ quay mượt trục Y
-                var rotationSpeed = 180.0; // độ/giây, chỉnh tốc độ quay tùy ý
-
-                // Tạo một rotation hiện tại chỉ chứa trục Y
-                var currentRotation = new pc.Quat().setFromEulerAngles_Unity( 0.0, this.Arrow.transform.eulerAngles.y, 0.0 );
-                var targetYRotation = new pc.Quat().setFromEulerAngles_Unity( 0.0, targetRotation.getPositiveEulerAngles().y, 0.0 );
-
-                // Quay mượt từ current đến target theo trục Y
-                var smoothRotation = pc.Quat.rotateTowards( currentRotation.$clone(), targetYRotation.$clone(), rotationSpeed * UnityEngine.Time.deltaTime );
-
-                // Áp dụng rotation giữ nguyên trục X và Z gốc
-                this.Arrow.transform.rotation = new pc.Quat().setFromEulerAngles_Unity( this.Arrow.transform.eulerAngles.x, smoothRotation.getPositiveEulerAngles().y, this.Arrow.transform.eulerAngles.z );
-
-                if (!this.isCollision) {
-                    // --- Quay xe dựa trên input chuột ---
-                    this.turnAmount = this.targetTurn * this.turnSpeed * UnityEngine.Time.deltaTime;
-                    this.transform.Rotate$1(pc.Vec3.UP.clone(), this.turnAmount);
-
-                    // === Xác định hướng di chuyển ===
-                    this.moveDirection = this.transform.forward.$clone();
-                    var moveStep = this.moveSpeed * UnityEngine.Time.deltaTime;
-
-                    // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
-                    if (Math.abs(this.turnAmount) > this.slowTurnThreshold && this.velocity.length() > 5.0) {
-                        var driftOffset = this.transform.right.$clone().clone().scale( (this.turnAmount === 0 ? 1 : Math.sign(this.turnAmount)) ).clone().scale( this.driftIntensity );
-                        this.transform.position = this.transform.position.$clone().add( driftOffset.$clone().clone().scale( UnityEngine.Time.deltaTime ) );
-                        UnityEngine.Debug.Log$1("Drift gi\u1ea3 l\u1eadp!");
+                    //UIManager.Instance.setVelocity((int)velocity.magnitude);
+                    // === Lấy checkpoint tiếp theo ===
+                    var target = this.checkpointManager.GetCheckpoint(this.currentCheckpointIndex);
+                    if (UnityEngine.Component.op_Equality(target, null)) {
+                        return;
                     }
 
-                    // === Di chuyển chính (áp dụng SmoothDamp) ===
-                    this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( this.moveDirection.$clone().clone().scale( moveStep ) ), Bridge.ref(this, "moveVelocity"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
-                    if (this.transform.position.y > 0.03) {
-                        this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( pc.Vec3.DOWN.clone().clone().scale( 0.03 ).clone().scale( 50.0 ).clone().scale( UnityEngine.Time.deltaTime ) ), Bridge.ref(this, "moveVelocity2"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
-                    }
-                    // === Tính vận tốc ===
-                    this.velocity = this.moveVelocity.$clone();
-                    //lastPosition = transform.position;
-                    /* 
-                               // === Kiểm tra qua checkpoint ===
-                               if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
-                                   {
-                                       currentCheckpointIndex++;
-                                       if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
-                                           currentCheckpointIndex = 0;
-                                   }
-                    */
-                    /* 
-                    var pos = transform.position;
-                    pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex+1).position.y-1f;
-                    transform.position = pos;
-                    */
-                } else {
-                    // === Phát hiện kẹt xe ===
-                    if (this.timeStopping > 1.0) {
+                    // Hướng từ Arrow tới target
+                    var targetDir = (target.position.$clone().sub( this.Arrow.transform.position )).clone().normalize().$clone();
 
-                        this.timeStopping -= UnityEngine.Time.deltaTime;
-                    } else if (this.timeStopping > 0) {
-                        //isCollision = false;
-                        // === Xác định hướng lui ===
-                        this.moveDirection = this.transform.forward.$clone().scale( -1 );
-                        var moveStep1 = this.moveSpeed * UnityEngine.Time.deltaTime;
-                        // === lui` xe (áp dụng SmoothDamp) ===
+                    // Tính góc quay mục tiêu
+                    var targetRotation = new pc.Quat().lookRotation( targetDir, pc.Vec3.UP.clone() );
+
+                    // Giữ lại trục X và Z hiện tại, chỉ quay mượt trục Y
+                    var rotationSpeed = 180.0; // độ/giây, chỉnh tốc độ quay tùy ý
+
+                    // Tạo một rotation hiện tại chỉ chứa trục Y
+                    var currentRotation = new pc.Quat().setFromEulerAngles_Unity( 0.0, this.Arrow.transform.eulerAngles.y, 0.0 );
+                    var targetYRotation = new pc.Quat().setFromEulerAngles_Unity( 0.0, targetRotation.getPositiveEulerAngles().y, 0.0 );
+
+                    // Quay mượt từ current đến target theo trục Y
+                    var smoothRotation = pc.Quat.rotateTowards( currentRotation.$clone(), targetYRotation.$clone(), rotationSpeed * UnityEngine.Time.deltaTime );
+
+                    // Áp dụng rotation giữ nguyên trục X và Z gốc
+                    this.Arrow.transform.rotation = new pc.Quat().setFromEulerAngles_Unity( this.Arrow.transform.eulerAngles.x, smoothRotation.getPositiveEulerAngles().y, this.Arrow.transform.eulerAngles.z );
+
+                    if (!this.isCollision) {
+                        // --- Quay xe dựa trên input chuột ---
+                        this.turnAmount = this.targetTurn * this.turnSpeed * UnityEngine.Time.deltaTime;
+                        this.transform.Rotate$1(pc.Vec3.UP.clone(), this.turnAmount);
+
+                        // === Xác định hướng di chuyển ===
+                        this.moveDirection = this.transform.forward.$clone();
+                        var moveStep = (this.moveSpeed + this.speedUpMoving) * UnityEngine.Time.deltaTime;
+
+                        // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
+                        if (Math.abs(this.turnAmount) > this.slowTurnThreshold && this.velocity.length() > 5.0) {
+                            if (this.turnAmount > 0) {
+                                if (!this.RightDriftEffect.activeInHierarchy) {
+                                    this.rightDriftEffect();
+                                }
+                            } else if (this.turnAmount < 0) {
+                                if (!this.LeftDriftEffect.activeInHierarchy) {
+                                    this.leftDriftEffect();
+                                }
+                            }
+
+                            var driftOffset = this.transform.right.$clone().clone().scale( (this.turnAmount === 0 ? 1 : Math.sign(this.turnAmount)) ).clone().scale( this.driftIntensity );
+                            this.transform.position = this.transform.position.$clone().add( driftOffset.$clone().clone().scale( UnityEngine.Time.deltaTime ) );
+                            UnityEngine.Debug.Log$1("Drift gi\u1ea3 l\u1eadp!");
+                        } else {
+                            this.RightDriftEffect.SetActive(false);
+                            this.LeftDriftEffect.SetActive(false);
+                        }
+
+                        // === Di chuyển chính (áp dụng SmoothDamp) ===
+                        this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( this.moveDirection.$clone().clone().scale( moveStep ) ), Bridge.ref(this, "moveVelocity"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
 
 
-                        this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( this.moveDirection.$clone().clone().scale( moveStep1 ) ), Bridge.ref(this, "moveVelocity"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
+                        this.SmokeTrailEffect.SetActive(true);
                         // === Tính vận tốc ===
                         this.velocity = this.moveVelocity.$clone();
-                        this.timeStopping -= UnityEngine.Time.deltaTime;
+                        //lastPosition = transform.position;
+                        /* 
+                                   // === Kiểm tra qua checkpoint ===
+                                   if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+                                       {
+                                           currentCheckpointIndex++;
+                                           if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                                               currentCheckpointIndex = 0;
+                                       }
+                        */
+                        /* 
+                        var pos = transform.position;
+                        pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex+1).position.y-1f;
+                        transform.position = pos;
+                        */
                     } else {
-                        this.isCollision = false;
-                        this.moveVelocity = pc.Vec3.ZERO.clone();
-                        this.timeStopping = 0.0;
-                    }
-                }
+                        // === Phát hiện kẹt xe ===
+                        if (this.timeStopping > 1.0) {
 
+                            this.timeStopping -= UnityEngine.Time.deltaTime;
+                        } else if (this.timeStopping > 0) {
+                            //isCollision = false;
+                            // === Xác định hướng lui ===
+                            this.moveDirection = this.transform.forward.$clone().scale( -1 );
+                            var moveStep1 = this.moveSpeed * UnityEngine.Time.deltaTime;
+                            // === lui` xe (áp dụng SmoothDamp) ===
+
+
+                            this.transform.position = pc.Vec3.smoothDamp( this.transform.position.$clone(), this.transform.position.$clone().add( this.moveDirection.$clone().clone().scale( moveStep1 ) ), Bridge.ref(this, "moveVelocity"), this.smoothTime * UnityEngine.Time.deltaTime, Infinity, UnityEngine.Time.deltaTime );
+                            // === Tính vận tốc ===
+                            this.velocity = this.moveVelocity.$clone();
+                            this.timeStopping -= UnityEngine.Time.deltaTime;
+                        } else {
+                            this.isCollision = false;
+                            this.moveVelocity = pc.Vec3.ZERO.clone();
+                            this.timeStopping = 0.0;
+                        }
+                    }
+
+
+                }
 
             },
             /*PlayerCarController.Update end.*/
 
-            /*PlayerCarController.FixedUpdate start.*/
-            FixedUpdate: function () {
-if ( TRACE ) { TRACE( "PlayerCarController#FixedUpdate", this ); }
+            /*PlayerCarController.startEffect start.*/
+            startEffect: function () {
+if ( TRACE ) { TRACE( "PlayerCarController#startEffect", this ); }
 
-                //rb.AddForce(Vector3.down * 800f * Time.fixedDeltaTime, ForceMode.Acceleration);
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    this.audioSource.Stop();
+                                        this.audioSource.clip = this.StartSound;
+                                        this.audioSource.Play();
+                                        this.audioSource.loop = false;
+                                        //StartSound.Play();
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(0.87);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    this.IdleEngineEffect.SetActive(true);
+                                        this.audioSource.Stop();
+                                        this.audioSource.clip = this.WiperSound;
+                                        this.audioSource.Play();
+                                        this.audioSource.loop = true;
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(0.3);
+                                        $step = 2;
+                                        return true;
+                                }
+                                case 2: {
+                                    this.SmokeStartupEffect.SetActive(true);
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(4.0);
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    this.SmokeStartupEffect.SetActive(false);
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(5.0);
+                                        $step = 4;
+                                        return true;
+                                }
+                                case 4: {
+                                    this.audioSource.Stop();
+                                        this.audioSource.clip = this.DrivingSound;
+                                        this.audioSource.Play();
+                                        this.audioSource.loop = true;
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
             },
-            /*PlayerCarController.FixedUpdate end.*/
+            /*PlayerCarController.startEffect end.*/
+
+            /*PlayerCarController.rightDriftEffect start.*/
+            rightDriftEffect: function () {
+if ( TRACE ) { TRACE( "PlayerCarController#rightDriftEffect", this ); }
+
+                this.RightDriftEffect.SetActive(true);
+                //LeftDriftEffect.SetActive(false);
+
+
+            },
+            /*PlayerCarController.rightDriftEffect end.*/
+
+            /*PlayerCarController.leftDriftEffect start.*/
+            leftDriftEffect: function () {
+if ( TRACE ) { TRACE( "PlayerCarController#leftDriftEffect", this ); }
+
+                this.LeftDriftEffect.SetActive(true);
+                //LeftDriftEffect.SetActive(false);
+
+            },
+            /*PlayerCarController.leftDriftEffect end.*/
 
             /*PlayerCarController.OnCollisionEnter start.*/
             OnCollisionEnter: function (collision) {
@@ -4073,9 +4316,13 @@ if ( TRACE ) { TRACE( "PlayerCarController#OnTriggerEnter", this ); }
                                 this.currentCheckpointIndex = 0;
                             } else {
 
-                                UIManager.Instance.cameraSequence.smoothFollowCamera.enabled = false;
-                                UIManager.Instance.cameraSequence.enabled = false;
-                                this.enabled = false;
+                                this.audioSource.Stop();
+                                this.audioSource.clip = this.StopSound;
+                                this.audioSource.Play();
+                                this.audioSource.loop = true;
+
+
+                                this.IdleEngineEffect.SetActive(false);
                                 UIManager.Instance.OnLapCompleted();
                             }
                         }
@@ -4096,21 +4343,28 @@ if ( TRACE ) { TRACE( "PlayerCarController#OnTriggerEnter", this ); }
             speedUp: function () {
 if ( TRACE ) { TRACE( "PlayerCarController#speedUp", this ); }
 
+                this.audioSource.Stop();
+                this.audioSource.clip = this.SpeedupSound;
+                this.audioSource.Play();
+                this.audioSource.loop = false;
+
+
                 var mapType = GameManager.Instance.mapType;
                 switch (mapType) {
                     case MapType.Summer: 
                         this.speedUpTime = 5;
-                        this.moveSpeed += 2500;
+                        this.speedUpMoving = 5000;
                         break;
                     case MapType.Rainy: 
                         this.speedUpTime = 6;
-                        this.moveSpeed += 3000;
+                        this.speedUpMoving = 6000;
                         break;
                     case MapType.Winter: 
                         this.speedUpTime = 7;
-                        this.moveSpeed += 3500;
+                        this.speedUpMoving = 7000;
                         break;
                 }
+
             },
             /*PlayerCarController.speedUp end.*/
 
@@ -4223,8 +4477,6 @@ if ( TRACE ) { TRACE( "SmoothFollowCamera#LateUpdate", this ); }
             }
         },
         fields: {
-            fireworkGroup: null,
-            fireworkStart: null,
             Cars: null,
             Menu: null,
             Scene: null,
@@ -4344,9 +4596,11 @@ if ( TRACE ) { TRACE( "UIManager#onStartBtnClick", this ); }
 
 
                 GameManager.Instance.mapType = MapType.Summer;
-                GameManager.Instance.setupScene();
+
+
                 this.Menu.SetActive(false);
                 this.Scene.SetActive(true);
+                GameManager.Instance.setupScene();
 
                 this.cameraSequence.enabled = true;
             },
@@ -4357,7 +4611,7 @@ if ( TRACE ) { TRACE( "UIManager#onStartBtnClick", this ); }
 if ( TRACE ) { TRACE( "UIManager#onNextMapBtnClick", this ); }
 
                 var $t;
-
+                GameManager.Instance.currentMapType = GameManager.Instance.mapType;
                 if (GameManager.Instance.currentMapType < 3) {
                     ($t = GameManager.Instance).currentMapType = ($t.currentMapType + 1) | 0;
                 } else {
@@ -4365,9 +4619,10 @@ if ( TRACE ) { TRACE( "UIManager#onNextMapBtnClick", this ); }
                 }
 
                 GameManager.Instance.mapType = GameManager.Instance.currentMapType;
-                GameManager.Instance.setupScene();
+
                 this.Menu.SetActive(false);
                 this.Scene.SetActive(true);
+                GameManager.Instance.setupScene();
                 this.cameraSequence.enabled = true;
             },
             /*UIManager.onNextMapBtnClick end.*/
@@ -4458,23 +4713,11 @@ if ( TRACE ) { TRACE( "UIManager#CountdownRoutine", this ); }
                                     this.countdownText.gameObject.SetActive(false);
                                         UnityEngine.Debug.Log$1("Race Start!");
 
-                                        //Ban phao hoa bat dau
-                                        this.fireworkStart.SetActive(true);
-                                        $enumerator.current = new UnityEngine.WaitForSeconds(0.5);
-                                        $step = 6;
-                                        return true;
-                                }
-                                case 6: {
-                                    // Gọi sự kiện bắt đầu game ở đây
+
+                                        // Gọi sự kiện bắt đầu game ở đây
 
 
                                         GameManager.Instance.startGame();
-                                        $enumerator.current = new UnityEngine.WaitForSeconds(1.5);
-                                        $step = 7;
-                                        return true;
-                                }
-                                case 7: {
-                                    this.fireworkStart.SetActive(false);
 
                                 }
                                 default: {
@@ -4572,8 +4815,6 @@ if ( TRACE ) { TRACE( "UIManager#endGame", this ); }
                 var $step = 0,
                     $jumpFromFinally,
                     $returnValue,
-                    $t,
-                    $t1,
                     $async_e;
 
                 var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
@@ -4581,27 +4822,30 @@ if ( TRACE ) { TRACE( "UIManager#endGame", this ); }
                         for (;;) {
                             switch ($step) {
                                 case 0: {
-                                    //Ban phao hoa
-                                        this.fireworkGroup.SetActive(true);
-                                        $enumerator.current = new UnityEngine.WaitForSeconds(5.0);
+                                    $enumerator.current = new UnityEngine.WaitForSeconds(2.4);
                                         $step = 1;
                                         return true;
                                 }
                                 case 1: {
-                                    this.fireworkGroup.SetActive(false);
-                                        this.playerCarController.transform.localPosition = pc.Vec3.ZERO.clone();
-                                        this.playerCarController.transform.localRotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, 0 );
-                                        this.cameraSequence.gameObject.transform.localPosition = pc.Vec3.ZERO.clone();
+                                    this.playerCarController.audioSource.Stop();
+                                        this.playerCarController.audioSource.clip = null;
+                                        GameManager.Instance.isStartGame = false;
+                                        this.StopBarFill(false, 0.0);
+
+
+
+
+                                        this.cameraSequence.smoothFollowCamera.enabled = false;
+                                        this.cameraSequence.enabled = false;
+
                                         this.cameraSequence.gameObject.transform.localRotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, 0 );
-                                        this.playerCarController.Arrow.localRotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, 0 );
-                                        for (var i = 0; i < GameManager.Instance.carAIArray.length; i = (i + 1) | 0) {
-                                            ($t = GameManager.Instance.carAIArray)[i].transform.localPosition = pc.Vec3.ZERO.clone();
-                                            ($t1 = GameManager.Instance.carAIArray)[i].transform.localRotation = new pc.Quat().setFromEulerAngles_Unity( 0, 0, 0 );
-                                        }
+                                        this.cameraSequence.gameObject.transform.localPosition = pc.Vec3.ZERO.clone();
+
+
                                         this.setupMenu();
                                         this.Menu.SetActive(true);
                                         this.Scene.SetActive(false);
-                                        this.StopBarFill(false, 0.0);
+
                                         this.barFill.localScale = new pc.Vec3( 0.0, 1.0, 1.0 );
                                         this.currentLap = 0;
 
@@ -4647,7 +4891,7 @@ if ( TRACE ) { TRACE( "UIManager#ShowRoundText", this ); }
         $n = ["System","UnityEngine","System.Collections","DG.Tweening","TMPro","UnityEngine.UI","UnityEngine.Audio","DG.Tweening.Core","DG.Tweening.Plugins.Core.PathCore","System.Globalization","DG.Tweening.Plugins.Options"];
 
     /*AICarController start.*/
-    $m("AICarController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"OnTriggerEnter","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerEnter","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"setup","t":8,"sn":"setup","rt":$n[0].Void},{"a":2,"n":"speedUp","t":8,"sn":"speedUp","rt":$n[0].Void},{"a":2,"n":"avoidanceStrength","t":4,"rt":$n[0].Single,"sn":"avoidanceStrength","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"checkpointManager","t":4,"rt":CheckpointManager,"sn":"checkpointManager"},{"a":2,"n":"checkpointRadius","t":4,"rt":$n[0].Single,"sn":"checkpointRadius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"currentCheckpointIndex","t":4,"rt":$n[0].Int32,"sn":"currentCheckpointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"currentLap","t":4,"rt":$n[0].Int32,"sn":"currentLap","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"driftIntensity","t":4,"rt":$n[0].Single,"sn":"driftIntensity","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"lastPosition","t":4,"rt":$n[1].Vector3,"sn":"lastPosition"},{"a":2,"n":"maxSpeed","t":4,"rt":$n[0].Single,"sn":"maxSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Movement Settings")],"a":2,"n":"moveSpeed","t":4,"rt":$n[0].Single,"sn":"moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveVelocity","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity"},{"a":1,"n":"moveVelocity2","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity2"},{"at":[new UnityEngine.HeaderAttribute("Obstacle Avoidance")],"a":2,"n":"obstacleDetectionRange","t":4,"rt":$n[0].Single,"sn":"obstacleDetectionRange","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"obstacleLayers","t":4,"rt":$n[1].LayerMask,"sn":"obstacleLayers"},{"at":[new UnityEngine.HeaderAttribute("Drift Settings")],"a":2,"n":"slowTurnThreshold","t":4,"rt":$n[0].Single,"sn":"slowTurnThreshold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"smoothTime","t":4,"rt":$n[0].Single,"sn":"smoothTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"speedUpTime","t":4,"rt":$n[0].Single,"sn":"speedUpTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"timeStopping","t":4,"rt":$n[0].Single,"sn":"timeStopping","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"turnSpeed","t":4,"rt":$n[0].Single,"sn":"turnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"velocity","t":4,"rt":$n[1].Vector3,"sn":"velocity"}]}; }, $n);
+    $m("AICarController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"OnTriggerEnter","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerEnter","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"leftDriftEffect","t":8,"sn":"leftDriftEffect","rt":$n[0].Void},{"a":1,"n":"rightDriftEffect","t":8,"sn":"rightDriftEffect","rt":$n[0].Void},{"a":2,"n":"setup","t":8,"sn":"setup","rt":$n[0].Void},{"a":2,"n":"speedUp","t":8,"sn":"speedUp","rt":$n[0].Void},{"a":1,"n":"startEffect","t":8,"sn":"startEffect","rt":$n[2].IEnumerator},{"a":2,"n":"IdleEngineEffect","t":4,"rt":$n[1].GameObject,"sn":"IdleEngineEffect"},{"a":2,"n":"LeftDriftEffect","t":4,"rt":$n[1].GameObject,"sn":"LeftDriftEffect"},{"a":2,"n":"RightDriftEffect","t":4,"rt":$n[1].GameObject,"sn":"RightDriftEffect"},{"a":2,"n":"SmokeStartupEffect","t":4,"rt":$n[1].GameObject,"sn":"SmokeStartupEffect"},{"a":2,"n":"SmokeTrailEffect","t":4,"rt":$n[1].GameObject,"sn":"SmokeTrailEffect"},{"a":2,"n":"SpeedUpEffect","t":4,"rt":$n[1].GameObject,"sn":"SpeedUpEffect"},{"a":2,"n":"avoidanceStrength","t":4,"rt":$n[0].Single,"sn":"avoidanceStrength","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"checkpointManager","t":4,"rt":CheckpointManager,"sn":"checkpointManager"},{"a":2,"n":"checkpointRadius","t":4,"rt":$n[0].Single,"sn":"checkpointRadius","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"currentCheckpointIndex","t":4,"rt":$n[0].Int32,"sn":"currentCheckpointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"currentLap","t":4,"rt":$n[0].Int32,"sn":"currentLap","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"driftIntensity","t":4,"rt":$n[0].Single,"sn":"driftIntensity","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"lastPosition","t":4,"rt":$n[1].Vector3,"sn":"lastPosition"},{"a":2,"n":"maxSpeed","t":4,"rt":$n[0].Single,"sn":"maxSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Movement Settings")],"a":2,"n":"moveSpeed","t":4,"rt":$n[0].Single,"sn":"moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveVelocity","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity"},{"a":1,"n":"moveVelocity2","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity2"},{"at":[new UnityEngine.HeaderAttribute("Obstacle Avoidance")],"a":2,"n":"obstacleDetectionRange","t":4,"rt":$n[0].Single,"sn":"obstacleDetectionRange","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"obstacleLayers","t":4,"rt":$n[1].LayerMask,"sn":"obstacleLayers"},{"at":[new UnityEngine.HeaderAttribute("Drift Settings")],"a":2,"n":"slowTurnThreshold","t":4,"rt":$n[0].Single,"sn":"slowTurnThreshold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"smoothTime","t":4,"rt":$n[0].Single,"sn":"smoothTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"speedUpMoving","t":4,"rt":$n[0].Single,"sn":"speedUpMoving","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"speedUpTime","t":4,"rt":$n[0].Single,"sn":"speedUpTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"timeStopping","t":4,"rt":$n[0].Single,"sn":"timeStopping","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"turnSpeed","t":4,"rt":$n[0].Single,"sn":"turnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"velocity","t":4,"rt":$n[1].Vector3,"sn":"velocity"}]}; }, $n);
     /*AICarController end.*/
 
     /*CameraSequence start.*/
@@ -4667,11 +4911,11 @@ if ( TRACE ) { TRACE( "UIManager#ShowRoundText", this ); }
     /*PlayerCarType end.*/
 
     /*GameManager start.*/
-    $m("GameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"setupCarAI","t":8,"pi":[{"n":"_number","pt":$n[0].Int32,"ps":0}],"sn":"setupCarAI","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"setupMap","t":8,"sn":"setupMap","rt":$n[0].Void},{"a":2,"n":"setupPlayer","t":8,"sn":"setupPlayer","rt":$n[0].Void},{"a":2,"n":"setupScene","t":8,"sn":"setupScene","rt":$n[0].Void},{"a":1,"n":"setupSeason","t":8,"sn":"setupSeason","rt":$n[0].Void},{"a":2,"n":"startGame","t":8,"sn":"startGame","rt":$n[0].Void},{"a":2,"n":"currentMapType","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_currentMapType","t":8,"rt":$n[0].Int32,"fg":"currentMapType","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":2,"n":"set_currentMapType","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"currentMapType"},"fn":"currentMapType"},{"a":2,"n":"isEndGame","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_isEndGame","t":8,"rt":$n[0].Boolean,"fg":"isEndGame","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":2,"n":"set_isEndGame","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"isEndGame"},"fn":"isEndGame"},{"a":2,"n":"mapType","t":16,"rt":MapType,"g":{"a":2,"n":"get_mapType","t":8,"rt":MapType,"fg":"mapType","box":function ($v) { return Bridge.box($v, MapType, System.Enum.toStringFn(MapType));}},"s":{"a":2,"n":"set_mapType","t":8,"p":[MapType],"rt":$n[0].Void,"fs":"mapType"},"fn":"mapType"},{"a":2,"n":"Instance","is":true,"t":4,"rt":GameManager,"sn":"Instance"},{"a":1,"n":"__Property__Initializer__currentMapType","t":4,"rt":$n[0].Int32,"sn":"__Property__Initializer__currentMapType","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"__Property__Initializer__isEndGame","t":4,"rt":$n[0].Boolean,"sn":"__Property__Initializer__isEndGame","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"__Property__Initializer__mapType","t":4,"rt":MapType,"sn":"__Property__Initializer__mapType","box":function ($v) { return Bridge.box($v, MapType, System.Enum.toStringFn(MapType));}},{"a":2,"n":"carAIArray","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"carAIArray"},{"a":1,"n":"currentSeasonEffect","t":4,"rt":$n[1].GameObject,"sn":"currentSeasonEffect"},{"a":1,"n":"currentSpeedUpEffect","t":4,"rt":$n[1].GameObject,"sn":"currentSpeedUpEffect"},{"a":2,"n":"mapRenderer","t":4,"rt":$n[1].Renderer,"sn":"mapRenderer"},{"a":2,"n":"playerCarArray","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"playerCarArray"},{"a":2,"n":"playerCarController","t":4,"rt":PlayerCarController,"sn":"playerCarController"},{"a":1,"n":"playerCarType","t":4,"rt":PlayerCarType,"sn":"playerCarType","box":function ($v) { return Bridge.box($v, PlayerCarType, System.Enum.toStringFn(PlayerCarType));}},{"a":2,"n":"seasonEffectArray","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"seasonEffectArray"},{"a":2,"n":"seasonMaterialArray","t":4,"rt":System.Array.type(UnityEngine.Material),"sn":"seasonMaterialArray"},{"a":2,"n":"speedUpEffectArray","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"speedUpEffectArray"},{"a":1,"backing":true,"n":"<currentMapType>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"currentMapType","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<isEndGame>k__BackingField","t":4,"rt":$n[0].Boolean,"sn":"isEndGame","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"backing":true,"n":"<mapType>k__BackingField","t":4,"rt":MapType,"sn":"mapType","box":function ($v) { return Bridge.box($v, MapType, System.Enum.toStringFn(MapType));}}]}; }, $n);
+    $m("GameManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"setupCarAI","t":8,"pi":[{"n":"_number","pt":$n[0].Int32,"ps":0}],"sn":"setupCarAI","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"setupMap","t":8,"sn":"setupMap","rt":$n[0].Void},{"a":2,"n":"setupPlayer","t":8,"sn":"setupPlayer","rt":$n[0].Void},{"a":2,"n":"setupScene","t":8,"sn":"setupScene","rt":$n[0].Void},{"a":1,"n":"setupSeason","t":8,"sn":"setupSeason","rt":$n[0].Void},{"a":2,"n":"startGame","t":8,"sn":"startGame","rt":$n[0].Void},{"a":2,"n":"currentMapType","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_currentMapType","t":8,"rt":$n[0].Int32,"fg":"currentMapType","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":2,"n":"set_currentMapType","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"currentMapType"},"fn":"currentMapType"},{"a":2,"n":"isStartGame","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_isStartGame","t":8,"rt":$n[0].Boolean,"fg":"isStartGame","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":2,"n":"set_isStartGame","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"isStartGame"},"fn":"isStartGame"},{"a":2,"n":"mapType","t":16,"rt":MapType,"g":{"a":2,"n":"get_mapType","t":8,"rt":MapType,"fg":"mapType","box":function ($v) { return Bridge.box($v, MapType, System.Enum.toStringFn(MapType));}},"s":{"a":2,"n":"set_mapType","t":8,"p":[MapType],"rt":$n[0].Void,"fs":"mapType"},"fn":"mapType"},{"a":2,"n":"Instance","is":true,"t":4,"rt":GameManager,"sn":"Instance"},{"a":1,"n":"__Property__Initializer__currentMapType","t":4,"rt":$n[0].Int32,"sn":"__Property__Initializer__currentMapType","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"__Property__Initializer__isStartGame","t":4,"rt":$n[0].Boolean,"sn":"__Property__Initializer__isStartGame","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"__Property__Initializer__mapType","t":4,"rt":MapType,"sn":"__Property__Initializer__mapType","box":function ($v) { return Bridge.box($v, MapType, System.Enum.toStringFn(MapType));}},{"a":2,"n":"carAIArray","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"carAIArray"},{"a":1,"n":"currentSeasonEffect","t":4,"rt":$n[1].GameObject,"sn":"currentSeasonEffect"},{"a":1,"n":"currentSpeedUpEffect","t":4,"rt":$n[1].GameObject,"sn":"currentSpeedUpEffect"},{"a":2,"n":"mapRenderer","t":4,"rt":$n[1].Renderer,"sn":"mapRenderer"},{"a":2,"n":"playerCarArray","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"playerCarArray"},{"a":2,"n":"playerCarController","t":4,"rt":PlayerCarController,"sn":"playerCarController"},{"a":1,"n":"playerCarType","t":4,"rt":PlayerCarType,"sn":"playerCarType","box":function ($v) { return Bridge.box($v, PlayerCarType, System.Enum.toStringFn(PlayerCarType));}},{"a":2,"n":"seasonEffectArray","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"seasonEffectArray"},{"a":2,"n":"seasonMaterialArray","t":4,"rt":System.Array.type(UnityEngine.Material),"sn":"seasonMaterialArray"},{"a":2,"n":"speedUpEffectArray","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"speedUpEffectArray"},{"a":1,"backing":true,"n":"<currentMapType>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"currentMapType","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<isStartGame>k__BackingField","t":4,"rt":$n[0].Boolean,"sn":"isStartGame","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"backing":true,"n":"<mapType>k__BackingField","t":4,"rt":MapType,"sn":"mapType","box":function ($v) { return Bridge.box($v, MapType, System.Enum.toStringFn(MapType));}}]}; }, $n);
     /*GameManager end.*/
 
     /*PlayerCarController start.*/
-    $m("PlayerCarController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"FixedUpdate","t":8,"sn":"FixedUpdate","rt":$n[0].Void},{"a":1,"n":"HandleInput","t":8,"sn":"HandleInput","rt":$n[0].Void},{"a":1,"n":"OnCollisionEnter","t":8,"pi":[{"n":"collision","pt":$n[1].Collision,"ps":0}],"sn":"OnCollisionEnter","rt":$n[0].Void,"p":[$n[1].Collision]},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"OnTriggerEnter","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerEnter","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"setup","t":8,"sn":"setup","rt":$n[0].Void},{"a":2,"n":"speedUp","t":8,"sn":"speedUp","rt":$n[0].Void},{"a":2,"n":"speedUpTime","t":16,"rt":$n[0].Single,"g":{"a":2,"n":"get_speedUpTime","t":8,"rt":$n[0].Single,"fg":"speedUpTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},"s":{"a":2,"n":"set_speedUpTime","t":8,"p":[$n[0].Single],"rt":$n[0].Void,"fs":"speedUpTime"},"fn":"speedUpTime"},{"a":2,"n":"Arrow","t":4,"rt":$n[1].Transform,"sn":"Arrow"},{"a":2,"n":"checkpointManager","t":4,"rt":CheckpointManager,"sn":"checkpointManager"},{"a":1,"n":"currentCheckpointIndex","t":4,"rt":$n[0].Int32,"sn":"currentCheckpointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"driftIntensity","t":4,"rt":$n[0].Single,"sn":"driftIntensity","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isCollision","t":4,"rt":$n[0].Boolean,"sn":"isCollision","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isDragging","t":4,"rt":$n[0].Boolean,"sn":"isDragging","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"maxSpeed","t":4,"rt":$n[0].Single,"sn":"maxSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"maxTurnAngle","t":4,"rt":$n[0].Single,"sn":"maxTurnAngle","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveDirection","t":4,"rt":$n[1].Vector3,"sn":"moveDirection"},{"at":[new UnityEngine.HeaderAttribute("Movement Settings")],"a":2,"n":"moveSpeed","t":4,"rt":$n[0].Single,"sn":"moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveVelocity","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity"},{"a":1,"n":"moveVelocity2","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity2"},{"a":1,"n":"screenCenterX","t":4,"rt":$n[0].Single,"sn":"screenCenterX","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Drift Settings")],"a":2,"n":"slowTurnThreshold","t":4,"rt":$n[0].Single,"sn":"slowTurnThreshold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"smoothTime","t":4,"rt":$n[0].Single,"sn":"smoothTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"targetTurn","t":4,"rt":$n[0].Single,"sn":"targetTurn","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"timeStopping","t":4,"rt":$n[0].Single,"sn":"timeStopping","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnAmount","t":4,"rt":$n[0].Single,"sn":"turnAmount","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"turnSpeed","t":4,"rt":$n[0].Single,"sn":"turnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"velocity","t":4,"rt":$n[1].Vector3,"sn":"velocity"},{"a":1,"backing":true,"n":"<speedUpTime>k__BackingField","t":4,"rt":$n[0].Single,"sn":"speedUpTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("PlayerCarController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"HandleInput","t":8,"sn":"HandleInput","rt":$n[0].Void},{"a":1,"n":"OnCollisionEnter","t":8,"pi":[{"n":"collision","pt":$n[1].Collision,"ps":0}],"sn":"OnCollisionEnter","rt":$n[0].Void,"p":[$n[1].Collision]},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"OnTriggerEnter","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerEnter","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"leftDriftEffect","t":8,"sn":"leftDriftEffect","rt":$n[0].Void},{"a":1,"n":"rightDriftEffect","t":8,"sn":"rightDriftEffect","rt":$n[0].Void},{"a":2,"n":"setup","t":8,"sn":"setup","rt":$n[0].Void},{"a":2,"n":"speedUp","t":8,"sn":"speedUp","rt":$n[0].Void},{"a":1,"n":"startEffect","t":8,"sn":"startEffect","rt":$n[2].IEnumerator},{"a":2,"n":"speedUpTime","t":16,"rt":$n[0].Single,"g":{"a":2,"n":"get_speedUpTime","t":8,"rt":$n[0].Single,"fg":"speedUpTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},"s":{"a":2,"n":"set_speedUpTime","t":8,"p":[$n[0].Single],"rt":$n[0].Void,"fs":"speedUpTime"},"fn":"speedUpTime"},{"a":2,"n":"Arrow","t":4,"rt":$n[1].Transform,"sn":"Arrow"},{"a":2,"n":"DrivingSound","t":4,"rt":$n[1].AudioClip,"sn":"DrivingSound"},{"a":2,"n":"IdleEngineEffect","t":4,"rt":$n[1].GameObject,"sn":"IdleEngineEffect"},{"a":2,"n":"IdleEngineSound","t":4,"rt":$n[1].AudioClip,"sn":"IdleEngineSound"},{"a":2,"n":"LeftDriftEffect","t":4,"rt":$n[1].GameObject,"sn":"LeftDriftEffect"},{"a":2,"n":"RightDriftEffect","t":4,"rt":$n[1].GameObject,"sn":"RightDriftEffect"},{"a":2,"n":"SmokeStartupEffect","t":4,"rt":$n[1].GameObject,"sn":"SmokeStartupEffect"},{"a":2,"n":"SmokeTrailEffect","t":4,"rt":$n[1].GameObject,"sn":"SmokeTrailEffect"},{"a":2,"n":"SpeedUpEffect","t":4,"rt":$n[1].GameObject,"sn":"SpeedUpEffect"},{"a":2,"n":"SpeedupSound","t":4,"rt":$n[1].AudioClip,"sn":"SpeedupSound"},{"a":2,"n":"StartSound","t":4,"rt":$n[1].AudioClip,"sn":"StartSound"},{"a":2,"n":"StopSound","t":4,"rt":$n[1].AudioClip,"sn":"StopSound"},{"a":2,"n":"WiperSound","t":4,"rt":$n[1].AudioClip,"sn":"WiperSound"},{"a":2,"n":"audioSource","t":4,"rt":$n[1].AudioSource,"sn":"audioSource"},{"a":2,"n":"checkpointManager","t":4,"rt":CheckpointManager,"sn":"checkpointManager"},{"a":1,"n":"currentCheckpointIndex","t":4,"rt":$n[0].Int32,"sn":"currentCheckpointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"driftIntensity","t":4,"rt":$n[0].Single,"sn":"driftIntensity","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isCollision","t":4,"rt":$n[0].Boolean,"sn":"isCollision","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isDragging","t":4,"rt":$n[0].Boolean,"sn":"isDragging","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"maxSpeed","t":4,"rt":$n[0].Single,"sn":"maxSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"maxTurnAngle","t":4,"rt":$n[0].Single,"sn":"maxTurnAngle","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveDirection","t":4,"rt":$n[1].Vector3,"sn":"moveDirection"},{"at":[new UnityEngine.HeaderAttribute("Movement Settings")],"a":2,"n":"moveSpeed","t":4,"rt":$n[0].Single,"sn":"moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"moveVelocity","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity"},{"a":1,"n":"moveVelocity2","t":4,"rt":$n[1].Vector3,"sn":"moveVelocity2"},{"a":1,"n":"screenCenterX","t":4,"rt":$n[0].Single,"sn":"screenCenterX","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.HeaderAttribute("Drift Settings")],"a":2,"n":"slowTurnThreshold","t":4,"rt":$n[0].Single,"sn":"slowTurnThreshold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"smoothTime","t":4,"rt":$n[0].Single,"sn":"smoothTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"speedUpMoving","t":4,"rt":$n[0].Single,"sn":"speedUpMoving","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"targetTurn","t":4,"rt":$n[0].Single,"sn":"targetTurn","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"timeStopping","t":4,"rt":$n[0].Single,"sn":"timeStopping","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"turnAmount","t":4,"rt":$n[0].Single,"sn":"turnAmount","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"turnSpeed","t":4,"rt":$n[0].Single,"sn":"turnSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"velocity","t":4,"rt":$n[1].Vector3,"sn":"velocity"},{"a":1,"backing":true,"n":"<speedUpTime>k__BackingField","t":4,"rt":$n[0].Single,"sn":"speedUpTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*PlayerCarController end.*/
 
     /*SmoothFollowCamera start.*/
@@ -4679,7 +4923,7 @@ if ( TRACE ) { TRACE( "UIManager#ShowRoundText", this ); }
     /*SmoothFollowCamera end.*/
 
     /*UIManager start.*/
-    $m("UIManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CountdownRoutine","t":8,"sn":"CountdownRoutine","rt":$n[2].IEnumerator},{"a":1,"n":"OnBarFull","t":8,"sn":"OnBarFull","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":2,"n":"OnLapCompleted","t":8,"sn":"OnLapCompleted","rt":$n[0].Void},{"a":1,"n":"ShowRoundText","t":8,"pi":[{"n":"message","pt":$n[0].String,"ps":0}],"sn":"ShowRoundText","rt":$n[0].Void,"p":[$n[0].String]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StartBarFill","t":8,"sn":"StartBarFill","rt":$n[0].Void},{"a":2,"n":"StopBarFill","t":8,"pi":[{"n":"isStartBarFill","pt":$n[0].Boolean,"ps":0},{"n":"fillDuration","pt":$n[0].Single,"ps":1}],"sn":"StopBarFill","rt":$n[0].Void,"p":[$n[0].Boolean,$n[0].Single]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"endGame","t":8,"sn":"endGame","rt":$n[2].IEnumerator},{"a":2,"n":"onLeftArrowBtnClick","t":8,"sn":"onLeftArrowBtnClick","rt":$n[0].Void},{"a":2,"n":"onNextMapBtnClick","t":8,"sn":"onNextMapBtnClick","rt":$n[0].Void},{"a":2,"n":"onRightArrowBtnClick","t":8,"sn":"onRightArrowBtnClick","rt":$n[0].Void},{"a":2,"n":"onStartBtnClick","t":8,"sn":"onStartBtnClick","rt":$n[0].Void},{"a":2,"n":"setupMenu","t":8,"sn":"setupMenu","rt":$n[0].Void},{"a":2,"n":"startBarFill","t":8,"pi":[{"n":"fillDuration","pt":$n[0].Single,"ps":0}],"sn":"startBarFill","rt":$n[0].Void,"p":[$n[0].Single]},{"a":2,"n":"startCountDownRoutine","t":8,"sn":"startCountDownRoutine","rt":$n[0].Void},{"a":2,"n":"currentCarIndex","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_currentCarIndex","t":8,"rt":$n[0].Int32,"fg":"currentCarIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":2,"n":"set_currentCarIndex","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"currentCarIndex"},"fn":"currentCarIndex"},{"a":2,"n":"currentLap","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_currentLap","t":8,"rt":$n[0].Int32,"fg":"currentLap","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":2,"n":"set_currentLap","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"currentLap"},"fn":"currentLap"},{"a":2,"n":"Cars","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"Cars"},{"a":2,"n":"Instance","is":true,"t":4,"rt":UIManager,"sn":"Instance"},{"a":2,"n":"Menu","t":4,"rt":$n[1].GameObject,"sn":"Menu"},{"a":2,"n":"Scene","t":4,"rt":$n[1].GameObject,"sn":"Scene"},{"a":1,"n":"__Property__Initializer__currentLap","t":4,"rt":$n[0].Int32,"sn":"__Property__Initializer__currentLap","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"barFill","t":4,"rt":$n[1].RectTransform,"sn":"barFill"},{"a":1,"n":"barTween","t":4,"rt":$n[3].Tween,"sn":"barTween"},{"a":2,"n":"cameraSequence","t":4,"rt":CameraSequence,"sn":"cameraSequence"},{"a":2,"n":"countdownText","t":4,"rt":$n[4].TextMeshProUGUI,"sn":"countdownText"},{"a":2,"n":"fillDuration","t":4,"rt":$n[0].Single,"sn":"fillDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"fireworkGroup","t":4,"rt":$n[1].GameObject,"sn":"fireworkGroup"},{"a":2,"n":"fireworkStart","t":4,"rt":$n[1].GameObject,"sn":"fireworkStart"},{"a":1,"n":"isTweenScaleToZero","t":4,"rt":$n[0].Boolean,"sn":"isTweenScaleToZero","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"nextBtn","t":4,"rt":$n[5].Button,"sn":"nextBtn"},{"a":2,"n":"playerCarController","t":4,"rt":PlayerCarController,"sn":"playerCarController"},{"a":1,"n":"rainbowColors","t":4,"rt":System.Array.type(UnityEngine.Color),"sn":"rainbowColors"},{"a":2,"n":"retryBtn","t":4,"rt":$n[5].Button,"sn":"retryBtn"},{"a":2,"n":"roundText","t":4,"rt":$n[4].TextMeshProUGUI,"sn":"roundText"},{"a":2,"n":"shrinkDuration","t":4,"rt":$n[0].Single,"sn":"shrinkDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"startBtn","t":4,"rt":$n[5].Button,"sn":"startBtn"},{"a":2,"n":"timeBetweenCounts","t":4,"rt":$n[0].Single,"sn":"timeBetweenCounts","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"totalLaps","t":4,"rt":$n[0].Int32,"sn":"totalLaps","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<currentCarIndex>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"currentCarIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<currentLap>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"currentLap","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
+    $m("UIManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CountdownRoutine","t":8,"sn":"CountdownRoutine","rt":$n[2].IEnumerator},{"a":1,"n":"OnBarFull","t":8,"sn":"OnBarFull","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":2,"n":"OnLapCompleted","t":8,"sn":"OnLapCompleted","rt":$n[0].Void},{"a":1,"n":"ShowRoundText","t":8,"pi":[{"n":"message","pt":$n[0].String,"ps":0}],"sn":"ShowRoundText","rt":$n[0].Void,"p":[$n[0].String]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StartBarFill","t":8,"sn":"StartBarFill","rt":$n[0].Void},{"a":2,"n":"StopBarFill","t":8,"pi":[{"n":"isStartBarFill","pt":$n[0].Boolean,"ps":0},{"n":"fillDuration","pt":$n[0].Single,"ps":1}],"sn":"StopBarFill","rt":$n[0].Void,"p":[$n[0].Boolean,$n[0].Single]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"endGame","t":8,"sn":"endGame","rt":$n[2].IEnumerator},{"a":2,"n":"onLeftArrowBtnClick","t":8,"sn":"onLeftArrowBtnClick","rt":$n[0].Void},{"a":2,"n":"onNextMapBtnClick","t":8,"sn":"onNextMapBtnClick","rt":$n[0].Void},{"a":2,"n":"onRightArrowBtnClick","t":8,"sn":"onRightArrowBtnClick","rt":$n[0].Void},{"a":2,"n":"onStartBtnClick","t":8,"sn":"onStartBtnClick","rt":$n[0].Void},{"a":2,"n":"setupMenu","t":8,"sn":"setupMenu","rt":$n[0].Void},{"a":2,"n":"startBarFill","t":8,"pi":[{"n":"fillDuration","pt":$n[0].Single,"ps":0}],"sn":"startBarFill","rt":$n[0].Void,"p":[$n[0].Single]},{"a":2,"n":"startCountDownRoutine","t":8,"sn":"startCountDownRoutine","rt":$n[0].Void},{"a":2,"n":"currentCarIndex","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_currentCarIndex","t":8,"rt":$n[0].Int32,"fg":"currentCarIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":2,"n":"set_currentCarIndex","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"currentCarIndex"},"fn":"currentCarIndex"},{"a":2,"n":"currentLap","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_currentLap","t":8,"rt":$n[0].Int32,"fg":"currentLap","box":function ($v) { return Bridge.box($v, System.Int32);}},"s":{"a":2,"n":"set_currentLap","t":8,"p":[$n[0].Int32],"rt":$n[0].Void,"fs":"currentLap"},"fn":"currentLap"},{"a":2,"n":"Cars","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"Cars"},{"a":2,"n":"Instance","is":true,"t":4,"rt":UIManager,"sn":"Instance"},{"a":2,"n":"Menu","t":4,"rt":$n[1].GameObject,"sn":"Menu"},{"a":2,"n":"Scene","t":4,"rt":$n[1].GameObject,"sn":"Scene"},{"a":1,"n":"__Property__Initializer__currentLap","t":4,"rt":$n[0].Int32,"sn":"__Property__Initializer__currentLap","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"barFill","t":4,"rt":$n[1].RectTransform,"sn":"barFill"},{"a":1,"n":"barTween","t":4,"rt":$n[3].Tween,"sn":"barTween"},{"a":2,"n":"cameraSequence","t":4,"rt":CameraSequence,"sn":"cameraSequence"},{"a":2,"n":"countdownText","t":4,"rt":$n[4].TextMeshProUGUI,"sn":"countdownText"},{"a":2,"n":"fillDuration","t":4,"rt":$n[0].Single,"sn":"fillDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isTweenScaleToZero","t":4,"rt":$n[0].Boolean,"sn":"isTweenScaleToZero","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"nextBtn","t":4,"rt":$n[5].Button,"sn":"nextBtn"},{"a":2,"n":"playerCarController","t":4,"rt":PlayerCarController,"sn":"playerCarController"},{"a":1,"n":"rainbowColors","t":4,"rt":System.Array.type(UnityEngine.Color),"sn":"rainbowColors"},{"a":2,"n":"retryBtn","t":4,"rt":$n[5].Button,"sn":"retryBtn"},{"a":2,"n":"roundText","t":4,"rt":$n[4].TextMeshProUGUI,"sn":"roundText"},{"a":2,"n":"shrinkDuration","t":4,"rt":$n[0].Single,"sn":"shrinkDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"startBtn","t":4,"rt":$n[5].Button,"sn":"startBtn"},{"a":2,"n":"timeBetweenCounts","t":4,"rt":$n[0].Single,"sn":"timeBetweenCounts","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"totalLaps","t":4,"rt":$n[0].Int32,"sn":"totalLaps","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<currentCarIndex>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"currentCarIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"backing":true,"n":"<currentLap>k__BackingField","t":4,"rt":$n[0].Int32,"sn":"currentLap","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
     /*UIManager end.*/
 
     /*IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty start.*/

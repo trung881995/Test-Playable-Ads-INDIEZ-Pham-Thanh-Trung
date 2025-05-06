@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10000
+  moveSpeed: 8000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10000
+  moveSpeed: 8000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -2384,7 +2384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10000
+  moveSpeed: 8000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -13284,10 +13284,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7faed73822e64745ad59405d2082bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10000
+  moveSpeed: 8000
   smoothTime: 100
   maxSpeed: 100
-  turnSpeed: 10
+  turnSpeed: 7
   maxTurnAngle: 60
   slowTurnThreshold: 30
   driftIntensity: 0.5
@@ -15087,7 +15087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10000
+  moveSpeed: 8000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -18421,7 +18421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10000
+  moveSpeed: 8000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250

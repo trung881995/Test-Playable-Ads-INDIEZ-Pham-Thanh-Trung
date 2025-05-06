@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject fireworkGroup;
-    public GameObject fireworkStart;
+    
 
     public GameObject[] Cars;
     public GameObject Menu;
@@ -109,24 +108,27 @@ public class UIManager : MonoBehaviour
     {
         
         GameManager.Instance.mapType = MapType.Summer;
-        GameManager.Instance.setupScene();
+       
+        
         Menu.SetActive(false);
         Scene.SetActive(true);
-        
+        GameManager.Instance.setupScene();
+
         cameraSequence.enabled = true;
     }
     public void onNextMapBtnClick()
     {
-        
+        GameManager.Instance.currentMapType = (int)GameManager.Instance.mapType;
         if (GameManager.Instance.currentMapType < 3)
             GameManager.Instance.currentMapType += 1;
         else
             GameManager.Instance.currentMapType = 1;
 
         GameManager.Instance.mapType = (MapType)GameManager.Instance.currentMapType;
-        GameManager.Instance.setupScene();
+        
         Menu.SetActive(false);
         Scene.SetActive(true);
+        GameManager.Instance.setupScene();
         cameraSequence.enabled = true;
     }
     public void startCountDownRoutine()
@@ -171,15 +173,12 @@ public class UIManager : MonoBehaviour
         countdownText.gameObject.SetActive(false);
         Debug.Log("Race Start!");
 
-        //Ban phao hoa bat dau
-        fireworkStart.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        
         // Gọi sự kiện bắt đầu game ở đây
 
 
         GameManager.Instance.startGame();
-        yield return new WaitForSeconds(1.5f);
-        fireworkStart.SetActive(false);
+        
     }
     public void StartBarFill()
     {
@@ -240,31 +239,34 @@ public class UIManager : MonoBehaviour
         {
             ShowRoundText("FINISH!");
 
-            StartCoroutine(endGame());
+            StartCoroutine( endGame());
         }
     }
     IEnumerator endGame()
     {
-        //Ban phao hoa
-        fireworkGroup.SetActive(true);
-        yield return new WaitForSeconds(5f);
-        fireworkGroup.SetActive(false);
-        playerCarController.transform.localPosition = Vector3.zero;
-        playerCarController.transform.localRotation = Quaternion.Euler(0,0,0);
-        cameraSequence.gameObject.transform.localPosition = Vector3.zero;
+        yield return new WaitForSeconds(2.4f);
+        playerCarController.audioSource.Stop();
+        playerCarController.audioSource.clip = null;
+        GameManager.Instance.isStartGame = false;
+        StopBarFill(false, 0f);
+        
+       
+
+
+        cameraSequence.smoothFollowCamera.enabled = false;
+        cameraSequence.enabled = false;
+        
         cameraSequence.gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
-        playerCarController.Arrow.localRotation = Quaternion.Euler(0, 0, 0);
-        for (int i = 0; i < GameManager.Instance.carAIArray.Length; i++)
-        {
-            GameManager.Instance.carAIArray[i].transform.localPosition = Vector3.zero;
-            GameManager.Instance.carAIArray[i].transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
+        cameraSequence.gameObject.transform.localPosition = Vector3.zero;
+
+
         setupMenu();
         Menu.SetActive(true);
         Scene.SetActive(false);
-        StopBarFill(false,0f);
+        
         barFill.localScale = new Vector3(0f, 1f, 1f);
         currentLap = 0;
+        
 
     }
     private void ShowRoundText(string message)

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerCarController : MonoBehaviour
@@ -27,6 +28,23 @@ public class PlayerCarController : MonoBehaviour
 
     public CheckpointManager checkpointManager;
     public Transform Arrow;
+
+    public GameObject SpeedUpEffect;
+    public GameObject SmokeTrailEffect;
+    public GameObject SmokeStartupEffect;
+    public GameObject IdleEngineEffect;
+    public GameObject RightDriftEffect;
+    public GameObject LeftDriftEffect;
+
+    public AudioSource audioSource;
+
+    public AudioClip StartSound;
+    public AudioClip WiperSound;
+    public AudioClip IdleEngineSound;
+    public AudioClip DrivingSound;
+    public AudioClip SpeedupSound;
+    public AudioClip StopSound;
+
     //private Vector3 lastPosition;
     private Vector3 velocity = Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
@@ -34,14 +52,23 @@ public class PlayerCarController : MonoBehaviour
     //private Rigidbody rb;
 
     public float speedUpTime { set; get; }
+    private float speedUpMoving;
     private void OnEnable()
     {
-        setup();
+        //setup();
     }
-    private void setup()
+    private void Start()
     {
+        
+    }
+    public void setup()
+    {
+        StartCoroutine(startEffect());
+        //SpeedUpEffect.SetActive(false);
+        SmokeTrailEffect.SetActive(false);
+        
         screenCenterX = Screen.width / 2f;
-        UIManager.Instance.StartBarFill();
+        
         
         //UIManager.Instance.StopBarFill();
         
@@ -54,11 +81,16 @@ public class PlayerCarController : MonoBehaviour
         currentCheckpointIndex = 0;
         velocity = Vector3.zero;
         moveVelocity = Vector3.zero;
+        transform.localPosition = Vector3.zero;
+       transform.localRotation = Quaternion.Euler(0, 0, 0);
+        Arrow.localRotation = Quaternion.Euler(0, 0, 0);
     }
 
     void Update()
     {
-        /*
+        if(GameManager.Instance.isStartGame)
+        {
+            /*
         if(transform.position.y>0.2f)
         {
             rb.freezeRotation = false;
@@ -68,48 +100,57 @@ public class PlayerCarController : MonoBehaviour
             rb.freezeRotation = true;
         }
         */
-        
-        if(speedUpTime>0)
-        {
-            speedUpTime -= Time.deltaTime;
-        }
-        else
-        {
-            moveSpeed = 7000f;
-            speedUpTime = 0;
-        }
-        HandleInput();
-        
-           
+
+            if (speedUpTime > 0)
+            {
+                speedUpTime -= Time.deltaTime;
+                SpeedUpEffect.SetActive(true);
+                
+            }
+            else if(speedUpTime<0f)
+            {
+                audioSource.Stop();
+                audioSource.clip = DrivingSound;
+                audioSource.Play();
+                audioSource.loop = true;
+                
+
+                speedUpMoving = 0f;
+                speedUpTime = 0;
+                SpeedUpEffect.SetActive(false);
+            }
+            HandleInput();
+
+
             //UIManager.Instance.setVelocity((int)velocity.magnitude);
             // === Lấy checkpoint tiếp theo ===
             Transform target = checkpointManager.GetCheckpoint(currentCheckpointIndex);
             if (target == null) return;
 
-        // Hướng từ Arrow tới target
-        Vector3 targetDir = (target.position - Arrow.transform.position).normalized;
+            // Hướng từ Arrow tới target
+            Vector3 targetDir = (target.position - Arrow.transform.position).normalized;
 
-        // Tính góc quay mục tiêu
-        Quaternion targetRotation = Quaternion.LookRotation(targetDir, Vector3.up);
+            // Tính góc quay mục tiêu
+            Quaternion targetRotation = Quaternion.LookRotation(targetDir, Vector3.up);
 
-        // Giữ lại trục X và Z hiện tại, chỉ quay mượt trục Y
-        float rotationSpeed = 180f; // độ/giây, chỉnh tốc độ quay tùy ý
+            // Giữ lại trục X và Z hiện tại, chỉ quay mượt trục Y
+            float rotationSpeed = 180f; // độ/giây, chỉnh tốc độ quay tùy ý
 
-        // Tạo một rotation hiện tại chỉ chứa trục Y
-        Quaternion currentRotation = Quaternion.Euler(0f, Arrow.transform.eulerAngles.y, 0f);
-        Quaternion targetYRotation = Quaternion.Euler(0f, targetRotation.eulerAngles.y, 0f);
+            // Tạo một rotation hiện tại chỉ chứa trục Y
+            Quaternion currentRotation = Quaternion.Euler(0f, Arrow.transform.eulerAngles.y, 0f);
+            Quaternion targetYRotation = Quaternion.Euler(0f, targetRotation.eulerAngles.y, 0f);
 
-        // Quay mượt từ current đến target theo trục Y
-        Quaternion smoothRotation = Quaternion.RotateTowards(currentRotation, targetYRotation, rotationSpeed * Time.deltaTime);
+            // Quay mượt từ current đến target theo trục Y
+            Quaternion smoothRotation = Quaternion.RotateTowards(currentRotation, targetYRotation, rotationSpeed * Time.deltaTime);
 
-        // Áp dụng rotation giữ nguyên trục X và Z gốc
-        Arrow.transform.rotation = Quaternion.Euler(
-            Arrow.transform.eulerAngles.x,
-            smoothRotation.eulerAngles.y,
-            Arrow.transform.eulerAngles.z
-        );
+            // Áp dụng rotation giữ nguyên trục X và Z gốc
+            Arrow.transform.rotation = Quaternion.Euler(
+                Arrow.transform.eulerAngles.x,
+                smoothRotation.eulerAngles.y,
+                Arrow.transform.eulerAngles.z
+            );
 
-        if (!isCollision)
+            if (!isCollision)
             {
                 // --- Quay xe dựa trên input chuột ---
                 turnAmount = targetTurn * turnSpeed * Time.deltaTime;
@@ -117,34 +158,53 @@ public class PlayerCarController : MonoBehaviour
 
                 // === Xác định hướng di chuyển ===
                 moveDirection = transform.forward;
-                float moveStep = moveSpeed * Time.deltaTime;
+                float moveStep = (moveSpeed+speedUpMoving) * Time.deltaTime;
 
                 // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
                 if (Mathf.Abs(turnAmount) > slowTurnThreshold && velocity.magnitude > 5f)
                 {
+                    if(turnAmount>0)
+                    {
+                        if(!RightDriftEffect.activeInHierarchy)
+                        {
+                            rightDriftEffect();
+                        }
+                    }
+                    else if(turnAmount<0)
+                    {
+                        if(!LeftDriftEffect.activeInHierarchy)
+                        {
+                            leftDriftEffect();
+                        }
+                    }
+                    
                     Vector3 driftOffset = transform.right * Mathf.Sign(turnAmount) * driftIntensity;
                     transform.position += driftOffset * Time.deltaTime;
                     Debug.Log("Drift giả lập!");
                 }
-
-            // === Di chuyển chính (áp dụng SmoothDamp) ===
-            transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
-            if(transform.position.y>0.03f)
-            {
-                transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * 0.03f*50f*Time.deltaTime, ref moveVelocity2, smoothTime * Time.deltaTime);
-            }
-            // === Tính vận tốc ===
-            velocity = moveVelocity;
-            //lastPosition = transform.position;
-/*
-            // === Kiểm tra qua checkpoint ===
-            if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+                else
                 {
-                    currentCheckpointIndex++;
-                    if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
-                        currentCheckpointIndex = 0;
+                    RightDriftEffect.SetActive(false);
+                    LeftDriftEffect.SetActive(false);
                 }
-*/
+
+                // === Di chuyển chính (áp dụng SmoothDamp) ===
+                transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
+                
+                
+                SmokeTrailEffect.SetActive(true);
+                // === Tính vận tốc ===
+                velocity = moveVelocity;
+                //lastPosition = transform.position;
+                /*
+                            // === Kiểm tra qua checkpoint ===
+                            if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+                                {
+                                    currentCheckpointIndex++;
+                                    if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                                        currentCheckpointIndex = 0;
+                                }
+                */
                 /*
                  var pos = transform.position;
                  pos.y = checkpointManager.GetCheckpoint(currentCheckpointIndex+1).position.y-1f;
@@ -169,9 +229,9 @@ public class PlayerCarController : MonoBehaviour
 
 
                     transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
-                // === Tính vận tốc ===
-                velocity = moveVelocity;
-                timeStopping -= Time.deltaTime;
+                    // === Tính vận tốc ===
+                    velocity = moveVelocity;
+                    timeStopping -= Time.deltaTime;
                 }
                 else
                 {
@@ -180,13 +240,52 @@ public class PlayerCarController : MonoBehaviour
                     timeStopping = 0f;
                 }
             }
-            
+
+
+        }
+
+    }
+
+    IEnumerator startEffect()
+    {
+        audioSource.Stop();
+        audioSource.clip = StartSound;
+        audioSource.Play();
+        audioSource.loop = false;
+        //StartSound.Play();
+        yield return new WaitForSeconds(0.870f);
+        
+        IdleEngineEffect.SetActive(true);
+        audioSource.Stop();
+        audioSource.clip = WiperSound;
+        audioSource.Play();
+        audioSource.loop = true;
+        yield return new WaitForSeconds(0.3f);
+        SmokeStartupEffect.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        SmokeStartupEffect.SetActive(false);
+        yield return new WaitForSeconds(5f);
+        audioSource.Stop();
+        audioSource.clip = DrivingSound;
+        audioSource.Play();
+        audioSource.loop = true;
+    }
+
+    private void rightDriftEffect()
+    {
+        RightDriftEffect.SetActive(true);
+        //LeftDriftEffect.SetActive(false);
+        
+
+    }
+    private void leftDriftEffect()
+    {
+        LeftDriftEffect.SetActive(true);
+        //LeftDriftEffect.SetActive(false);
        
     }
-    private void FixedUpdate()
-    {
-        //rb.AddForce(Vector3.down * 800f * Time.fixedDeltaTime, ForceMode.Acceleration);
-    }
+
+    
     // ==== CHỈNH HƯỚNG KHI VA CHẠM ====
     private void OnCollisionEnter(Collision collision)
     {
@@ -224,9 +323,13 @@ public class PlayerCarController : MonoBehaviour
                     else
                     {
 
-                        UIManager.Instance.cameraSequence.smoothFollowCamera.enabled = false;
-                        UIManager.Instance.cameraSequence.enabled = false;
-                        this.enabled = false;
+                        audioSource.Stop();
+                        audioSource.clip = StopSound;
+                        audioSource.Play();
+                        audioSource.loop = true;
+                       
+
+                        IdleEngineEffect.SetActive(false);
                         UIManager.Instance.OnLapCompleted();
                     }
                 }
@@ -245,34 +348,31 @@ public class PlayerCarController : MonoBehaviour
     }
     public void speedUp()
     {
+        audioSource.Stop();
+        audioSource.clip = SpeedupSound;
+        audioSource.Play();
+        audioSource.loop = false;
+        
+
         var mapType = GameManager.Instance.mapType;
         switch (mapType)
         {
             case MapType.Summer:
                 speedUpTime = 5;
-                moveSpeed += 2500;
+                speedUpMoving= 5000;
                 break;
             case MapType.Rainy:
                 speedUpTime = 6;
-                moveSpeed += 3000;
+                speedUpMoving= 6000;
                 break;
             case MapType.Winter:
                 speedUpTime = 7;
-                moveSpeed += 3500;
+                speedUpMoving= 7000;
                 break;
         }
+        
     }
-    /* private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.layer == 8)
-        { 
-            GameObject _target=new GameObject();
-            _target.transform.position  = new Vector3(other.gameObject.transform.position.x, other.gameObject.transform.position.y - 3f, other.gameObject.transform.position.z);
-            transform.LookAt(_target.transform);
-            Debug.Log("tren mat dat !!!");
-        }
-    }
-   */
+    
     void HandleInput()
     {
 #if UNITY_EDITOR || UNITY_STANDALONE
