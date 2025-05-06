@@ -239,11 +239,14 @@ public class UIManager : MonoBehaviour
         {
             ShowRoundText("FINISH!");
 
-            endGame();
+            StartCoroutine( endGame());
         }
     }
-    private void endGame()
+    IEnumerator endGame()
     {
+        yield return new WaitForSeconds(2.4f);
+        playerCarController.audioSource.Stop();
+        playerCarController.audioSource.clip = null;
         GameManager.Instance.isStartGame = false;
         StopBarFill(false, 0f);
         

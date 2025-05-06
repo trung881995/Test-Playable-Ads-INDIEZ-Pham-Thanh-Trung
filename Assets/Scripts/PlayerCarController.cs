@@ -28,12 +28,23 @@ public class PlayerCarController : MonoBehaviour
 
     public CheckpointManager checkpointManager;
     public Transform Arrow;
+
     public GameObject SpeedUpEffect;
     public GameObject SmokeTrailEffect;
     public GameObject SmokeStartupEffect;
     public GameObject IdleEngineEffect;
     public GameObject RightDriftEffect;
     public GameObject LeftDriftEffect;
+
+    public AudioSource audioSource;
+
+    public AudioClip StartSound;
+    public AudioClip WiperSound;
+    public AudioClip IdleEngineSound;
+    public AudioClip DrivingSound;
+    public AudioClip SpeedupSound;
+    public AudioClip StopSound;
+
     //private Vector3 lastPosition;
     private Vector3 velocity = Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
@@ -96,8 +107,14 @@ public class PlayerCarController : MonoBehaviour
                 SpeedUpEffect.SetActive(true);
                 
             }
-            else
+            else if(speedUpTime<0f)
             {
+                audioSource.Stop();
+                audioSource.clip = DrivingSound;
+                audioSource.Play();
+                audioSource.loop = true;
+                
+
                 speedUpMoving = 0f;
                 speedUpTime = 0;
                 SpeedUpEffect.SetActive(false);
@@ -231,13 +248,27 @@ public class PlayerCarController : MonoBehaviour
 
     IEnumerator startEffect()
     {
-        yield return new WaitForSeconds(0.5f);
+        audioSource.Stop();
+        audioSource.clip = StartSound;
+        audioSource.Play();
+        audioSource.loop = false;
+        //StartSound.Play();
+        yield return new WaitForSeconds(0.870f);
         
         IdleEngineEffect.SetActive(true);
+        audioSource.Stop();
+        audioSource.clip = WiperSound;
+        audioSource.Play();
+        audioSource.loop = true;
         yield return new WaitForSeconds(0.3f);
         SmokeStartupEffect.SetActive(true);
         yield return new WaitForSeconds(4f);
         SmokeStartupEffect.SetActive(false);
+        yield return new WaitForSeconds(5f);
+        audioSource.Stop();
+        audioSource.clip = DrivingSound;
+        audioSource.Play();
+        audioSource.loop = true;
     }
 
     private void rightDriftEffect()
@@ -253,6 +284,8 @@ public class PlayerCarController : MonoBehaviour
         //LeftDriftEffect.SetActive(false);
        
     }
+
+    
     // ==== CHỈNH HƯỚNG KHI VA CHẠM ====
     private void OnCollisionEnter(Collision collision)
     {
@@ -290,6 +323,11 @@ public class PlayerCarController : MonoBehaviour
                     else
                     {
 
+                        audioSource.Stop();
+                        audioSource.clip = StopSound;
+                        audioSource.Play();
+                        audioSource.loop = true;
+                       
 
                         IdleEngineEffect.SetActive(false);
                         UIManager.Instance.OnLapCompleted();
@@ -310,6 +348,12 @@ public class PlayerCarController : MonoBehaviour
     }
     public void speedUp()
     {
+        audioSource.Stop();
+        audioSource.clip = SpeedupSound;
+        audioSource.Play();
+        audioSource.loop = false;
+        
+
         var mapType = GameManager.Instance.mapType;
         switch (mapType)
         {
@@ -328,17 +372,7 @@ public class PlayerCarController : MonoBehaviour
         }
         
     }
-    /* private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.layer == 8)
-        { 
-            GameObject _target=new GameObject();
-            _target.transform.position  = new Vector3(other.gameObject.transform.position.x, other.gameObject.transform.position.y - 3f, other.gameObject.transform.position.z);
-            transform.LookAt(_target.transform);
-            Debug.Log("tren mat dat !!!");
-        }
-    }
-   */
+    
     void HandleInput()
     {
 #if UNITY_EDITOR || UNITY_STANDALONE
