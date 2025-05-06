@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8000
+  moveSpeed: 7000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -598,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 43493288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8000
+  moveSpeed: 6000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -2239,7 +2239,7 @@ Transform:
   m_GameObject: {fileID: 152616226}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2384,7 +2384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8000
+  moveSpeed: 7500
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -2439,7 +2439,7 @@ Transform:
   m_GameObject: {fileID: 182493895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13284,10 +13284,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7faed73822e64745ad59405d2082bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8000
+  moveSpeed: 7000
   smoothTime: 100
   maxSpeed: 100
-  turnSpeed: 7
+  turnSpeed: 5
   maxTurnAngle: 60
   slowTurnThreshold: 30
   driftIntensity: 0.5
@@ -13342,7 +13342,7 @@ Transform:
   m_GameObject: {fileID: 1261677031}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15087,7 +15087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8000
+  moveSpeed: 5500
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -15142,7 +15142,7 @@ Transform:
   m_GameObject: {fileID: 1475059027}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18421,7 +18421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8000
+  moveSpeed: 6500
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 250
@@ -18449,7 +18449,7 @@ Transform:
   m_GameObject: {fileID: 1837815679}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:

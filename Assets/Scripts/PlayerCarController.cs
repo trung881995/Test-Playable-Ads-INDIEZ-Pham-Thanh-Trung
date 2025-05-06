@@ -190,7 +190,11 @@ public class PlayerCarController : MonoBehaviour
 
                 // === Di chuyển chính (áp dụng SmoothDamp) ===
                 transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
-                
+                if(transform.position.y<0.1f)
+                {
+                    transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.up * 0.1f*50f*Time.deltaTime, ref moveVelocity2, smoothTime * Time.deltaTime);
+
+                }
                 
                 SmokeTrailEffect.SetActive(true);
                 // === Tính vận tốc ===
@@ -359,15 +363,15 @@ public class PlayerCarController : MonoBehaviour
         {
             case MapType.Summer:
                 speedUpTime = 5;
-                speedUpMoving= 5000;
+                speedUpMoving= 2500;
                 break;
             case MapType.Rainy:
                 speedUpTime = 6;
-                speedUpMoving= 6000;
+                speedUpMoving= 3000;
                 break;
             case MapType.Winter:
                 speedUpTime = 7;
-                speedUpMoving= 7000;
+                speedUpMoving= 3500;
                 break;
         }
         
