@@ -13287,7 +13287,7 @@ MonoBehaviour:
   moveSpeed: 7000
   smoothTime: 100
   maxSpeed: 100
-  turnSpeed: 5
+  turnSpeed: 8
   maxTurnAngle: 60
   slowTurnThreshold: 30
   driftIntensity: 0.5
