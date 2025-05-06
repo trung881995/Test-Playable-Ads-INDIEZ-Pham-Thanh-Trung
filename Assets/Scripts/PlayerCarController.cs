@@ -49,6 +49,7 @@ public class PlayerCarController : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
     private Vector3 moveVelocity2 = Vector3.zero;
+    private Vector3 moveVelocity3 = Vector3.zero;
     //private Rigidbody rb;
 
     public float speedUpTime { set; get; }
@@ -88,7 +89,8 @@ public class PlayerCarController : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.Instance.isStartGame)
+        HandleInput();
+        if (GameManager.Instance.isStartGame)
         {
             /*
         if(transform.position.y>0.2f)
@@ -125,7 +127,7 @@ public class PlayerCarController : MonoBehaviour
                 SpeedUpEffect.SetActive(false);
                 SmokeTrailEffect.SetActive(true);
             }
-            HandleInput();
+            
 
 
             //UIManager.Instance.setVelocity((int)velocity.magnitude);
@@ -196,12 +198,16 @@ public class PlayerCarController : MonoBehaviour
 
                 // === Di chuyển chính (áp dụng SmoothDamp) ===
                 transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDirection * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
-                if(transform.position.y<0.1f)
+                if(transform.position.y<0.2f)
                 {
                     transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.up * 0.1f*50f*Time.deltaTime, ref moveVelocity2, smoothTime * Time.deltaTime);
 
                 }
-                
+                if (transform.position.y > 0.4f)
+                {
+                    transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * 0.1f * 50f * Time.deltaTime, ref moveVelocity3, smoothTime * Time.deltaTime);
+
+                }
                 //SmokeTrailEffect.SetActive(true);
                 // === Tính vận tốc ===
                 velocity = moveVelocity;

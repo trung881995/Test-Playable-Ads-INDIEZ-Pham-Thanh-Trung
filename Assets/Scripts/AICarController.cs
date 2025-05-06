@@ -33,6 +33,7 @@ public class AICarController : MonoBehaviour
     private Vector3 velocity=Vector3.zero;
     private Vector3 moveVelocity = Vector3.zero;
     private Vector3 moveVelocity2 = Vector3.zero;
+    private Vector3 moveVelocity3 = Vector3.zero;
     private float timeStopping = 0f;
 
     private float speedUpTime=0f;
@@ -130,12 +131,16 @@ public class AICarController : MonoBehaviour
             //var moveVelocity = Vector3.zero;
             transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDir * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
 
-            if (transform.position.y < 0.1f)
+            if (transform.position.y < 0.2f)
             {
                 transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.up * 0.1f * 50f * Time.deltaTime, ref moveVelocity2, smoothTime * Time.deltaTime);
 
             }
+            if (transform.position.y > 0.4f)
+            {
+                transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * 0.1f * 50f * Time.deltaTime, ref moveVelocity3, smoothTime * Time.deltaTime);
 
+            }
             //SmokeTrailEffect.SetActive(true);
             /*      
                     // === Kiểm tra qua checkpoint ===
