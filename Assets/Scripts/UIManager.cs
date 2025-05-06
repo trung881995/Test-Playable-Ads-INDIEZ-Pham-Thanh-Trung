@@ -109,24 +109,27 @@ public class UIManager : MonoBehaviour
     {
         
         GameManager.Instance.mapType = MapType.Summer;
-        GameManager.Instance.setupScene();
+       
+        
         Menu.SetActive(false);
         Scene.SetActive(true);
-        
+        GameManager.Instance.setupScene();
+
         cameraSequence.enabled = true;
     }
     public void onNextMapBtnClick()
     {
-        
+        GameManager.Instance.currentMapType = (int)GameManager.Instance.mapType;
         if (GameManager.Instance.currentMapType < 3)
             GameManager.Instance.currentMapType += 1;
         else
             GameManager.Instance.currentMapType = 1;
 
         GameManager.Instance.mapType = (MapType)GameManager.Instance.currentMapType;
-        GameManager.Instance.setupScene();
+        
         Menu.SetActive(false);
         Scene.SetActive(true);
+        GameManager.Instance.setupScene();
         cameraSequence.enabled = true;
     }
     public void startCountDownRoutine()
@@ -245,26 +248,26 @@ public class UIManager : MonoBehaviour
     }
     IEnumerator endGame()
     {
+        StopBarFill(false, 0f);
         //Ban phao hoa
         fireworkGroup.SetActive(true);
         yield return new WaitForSeconds(5f);
         fireworkGroup.SetActive(false);
-        playerCarController.transform.localPosition = Vector3.zero;
-        playerCarController.transform.localRotation = Quaternion.Euler(0,0,0);
+
+
+        cameraSequence.smoothFollowCamera.enabled = false;
+        cameraSequence.enabled = false;
         cameraSequence.gameObject.transform.localPosition = Vector3.zero;
         cameraSequence.gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
-        playerCarController.Arrow.localRotation = Quaternion.Euler(0, 0, 0);
-        for (int i = 0; i < GameManager.Instance.carAIArray.Length; i++)
-        {
-            GameManager.Instance.carAIArray[i].transform.localPosition = Vector3.zero;
-            GameManager.Instance.carAIArray[i].transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
+        
+       
         setupMenu();
         Menu.SetActive(true);
         Scene.SetActive(false);
-        StopBarFill(false,0f);
+        
         barFill.localScale = new Vector3(0f, 1f, 1f);
         currentLap = 0;
+        GameManager.Instance.isStartGame = false;
 
     }
     private void ShowRoundText(string message)

@@ -28,11 +28,12 @@ public class AICarController : MonoBehaviour
     private float timeStopping = 0f;
 
     private float speedUpTime=0f;
+    private float speedUpMoving;
 
     private int currentLap=0;
     private void OnEnable()
     {
-        setup();
+        //setup();
     }
     void Start()
     {
@@ -41,92 +42,94 @@ public class AICarController : MonoBehaviour
     }
 
     void Update()
+        
     {
-        if (speedUpTime > 0)
+        if(GameManager.Instance.isStartGame)
         {
-            speedUpTime -= Time.deltaTime;
-        }
-        else
-        {
-            moveSpeed = 7000f;
-            speedUpTime = 0;
-        }
+            if (speedUpTime > 0)
+            {
+                speedUpTime -= Time.deltaTime;
+            }
+            else
+            {
+                speedUpMoving= 0f;
+                speedUpTime = 0;
+            }
 
-        // === Tính vận tốc bằng tay ===
-        velocity = (transform.position - lastPosition) / Time.deltaTime;
-        lastPosition = transform.position;
+            // === Tính vận tốc bằng tay ===
+            velocity = (transform.position - lastPosition) / Time.deltaTime;
+            lastPosition = transform.position;
 
-        // === Phát hiện kẹt xe ===
-        if (velocity.magnitude < 1f)
-            timeStopping += Time.deltaTime;
-        else
-            timeStopping = 0f;
+            // === Phát hiện kẹt xe ===
+            if (velocity.magnitude < 1f)
+                timeStopping += Time.deltaTime;
+            else
+                timeStopping = 0f;
 
-        // === Lấy checkpoint tiếp theo ===
-        Transform target = checkpointManager.GetCheckpoint(currentCheckpointIndex);
-        if (target == null) return;
+            // === Lấy checkpoint tiếp theo ===
+            Transform target = checkpointManager.GetCheckpoint(currentCheckpointIndex);
+            if (target == null) return;
 
-        Vector3 targetDir = (target.position - transform.position).normalized;
-        float angleToTarget = Vector3.SignedAngle(transform.forward, targetDir, Vector3.up);
+            Vector3 targetDir = (target.position - transform.position).normalized;
+            float angleToTarget = Vector3.SignedAngle(transform.forward, targetDir, Vector3.up);
 
-        // === Quay mượt về hướng mục tiêu ===
-        float clampedTurn = Mathf.Clamp(angleToTarget, -turnSpeed * Time.deltaTime, turnSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.AngleAxis(clampedTurn, Vector3.up) * transform.rotation;
+            // === Quay mượt về hướng mục tiêu ===
+            float clampedTurn = Mathf.Clamp(angleToTarget, -turnSpeed * Time.deltaTime, turnSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.AngleAxis(clampedTurn, Vector3.up) * transform.rotation;
 
-        // === Xác định hướng di chuyển (lùi nếu kẹt) ===
-        Vector3 moveDir = (timeStopping >= 1.5f) ? -transform.forward : transform.forward;
-        float moveStep = moveSpeed * Time.deltaTime;
+            // === Xác định hướng di chuyển (lùi nếu kẹt) ===
+            Vector3 moveDir = (timeStopping >= 1.5f) ? -transform.forward : transform.forward;
+            float moveStep = (moveSpeed+speedUpMoving) * Time.deltaTime;
 
-        // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
-        if (Mathf.Abs(angleToTarget) > slowTurnThreshold && velocity.magnitude > 5f)
-        {
-            Vector3 driftOffset = transform.right * Mathf.Sign(angleToTarget) * driftIntensity;
-            transform.position += driftOffset * Time.deltaTime;
-            //Debug.Log(" Drift giả lập!");
-        }
+            // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
+            if (Mathf.Abs(angleToTarget) > slowTurnThreshold && velocity.magnitude > 5f)
+            {
+                Vector3 driftOffset = transform.right * Mathf.Sign(angleToTarget) * driftIntensity;
+                transform.position += driftOffset * Time.deltaTime;
+                //Debug.Log(" Drift giả lập!");
+            }
 
-        // === Di chuyển chính ===
-        //transform.position += moveDir * moveStep;
-        //var moveVelocity = Vector3.zero;
-        transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDir * moveStep, ref moveVelocity, smoothTime*Time.deltaTime );
-        if (transform.position.y > 0.03f)
-        {
-            transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * 0.03f * 50f * Time.deltaTime, ref moveVelocity2, smoothTime * Time.deltaTime);
-        }
-        /*      
-                // === Kiểm tra qua checkpoint ===
-                if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
-                {
-                    currentCheckpointIndex++;
-                    if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
-                        currentCheckpointIndex = 0;
-                }
-        */
-        // === Né vật cản bằng Raycast 3 hướng ===
-        RaycastHit hit;
-        Vector3[] directions = {
+            // === Di chuyển chính ===
+            //transform.position += moveDir * moveStep;
+            //var moveVelocity = Vector3.zero;
+            transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDir * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
+            
+            /*      
+                    // === Kiểm tra qua checkpoint ===
+                    if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
+                    {
+                        currentCheckpointIndex++;
+                        if (currentCheckpointIndex >= checkpointManager.TotalCheckpoints)
+                            currentCheckpointIndex = 0;
+                    }
+            */
+            // === Né vật cản bằng Raycast 3 hướng ===
+            RaycastHit hit;
+            Vector3[] directions = {
             transform.forward,
             Quaternion.AngleAxis(-30, Vector3.up) * transform.forward,
             Quaternion.AngleAxis(30, Vector3.up) * transform.forward
         };
 
-        foreach (var dir in directions)
-        {
-            if (Physics.Raycast(transform.position, dir, out hit, obstacleDetectionRange, obstacleLayers))
+            foreach (var dir in directions)
             {
-                Vector3 avoidDir = Vector3.Cross(Vector3.up, dir).normalized;
-                transform.position += avoidDir * avoidanceStrength * Time.deltaTime;
-                Debug.Log(" Né vật cản!");
-                break;
+                if (Physics.Raycast(transform.position, dir, out hit, obstacleDetectionRange, obstacleLayers))
+                {
+                    Vector3 avoidDir = Vector3.Cross(Vector3.up, dir).normalized;
+                    transform.position += avoidDir * avoidanceStrength * Time.deltaTime;
+                    Debug.Log(" Né vật cản!");
+                    break;
+                }
             }
-        }
 
-        // === Debug Raycast ===
-        Debug.DrawRay(transform.position, directions[0] * obstacleDetectionRange, Color.red);
-        Debug.DrawRay(transform.position, directions[1] * obstacleDetectionRange, Color.yellow);
-        Debug.DrawRay(transform.position, directions[2] * obstacleDetectionRange, Color.yellow);
+            // === Debug Raycast ===
+            Debug.DrawRay(transform.position, directions[0] * obstacleDetectionRange, Color.red);
+            Debug.DrawRay(transform.position, directions[1] * obstacleDetectionRange, Color.yellow);
+            Debug.DrawRay(transform.position, directions[2] * obstacleDetectionRange, Color.yellow);
+        }
+        
     }
-    private void setup()
+    public void setup()
     {
         currentCheckpointIndex = 0;
         velocity = Vector3.zero;
@@ -134,6 +137,8 @@ public class AICarController : MonoBehaviour
         timeStopping = 0f;
         speedUpTime = 0f;
         currentLap = 0;
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
         lastPosition = transform.position;
     }
     private void OnTriggerEnter(Collider other)
@@ -153,7 +158,7 @@ public class AICarController : MonoBehaviour
                     }
                     else
                     {
-                        this.enabled = false;
+                        //this.enabled = false;
                     }
 
                 }
@@ -175,15 +180,15 @@ public class AICarController : MonoBehaviour
         {
             case MapType.Summer:
                 speedUpTime = 5;
-                moveSpeed += 2500;
+                speedUpMoving= 5000;
                 break;
             case MapType.Rainy:
                 speedUpTime = 6;
-                moveSpeed += 3000;
+                speedUpMoving= 6000;
                 break;
             case MapType.Winter:
                 speedUpTime = 7;
-                moveSpeed += 3500;
+                speedUpMoving= 7000;
                 break;
         }
     }

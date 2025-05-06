@@ -38,7 +38,8 @@ public class GameManager : MonoBehaviour
     public PlayerCarController playerCarController;
     public GameObject[] carAIArray;
 
-    public bool isEndGame { set; get; } = false;
+    
+    public bool isStartGame { set; get; } = false;
 
     public int currentMapType { set; get; } = 0;
     private void Awake()
@@ -82,15 +83,23 @@ public class GameManager : MonoBehaviour
         }
         var index = UIManager.Instance.currentCarIndex;
         playerCarArray[index].SetActive(true);
+        playerCarController.setup();
     }
     public void setupCarAI(int _number)
     {
         for(int i=0;i<carAIArray.Length;i++)
         {
             if(i<_number)
+            {
                 carAIArray[i].SetActive(true);
+                carAIArray[i].GetComponent<AICarController>().setup();
+            }
+                
             else
+            {
                 carAIArray[i].SetActive(false);
+            }
+               
         }
     }
     private void setupSeason()
@@ -162,6 +171,8 @@ public class GameManager : MonoBehaviour
     }
     public void startGame()
     {
+        UIManager.Instance.StartBarFill();
+        /*
         for (int i = 0; i < carAIArray.Length; i++)
         {
             if(carAIArray[i].activeInHierarchy)
@@ -174,6 +185,8 @@ public class GameManager : MonoBehaviour
             }
         }
         playerCarController.enabled = true;
+        */
+        isStartGame = true;
     }
     
     

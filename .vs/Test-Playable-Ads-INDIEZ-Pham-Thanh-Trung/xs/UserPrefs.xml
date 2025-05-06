@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{3DAD8B3E-2A62-58CE-3511-9D5AA68ECDA6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerCarController.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerCarController.cs" Line="202" Column="27" />
-      <File FileName="Assets/Scripts/SimpleCameraMove.cs" Line="18" Column="28" />
+      <File FileName="Assets/Scripts/PlayerCarController.cs" Line="240" Column="53" />
+      <File FileName="Assets/Scripts/SimpleCameraMove.cs" Line="3" Column="24" />
       <File FileName="Assets/Scripts/CheckpointManager.cs" Line="7" Column="22" />
-      <File FileName="Assets/Scripts/AICarController.cs" Line="140" Column="27" />
-      <File FileName="Assets/Scripts/CameraSequence.cs" Line="65" Column="30" />
-      <File FileName="Assets/Scripts/UIManager.cs" Line="58" Column="31" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="106" Column="53" />
+      <File FileName="Assets/Scripts/AICarController.cs" Line="92" Column="40" />
+      <File FileName="Assets/Scripts/CameraSequence.cs" Line="18" Column="36" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="181" Column="44" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="43" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
