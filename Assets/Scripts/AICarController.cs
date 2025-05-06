@@ -58,12 +58,18 @@ public class AICarController : MonoBehaviour
             {
                 speedUpTime -= Time.deltaTime;
                 SpeedUpEffect.SetActive(true);
+                SmokeTrailEffect.SetActive(false);
             }
-            else
+            else if(speedUpTime<0)
             {
                 speedUpMoving= 0f;
                 speedUpTime = 0f;
+               
+            }
+            else
+            {
                 SpeedUpEffect.SetActive(false);
+                SmokeTrailEffect.SetActive(true);
             }
 
             // === Tính vận tốc bằng tay ===
@@ -130,7 +136,7 @@ public class AICarController : MonoBehaviour
 
             }
 
-            SmokeTrailEffect.SetActive(true);
+            //SmokeTrailEffect.SetActive(true);
             /*      
                     // === Kiểm tra qua checkpoint ===
                     if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
@@ -179,7 +185,7 @@ public class AICarController : MonoBehaviour
         transform.localRotation = Quaternion.Euler(0, 0, 0);
         lastPosition = transform.position;
 
-        SmokeTrailEffect.SetActive(false);
+        //SmokeTrailEffect.SetActive(false);
     }
 
     IEnumerator startEffect()

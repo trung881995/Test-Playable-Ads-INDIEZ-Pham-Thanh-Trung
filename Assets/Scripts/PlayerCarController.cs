@@ -65,7 +65,7 @@ public class PlayerCarController : MonoBehaviour
     {
         StartCoroutine(startEffect());
         //SpeedUpEffect.SetActive(false);
-        SmokeTrailEffect.SetActive(false);
+        //SmokeTrailEffect.SetActive(false);
         
         screenCenterX = Screen.width / 2f;
         
@@ -105,6 +105,7 @@ public class PlayerCarController : MonoBehaviour
             {
                 speedUpTime -= Time.deltaTime;
                 SpeedUpEffect.SetActive(true);
+                SmokeTrailEffect.SetActive(false);
                 
             }
             else if(speedUpTime<0f)
@@ -117,7 +118,12 @@ public class PlayerCarController : MonoBehaviour
 
                 speedUpMoving = 0f;
                 speedUpTime = 0;
+                
+            }
+            else
+            {
                 SpeedUpEffect.SetActive(false);
+                SmokeTrailEffect.SetActive(true);
             }
             HandleInput();
 
@@ -196,7 +202,7 @@ public class PlayerCarController : MonoBehaviour
 
                 }
                 
-                SmokeTrailEffect.SetActive(true);
+                //SmokeTrailEffect.SetActive(true);
                 // === Tính vận tốc ===
                 velocity = moveVelocity;
                 //lastPosition = transform.position;
