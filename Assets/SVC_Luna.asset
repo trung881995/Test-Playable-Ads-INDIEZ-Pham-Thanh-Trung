@@ -43,20 +43,6 @@ MonoBehaviour:
     upToDate: 0
     keywords: []
   - shaderCompilerPlatform: 5
-    shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords: []
-  - shaderCompilerPlatform: 9
-    shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords: []
-  - shaderCompilerPlatform: 5
     shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
     passType: 0
     passId: 0
@@ -86,6 +72,20 @@ MonoBehaviour:
     upToDate: 0
     keywords:
     - PIXELSNAP_ON
+  - shaderCompilerPlatform: 5
+    shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords: []
+  - shaderCompilerPlatform: 9
+    shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords: []
   - shaderCompilerPlatform: 5
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
     passType: 4
@@ -3386,20 +3386,6 @@ MonoBehaviour:
     upToDate: 0
     keywords: []
   - shaderCompilerPlatform: 5
-    shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords: []
-  - shaderCompilerPlatform: 9
-    shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords: []
-  - shaderCompilerPlatform: 5
     shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
     passType: 0
     passId: 0
@@ -3422,6 +3408,20 @@ MonoBehaviour:
     keywords: []
   - shaderCompilerPlatform: 9
     shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords: []
+  - shaderCompilerPlatform: 5
+    shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords: []
+  - shaderCompilerPlatform: 9
+    shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
     passType: 0
     passId: 0
     subShaderIndex: 0
@@ -3447,7 +3447,7 @@ MonoBehaviour:
     - LIGHTPROBE_SH
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 424
+  version: 147
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0

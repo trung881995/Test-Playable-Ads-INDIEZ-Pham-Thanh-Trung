@@ -2401,7 +2401,7 @@ Deserializers.productName = "INDIEZ";
 
 Deserializers.lunaInitializationTime = "04/29/2025 09:21:16";
 
-Deserializers.lunaDaysRunning = "6.2";
+Deserializers.lunaDaysRunning = "6.5";
 
 Deserializers.lunaVersion = "6.3.0";
 
@@ -2433,7 +2433,7 @@ Deserializers.isRuntimeAnalysisEnabledForCode = "False";
 
 Deserializers.runtimeAnalysisExcludedClassesCount = "1877";
 
-Deserializers.runtimeAnalysisExcludedMethodsCount = "4304";
+Deserializers.runtimeAnalysisExcludedMethodsCount = "4305";
 
 Deserializers.runtimeAnalysisExcludedModules = "physics2d, prefabs, mecanim-wasm";
 
@@ -2447,7 +2447,7 @@ Deserializers.isLunaCompilerV2Used = "False";
 
 Deserializers.companyName = "DefaultCompany";
 
-Deserializers.buildPlatform = "Android";
+Deserializers.buildPlatform = "StandaloneOSX";
 
 Deserializers.applicationIdentifier = "com.DefaultCompany.INDIEZ";
 
@@ -2457,7 +2457,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "dd5029a7-1864-480e-9870-bb18934c16b5";
+Deserializers.buildID = "f477450f-3ed8-4e19-8c3a-e004c40c903a";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["Cinemachine","CinemachineCore","InitializeModule"],["Cinemachine","CinemachineStoryboard","InitializeModule"],["Cinemachine","CinemachineImpulseManager","InitializeModule"],["Cinemachine","UpdateTracker","InitializeModule"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[],[],[]];
 
