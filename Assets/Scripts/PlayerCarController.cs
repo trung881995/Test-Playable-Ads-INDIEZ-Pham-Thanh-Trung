@@ -150,20 +150,25 @@ public class PlayerCarController : MonoBehaviour
                     {
                         if(!RightDriftEffect.activeInHierarchy)
                         {
-                            StartCoroutine(rightDriftEffect());
+                            rightDriftEffect();
                         }
                     }
                     else if(turnAmount<0)
                     {
                         if(!LeftDriftEffect.activeInHierarchy)
                         {
-                            StartCoroutine(leftDriftEffect());
+                            leftDriftEffect();
                         }
                     }
                     
                     Vector3 driftOffset = transform.right * Mathf.Sign(turnAmount) * driftIntensity;
                     transform.position += driftOffset * Time.deltaTime;
                     Debug.Log("Drift giả lập!");
+                }
+                else
+                {
+                    RightDriftEffect.SetActive(false);
+                    LeftDriftEffect.SetActive(false);
                 }
 
                 // === Di chuyển chính (áp dụng SmoothDamp) ===
@@ -231,22 +236,22 @@ public class PlayerCarController : MonoBehaviour
         IdleEngineEffect.SetActive(true);
         yield return new WaitForSeconds(0.3f);
         SmokeStartupEffect.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        SmokeStartupEffect.SetActive(false);
     }
 
-    IEnumerator rightDriftEffect()
+    private void rightDriftEffect()
     {
         RightDriftEffect.SetActive(true);
         //LeftDriftEffect.SetActive(false);
-        yield return new WaitForSeconds(1f);
-        RightDriftEffect.SetActive(false);
+        
 
     }
-    IEnumerator leftDriftEffect()
+    private void leftDriftEffect()
     {
         LeftDriftEffect.SetActive(true);
         //LeftDriftEffect.SetActive(false);
-        yield return new WaitForSeconds(1f);
-       LeftDriftEffect.SetActive(false);
+       
     }
     // ==== CHỈNH HƯỚNG KHI VA CHẠM ====
     private void OnCollisionEnter(Collision collision)
@@ -285,8 +290,8 @@ public class PlayerCarController : MonoBehaviour
                     else
                     {
 
-                        
-                        //this.enabled = false;
+
+                        IdleEngineEffect.SetActive(false);
                         UIManager.Instance.OnLapCompleted();
                     }
                 }

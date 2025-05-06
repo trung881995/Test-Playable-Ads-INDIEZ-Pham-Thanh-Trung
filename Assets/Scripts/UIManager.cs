@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject fireworkGroup;
-    public GameObject fireworkStart;
+    
 
     public GameObject[] Cars;
     public GameObject Menu;
@@ -174,15 +173,12 @@ public class UIManager : MonoBehaviour
         countdownText.gameObject.SetActive(false);
         Debug.Log("Race Start!");
 
-        //Ban phao hoa bat dau
-        fireworkStart.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        
         // Gọi sự kiện bắt đầu game ở đây
 
 
         GameManager.Instance.startGame();
-        yield return new WaitForSeconds(1.5f);
-        fireworkStart.SetActive(false);
+        
     }
     public void StartBarFill()
     {
@@ -243,31 +239,31 @@ public class UIManager : MonoBehaviour
         {
             ShowRoundText("FINISH!");
 
-            StartCoroutine(endGame());
+            endGame();
         }
     }
-    IEnumerator endGame()
+    private void endGame()
     {
+        GameManager.Instance.isStartGame = false;
         StopBarFill(false, 0f);
-        //Ban phao hoa
-        fireworkGroup.SetActive(true);
-        yield return new WaitForSeconds(5f);
-        fireworkGroup.SetActive(false);
+        
+       
 
 
         cameraSequence.smoothFollowCamera.enabled = false;
         cameraSequence.enabled = false;
-        cameraSequence.gameObject.transform.localPosition = Vector3.zero;
-        cameraSequence.gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
         
-       
+        cameraSequence.gameObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        cameraSequence.gameObject.transform.localPosition = Vector3.zero;
+
+
         setupMenu();
         Menu.SetActive(true);
         Scene.SetActive(false);
         
         barFill.localScale = new Vector3(0f, 1f, 1f);
         currentLap = 0;
-        GameManager.Instance.isStartGame = false;
+        
 
     }
     private void ShowRoundText(string message)

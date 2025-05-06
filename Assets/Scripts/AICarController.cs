@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class AICarController : MonoBehaviour
@@ -20,6 +21,13 @@ public class AICarController : MonoBehaviour
 
     public CheckpointManager checkpointManager;
     private int currentCheckpointIndex = 0;
+
+    public GameObject SpeedUpEffect;
+    public GameObject SmokeTrailEffect;
+    public GameObject SmokeStartupEffect;
+    public GameObject IdleEngineEffect;
+    public GameObject RightDriftEffect;
+    public GameObject LeftDriftEffect;
 
     private Vector3 lastPosition;
     private Vector3 velocity=Vector3.zero;
@@ -49,11 +57,13 @@ public class AICarController : MonoBehaviour
             if (speedUpTime > 0)
             {
                 speedUpTime -= Time.deltaTime;
+                SpeedUpEffect.SetActive(true);
             }
             else
             {
                 speedUpMoving= 0f;
-                speedUpTime = 0;
+                speedUpTime = 0f;
+                SpeedUpEffect.SetActive(false);
             }
 
             // === Tính vận tốc bằng tay ===
@@ -84,16 +94,36 @@ public class AICarController : MonoBehaviour
             // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
             if (Mathf.Abs(angleToTarget) > slowTurnThreshold && velocity.magnitude > 5f)
             {
+                if (angleToTarget > 0)
+                {
+                    if (!RightDriftEffect.activeInHierarchy)
+                    {
+                        rightDriftEffect();
+                    }
+                }
+                else if (angleToTarget < 0)
+                {
+                    if (!LeftDriftEffect.activeInHierarchy)
+                    {
+                        leftDriftEffect();
+                    }
+                }
+
                 Vector3 driftOffset = transform.right * Mathf.Sign(angleToTarget) * driftIntensity;
                 transform.position += driftOffset * Time.deltaTime;
                 //Debug.Log(" Drift giả lập!");
+            }
+            else
+            {
+                RightDriftEffect.SetActive(false);
+                LeftDriftEffect.SetActive(false);
             }
 
             // === Di chuyển chính ===
             //transform.position += moveDir * moveStep;
             //var moveVelocity = Vector3.zero;
             transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDir * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
-            
+            SmokeTrailEffect.SetActive(true);
             /*      
                     // === Kiểm tra qua checkpoint ===
                     if (Vector3.Distance(transform.position, target.position) < checkpointRadius)
@@ -131,6 +161,7 @@ public class AICarController : MonoBehaviour
     }
     public void setup()
     {
+        StartCoroutine(startEffect());
         currentCheckpointIndex = 0;
         velocity = Vector3.zero;
         moveVelocity = Vector3.zero;
@@ -140,7 +171,37 @@ public class AICarController : MonoBehaviour
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(0, 0, 0);
         lastPosition = transform.position;
+
+        SmokeTrailEffect.SetActive(false);
     }
+
+    IEnumerator startEffect()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        IdleEngineEffect.SetActive(true);
+        yield return new WaitForSeconds(0.3f);
+        SmokeStartupEffect.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        SmokeStartupEffect.SetActive(false);
+    }
+
+    private void rightDriftEffect()
+    {
+        RightDriftEffect.SetActive(true);
+        //LeftDriftEffect.SetActive(false);
+        
+      
+
+    }
+    private void leftDriftEffect()
+    {
+        LeftDriftEffect.SetActive(true);
+        //LeftDriftEffect.SetActive(false);
+        
+       
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.layer==8)
@@ -158,7 +219,7 @@ public class AICarController : MonoBehaviour
                     }
                     else
                     {
-                        //this.enabled = false;
+                        IdleEngineEffect.SetActive(false);
                     }
 
                 }
