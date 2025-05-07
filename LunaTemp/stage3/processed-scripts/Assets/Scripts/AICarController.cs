@@ -122,7 +122,7 @@ public class AICarController : MonoBehaviour
 
                 Vector3 driftOffset = transform.right * Mathf.Sign(turnAmount) * driftIntensity;
                 transform.position += driftOffset * Time.deltaTime;
-                //Debug.Log(" Drift giả lập!");
+                Debug.Log(" Drift giả lập!");
             }
             else
             {

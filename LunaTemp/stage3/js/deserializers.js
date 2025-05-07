@@ -2425,7 +2425,7 @@ Deserializers.productName = "INDIEZ";
 
 Deserializers.lunaInitializationTime = "04/29/2025 09:21:16";
 
-Deserializers.lunaDaysRunning = "7.9";
+Deserializers.lunaDaysRunning = "8.0";
 
 Deserializers.lunaVersion = "6.3.0";
 
@@ -2481,7 +2481,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "d3e6f484-d3aa-4737-a7e7-04c1d1fd97b3";
+Deserializers.buildID = "e54de19e-d8d6-4659-ad9d-6ddb1b6de40c";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["Cinemachine","CinemachineCore","InitializeModule"],["Cinemachine","CinemachineStoryboard","InitializeModule"],["Cinemachine","CinemachineImpulseManager","InitializeModule"],["Cinemachine","UpdateTracker","InitializeModule"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[],[],[]];
 

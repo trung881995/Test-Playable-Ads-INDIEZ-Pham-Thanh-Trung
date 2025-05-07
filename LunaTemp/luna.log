@@ -4,9 +4,9 @@ Exporting assets from Unity.............................................
 [ Stage1 ] Assets exported from Unity and staged for further processing
 Using /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[26042] font
   Using alphabet  ??1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./??!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+[ error ] $Failed to locate TTF file for the font named LegacyRuntime ??? falling back to Arial substitute.
 Using /System/Library/Fonts/Supplemental/Arial.ttf file to generate an atlas for LegacyRuntime[516] font
   Using alphabet  ??1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./??!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
-[ error ] $Failed to locate TTF file for the font named LegacyRuntime ??? falling back to Arial substitute.
 Combined 97 glyphs into bitmap texture at /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/LunaTemp/stage1/tmp/fonts/LiberationSans-26042/output_0.png (56kb)
 Combined 97 glyphs into bitmap texture at /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/LunaTemp/stage1/tmp/fonts/LegacyRuntime-516/output_0.png (58kb)
 Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
@@ -19,7 +19,7 @@ Microsoft (R) Build Engine version 16.10.1 for Mono
 Copyright (C) Microsoft Corporation. All rights reserved.
 
 
-Build started 07/05/2025 12:56:35 CH.
+Build started 07/05/2025 3:19:54 CH.
 
 Project "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj" on node 1 (Rebuild target(s)).
 
@@ -40,6 +40,7 @@ CoreClean:
   Deleting file "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Newtonsoft.Json.dll".
 
   Deleting file "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.Core.dll".
+
   Deleting file "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.dom.dll".
 
   Deleting file "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.es5.dll".
@@ -96,24 +97,26 @@ CoreCompile:
 /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/LunaTemp/stage3/processed-scripts/Assets/Scripts/GameManager.cs(26,27): warning CS0414: The field 'GameManager.playerCarType' is assigned but its value is never used [/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
 
 _CopyFilesMarkedCopyLocal:
+  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/com.unity.cinemachine/2.4.0/Cinemachine.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Cinemachine.dll".
+
+  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Bridge.Core.17.9.42-luna/lib/net40/Bridge.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.dll".
+
+  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Bridge.Newtonsoft.Json.1.16.0/lib/net40/Newtonsoft.Json.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Newtonsoft.Json.dll".
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Bridge.Html5.17.9.0/lib/net40/Bridge.Html5.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.Html5.dll".
 
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/DOTween.1.2.705/lib/net40/DOTween.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/DOTween.dll".
 
-  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Bridge.Core.17.9.42-luna/lib/net40/Bridge.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.dll".
-  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Bridge.Newtonsoft.Json.1.16.0/lib/net40/Newtonsoft.Json.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Newtonsoft.Json.dll".
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Bridge.WebGL.1.22.0/lib/net40/Bridge.WebGL.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.WebGL.dll".
-  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/com.unity.cinemachine/2.4.0/Cinemachine.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Cinemachine.dll".
 
-  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/Vendor/UnityEngine.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.dll".
-
-  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.es5.2.8.6733/lib/net40/Retyped.es5.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.es5.dll".
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.Core.1.6.6733/lib/net40/Retyped.Core.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.Core.dll".
+
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.dom.2.8.6733/lib/net40/Retyped.dom.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.dom.dll".
 
-  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.scripthost.2.8.6733/lib/net40/Retyped.scripthost.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.scripthost.dll".
+  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.es5.2.8.6733/lib/net40/Retyped.es5.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.es5.dll".
 
+  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.scripthost.2.8.6733/lib/net40/Retyped.scripthost.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.scripthost.dll".
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/com.unity.textmeshpro/3.0.6/TextMeshPro.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/TextMeshPro.dll".
+  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/Vendor/UnityEngine.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.dll".
 
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/com.unity.ui/1.2.1/UnityEngine.UI.dll" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.UI.dll".
 
@@ -131,9 +134,8 @@ _CopyFilesMarkedCopyLocal:
 
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.dom.2.8.6733/lib/net40/Retyped.dom.xml" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.dom.xml".
 
-  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.scripthost.2.8.6733/lib/net40/Retyped.scripthost.xml" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.scripthost.xml".
-
   Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.es5.2.8.6733/lib/net40/Retyped.es5.xml" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.es5.xml".
+  Copying file from "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/packages/Retyped.scripthost.2.8.6733/lib/net40/Retyped.scripthost.xml" to "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.scripthost.xml".
 
   Creating "/Users/phamthanhtrung/Downloads/6/pipeline/templates/LunaCompiler/Scripts/obj/Debug/Scripts.csproj.CopyComplete" because "AlwaysCreate" was specified.
 
@@ -177,7 +179,7 @@ Build succeeded.
 
 
 
-Time Elapsed 00:00:24.03
+Time Elapsed 00:00:20.90
 
 Source code compiled successfully!
 PHC: LP error code not found in JSON: 3015, JSON file might be outdated. Error message: Sequence contains no matching element
@@ -186,5 +188,5 @@ Diagnostics gathered successfully
 [ Stage3 ] Code compiled and bundled successfully.
 [ Stage4 ] Target platform: playground
 [ Stage4 ] Package bundled successfully
-navigateto:https://assets-lunalabs-io.s3-accelerate.amazonaws.com/uploads%2Fdirect%2F041d5a37e74e17b0b90dc3cca6ce559e%2F_build.zip
+navigateto:https://assets-lunalabs-io.s3-accelerate.amazonaws.com/uploads%2Fdirect%2Fd513a65bfd647df923ce827aad8b0516%2F_build.zip
 [ Stage4 ] Package uploaded successfully

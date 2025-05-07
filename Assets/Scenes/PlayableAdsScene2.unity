@@ -531,7 +531,7 @@ MonoBehaviour:
   moveSpeed: 6000
   maxSpeed: 100
   smoothTime: 100
-  turnSpeed: 10
+  turnSpeed: 3
   checkpointRadius: 10
   slowTurnThreshold: 60
   driftIntensity: 0.5
@@ -556,8 +556,8 @@ Rigidbody:
   m_GameObject: {fileID: 43493288}
   serializedVersion: 4
   m_Mass: 700
-  m_Drag: 3
-  m_AngularDrag: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -569,7 +569,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 126
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   moveSpeed: 5000
   maxSpeed: 100
   smoothTime: 100
-  turnSpeed: 10
+  turnSpeed: 3
   checkpointRadius: 10
   slowTurnThreshold: 60
   driftIntensity: 0.5
@@ -2466,8 +2466,8 @@ Rigidbody:
   m_GameObject: {fileID: 152616226}
   serializedVersion: 4
   m_Mass: 700
-  m_Drag: 3
-  m_AngularDrag: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2479,7 +2479,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 126
@@ -2724,7 +2724,7 @@ MonoBehaviour:
   moveSpeed: 6500
   maxSpeed: 100
   smoothTime: 100
-  turnSpeed: 10
+  turnSpeed: 3
   checkpointRadius: 10
   slowTurnThreshold: 60
   driftIntensity: 0.5
@@ -2749,8 +2749,8 @@ Rigidbody:
   m_GameObject: {fileID: 182493895}
   serializedVersion: 4
   m_Mass: 700
-  m_Drag: 3
-  m_AngularDrag: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2762,7 +2762,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 126
@@ -14041,7 +14041,7 @@ MonoBehaviour:
   smoothTime: 100
   maxSpeed: 100
   turnSpeed: 10
-  maxTurnAngle: 30
+  maxTurnAngle: 15
   slowTurnThreshold: 60
   driftIntensity: 0.5
   checkpointManager: {fileID: 511203117}
@@ -14067,8 +14067,8 @@ Rigidbody:
   m_GameObject: {fileID: 1261677031}
   serializedVersion: 4
   m_Mass: 700
-  m_Drag: 3
-  m_AngularDrag: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -14080,7 +14080,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 126
@@ -16096,7 +16096,7 @@ MonoBehaviour:
   moveSpeed: 4500
   maxSpeed: 100
   smoothTime: 100
-  turnSpeed: 10
+  turnSpeed: 3
   checkpointRadius: 10
   slowTurnThreshold: 60
   driftIntensity: 0.5
@@ -16121,8 +16121,8 @@ Rigidbody:
   m_GameObject: {fileID: 1475059027}
   serializedVersion: 4
   m_Mass: 700
-  m_Drag: 3
-  m_AngularDrag: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -16134,7 +16134,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 126
@@ -19105,8 +19105,8 @@ Rigidbody:
   m_GameObject: {fileID: 1837815679}
   serializedVersion: 4
   m_Mass: 700
-  m_Drag: 3
-  m_AngularDrag: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -19118,7 +19118,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 126
@@ -19138,7 +19138,7 @@ MonoBehaviour:
   moveSpeed: 5500
   maxSpeed: 100
   smoothTime: 100
-  turnSpeed: 10
+  turnSpeed: 3
   checkpointRadius: 10
   slowTurnThreshold: 60
   driftIntensity: 0.5

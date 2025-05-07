@@ -258,7 +258,7 @@ public class PlayerCarController : MonoBehaviour
         audioSource.clip = DrivingSound;
         audioSource.Play();
         audioSource.loop = true;
-        yield return new WaitForSeconds(0.3f);
+        
         SmokeStartupEffect.SetActive(true);
         yield return new WaitForSeconds(4f);
         SmokeStartupEffect.SetActive(false);
