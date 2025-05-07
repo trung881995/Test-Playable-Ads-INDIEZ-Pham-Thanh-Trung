@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6000
+  moveSpeed: 5000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 3
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5000
+  moveSpeed: 4000
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 3
@@ -2721,7 +2721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6500
+  moveSpeed: 5500
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 3
@@ -3614,7 +3614,7 @@ Transform:
   m_GameObject: {fileID: 279335882}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5704,7 +5704,7 @@ Transform:
   m_GameObject: {fileID: 484526078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8116,7 +8116,7 @@ Transform:
   m_GameObject: {fileID: 732715247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8674,7 +8674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4156788069713998331, guid: f57e9783d163b3649aea1e2a13b1be78, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4156788069713998331, guid: f57e9783d163b3649aea1e2a13b1be78, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9605,7 +9605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4254303941204894526, guid: 3a4aa5645123f8749901d59d6a084884, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4254303941204894526, guid: 3a4aa5645123f8749901d59d6a084884, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10706,7 +10706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 372867961186118659, guid: cf72300b5ee7a3a44bbb8c89cbac4208, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 372867961186118659, guid: cf72300b5ee7a3a44bbb8c89cbac4208, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11939,7 +11939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1153441825593237675, guid: c5d720f01583682468089f22f198119b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1153441825593237675, guid: c5d720f01583682468089f22f198119b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14037,11 +14037,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7faed73822e64745ad59405d2082bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6000
+  moveSpeed: 5000
   smoothTime: 100
   maxSpeed: 100
-  turnSpeed: 10
-  maxTurnAngle: 15
+  turnSpeed: 1
+  maxTurnAngle: 60
   slowTurnThreshold: 60
   driftIntensity: 0.5
   checkpointManager: {fileID: 511203117}
@@ -16093,7 +16093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4500
+  moveSpeed: 3500
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 3
@@ -19135,7 +19135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f125ea0fd480498283605452ad15d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5500
+  moveSpeed: 4500
   maxSpeed: 100
   smoothTime: 100
   turnSpeed: 3
@@ -19695,7 +19695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8299497026897874929, guid: 1e942fb63e2f56e42a8c63d16074f905, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8299497026897874929, guid: 1e942fb63e2f56e42a8c63d16074f905, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20869,7 +20869,7 @@ Transform:
   m_GameObject: {fileID: 2035599825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -62.2, y: 0.3, z: 7}
+  m_LocalPosition: {x: -55.5, y: 0.3, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -255,7 +255,7 @@ public class PlayerCarController : MonoBehaviour
         
         IdleEngineEffect.SetActive(true);
         audioSource.Stop();
-        audioSource.clip = DrivingSound;
+        audioSource.clip = IdleEngineSound;
         audioSource.Play();
         audioSource.loop = true;
         
@@ -377,14 +377,14 @@ public class PlayerCarController : MonoBehaviour
         if (isDragging)
         {
             float delta = Input.mousePosition.x - screenCenterX;
-            float percent = Mathf.Clamp(-delta / screenCenterX, -1f, 1f);
+            float percent = Mathf.Clamp(-delta , -1f, 1f);
             targetTurn = percent * maxTurnAngle;
         }
 #else
         if (Input.touchCount > 0)
         {
             float delta = Input.GetTouch(0).position.x - screenCenterX;
-            float percent = Mathf.Clamp(-delta / screenCenterX, -1f, 1f);
+            float percent = Mathf.Clamp(-delta , -1f, 1f);
             targetTurn = percent * maxTurnAngle;
         }
 #endif
