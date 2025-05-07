@@ -1,0 +1,712 @@
+Unity Editor version:    2022.3.61f1 (6c53ebaf375d)
+Branch:                  2022.3/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.3.2 (Build 24D81)
+Darwin version:          24.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+56271
+Successfully changed project path to: /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
+/Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8419870784]  Target information:
+
+Player connection [8419870784]  * "[IP] 192.168.2.18 [Port] 0 [Flags] 2 [Guid] 3600371979 [EditorId] 3600371979 [Version] 1048832 [Id] OSXEditor(0,192.168.2.18) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8419870784] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8419870784] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 14.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.61f1 (6c53ebaf375d)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 (high power)
+Metal devices available: 1
+0: Apple M2 (high power)
+Using device Apple M2 (high power)
+Initializing Metal device caps: Apple M2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56098
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.61f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006247 seconds.
+- Loaded All Assemblies, in  0.275 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+2025-05-07 12:47:41.973 Unity[75098:19038492] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 245 ms
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.484 seconds
+Domain Reload Profiling: 759ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (105ms)
+		LoadAssemblies (107ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (102ms)
+			TypeCache.Refresh (101ms)
+				TypeCache.ScanAssembly (91ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (484ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (454ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (364ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (62ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.451 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-07 12:47:43.570 Unity[75098:19038492] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.594 seconds
+Domain Reload Profiling: 1042ms
+	BeginReloadAssembly (80ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (315ms)
+		LoadAssemblies (210ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (129ms)
+				TypeCache.ScanAssembly (108ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (595ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (483ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (406ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.61f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3327 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (123.2 KB). Loaded Objects now: 3835.
+Memory consumption went from 141.9 MB to 141.7 MB.
+Total: 3.519625 ms (FindLiveObjects: 0.133375 ms CreateObjectMapping: 0.054959 ms MarkObjects: 3.170834 ms  DeleteObjects: 0.159959 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 935832.831530 seconds.
+  path: Assets/SVC_Luna.asset
+  artifactKey: Guid(0e5b5ff43062e4a90b7a93b8b7ca8d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SVC_Luna.asset using Guid(0e5b5ff43062e4a90b7a93b8b7ca8d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a94e3e0af8cf3842ccc2567af05da9bc') in 0.005542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/SnowFlakeParticle.mat
+  artifactKey: Guid(0bd244d5bef83444791fc87897c2502a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SnowFlakeParticle.mat using Guid(0bd244d5bef83444791fc87897c2502a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7081219f15373916835b3401bfc5d8b5') in 0.167376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ArrowMaterial.mat
+  artifactKey: Guid(7e35bed1083434cccafae0a9f82bb72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArrowMaterial.mat using Guid(7e35bed1083434cccafae0a9f82bb72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9dbdc2ff66d7ca265477f4bbfc4e467c') in 0.069817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.743887 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_1000_RPM_Rear_Exterior_Loop.wav
+  artifactKey: Guid(3c1c130f6e1be75418d305f8e478e0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_1000_RPM_Rear_Exterior_Loop.wav using Guid(3c1c130f6e1be75418d305f8e478e0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b410d8f1f92412227e21258c2bd99e6a') in 0.036662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_2000_RPM_Rear_Exterior_Loop.wav
+  artifactKey: Guid(bb4547b12a2dc5544bc90a0d6cfed265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_2000_RPM_Rear_Exterior_Loop.wav using Guid(bb4547b12a2dc5544bc90a0d6cfed265) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6b392296a3c0ef3cf8feeb243b84d9a9') in 0.010059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Interior_Loop_01.wav
+  artifactKey: Guid(880154ee893c42e4bb927527285c107d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Interior_Loop_01.wav using Guid(880154ee893c42e4bb927527285c107d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2b6aac7b6cf2f1e7a5849f5c5049e29c') in 0.014857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Interior_Loop_02.wav
+  artifactKey: Guid(06ad1481583af784ea25643fd04c15bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Interior_Loop_02.wav using Guid(06ad1481583af784ea25643fd04c15bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8e911d07385de6c2b0c659dea78efa34') in 0.014474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Exterior_Loop_02.wav
+  artifactKey: Guid(595e65a4e00c2f14caec4adb74d0deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Engine/Vehicle_Car_Engine_Idle_Exterior_Loop_02.wav using Guid(595e65a4e00c2f14caec4adb74d0deea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '26d46ef0b2747e3e274fb2cbb15326c2') in 0.011178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.763941 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Wiper/Vehicle_Car_Wiper_Exterior_Solo.wav
+  artifactKey: Guid(f7bfa8a45a40cca428e1764a1a7c27a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Wiper/Vehicle_Car_Wiper_Exterior_Solo.wav using Guid(f7bfa8a45a40cca428e1764a1a7c27a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '49c9cb8033162818036757e14ea9dbf9') in 0.011222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Wiper/Vehicle_Car_Wiper_Interior_Solo.wav
+  artifactKey: Guid(ad76f18291db01c45ab7ffc9fbe0b3d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Wiper/Vehicle_Car_Wiper_Interior_Solo.wav using Guid(ad76f18291db01c45ab7ffc9fbe0b3d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e3e09d70055bd73dbf08e1ae2a6acc7c') in 0.007519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 31.537125 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Warning/Vehicle_Car_Warning_Interior_Loop_02.wav
+  artifactKey: Guid(c35610a4b59635f4a90e0c62d6891645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Warning/Vehicle_Car_Warning_Interior_Loop_02.wav using Guid(c35610a4b59635f4a90e0c62d6891645) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '80e74f390902b01bbf25c8cd78705ed4') in 0.019018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 70.992063 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Buttons/Vehicle_Car_Button_02.wav
+  artifactKey: Guid(56d1669bab87b7845942de66f4197b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Buttons/Vehicle_Car_Button_02.wav using Guid(56d1669bab87b7845942de66f4197b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '531373c2fe17c67a14458b06369185c0') in 0.010454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Buttons/Vehicle_Car_Button_04.wav
+  artifactKey: Guid(ef3be14e921ddb842865f8e374780ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Buttons/Vehicle_Car_Button_04.wav using Guid(ef3be14e921ddb842865f8e374780ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a5bdc3dc2fb8e8c6f328208407ad5dbe') in 0.004439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Buttons/Vehicle_Car_Button_Movement_01.wav
+  artifactKey: Guid(1a9c6ff48f0df53448795c71eb0fb84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Buttons/Vehicle_Car_Button_Movement_01.wav using Guid(1a9c6ff48f0df53448795c71eb0fb84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cd22528db978d625dad4cb984d4422df') in 0.004604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.523161 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Trunk/Vehicle_Car_Trunk_Close_Impact.wav
+  artifactKey: Guid(adbaafa124d405c47ae5ba367841c7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Trunk/Vehicle_Car_Trunk_Close_Impact.wav using Guid(adbaafa124d405c47ae5ba367841c7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '97f20f938a8663dcd827d65b0eea98e4') in 0.009491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Trunk/Vehicle_Car_Trunk_Open_Button.wav
+  artifactKey: Guid(d56086d724212f848855742cb939b4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Trunk/Vehicle_Car_Trunk_Open_Button.wav using Guid(d56086d724212f848855742cb939b4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '72d498da171a23a89e9ba6ee9ff2dd66') in 0.012905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.038741 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Horns/Vehicle_Car_Horn_Interior.wav
+  artifactKey: Guid(2577710ba2fedff49afe28b2b3710e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Horns/Vehicle_Car_Horn_Interior.wav using Guid(2577710ba2fedff49afe28b2b3710e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3cdfa918a2853636f9fd856ce338def6') in 0.009193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.938072 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Handbrake/Vehicle_Car_HandBrake_02.wav
+  artifactKey: Guid(f2ba6894f2652db4884735101461a6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Handbrake/Vehicle_Car_HandBrake_02.wav using Guid(f2ba6894f2652db4884735101461a6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b9f1837b5cb3b877a821ca1453759090') in 0.010611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Handbrake/Vehicle_Car_HandBrake_03.wav
+  artifactKey: Guid(26699ec4fec337549a874a9e8e6cac48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Handbrake/Vehicle_Car_HandBrake_03.wav using Guid(26699ec4fec337549a874a9e8e6cac48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'da07de083b045fa30b1625ad41f7b8f8') in 0.008738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.581602 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Glove_Box/Vehicle_Car_GloveBox_Interior_02.wav
+  artifactKey: Guid(c932023a65398934db95f3521d8f00ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Glove_Box/Vehicle_Car_GloveBox_Interior_02.wav using Guid(c932023a65398934db95f3521d8f00ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2a5eb2fd26bb5f2da9702bc982260607') in 0.008824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Glove_Box/Vehicle_Car_GloveBox_Interior_03.wav
+  artifactKey: Guid(af924aa249784ad40867056ef926c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Glove_Box/Vehicle_Car_GloveBox_Interior_03.wav using Guid(af924aa249784ad40867056ef926c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '43507810c5958fd5463525dd58d60820') in 0.005490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.895644 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Exterior_Short_Loop.wav
+  artifactKey: Guid(fcf7d281354eb6340bf006a9528281e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Exterior_Short_Loop.wav using Guid(fcf7d281354eb6340bf006a9528281e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '49eb6c70a8257bdd9fb5421599445e9d') in 0.015942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Interior_Loop_02.wav
+  artifactKey: Guid(32fa4aee1f1a82942a97c4b48e887fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Interior_Loop_02.wav using Guid(32fa4aee1f1a82942a97c4b48e887fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '660810d45b599152b6af54477f4fd82d') in 0.059639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Interior_Loop_04.wav
+  artifactKey: Guid(594c96bc024374641bdf1660a2622236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vehicle_Essentials/Vehicle_Car/Vehicle_Car_Drive/Vehicle_Car_Drive_Interior_Loop_04.wav using Guid(594c96bc024374641bdf1660a2622236) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1590f008ee28430b950add1e25b1ca7e') in 0.023180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17d397000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.371 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-07 12:53:07.625 Unity[75098:19038492] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.797 seconds
+Domain Reload Profiling: 1169ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (165ms)
+		LoadAssemblies (183ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (797ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (348ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (31ms)
+			ProcessInitializeOnLoadAttributes (267ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 20 unused Assets / (100.2 KB). Loaded Objects now: 3895.
+Memory consumption went from 139.1 MB to 139.0 MB.
+Total: 3.632083 ms (FindLiveObjects: 0.145125 ms CreateObjectMapping: 0.058333 ms MarkObjects: 3.374584 ms  DeleteObjects: 0.053291 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 6f96fd3683cdf8fdc8f07b76add17bff -> 9040266a7beb9b88891f4f31bfa4d92f
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17d5c7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.338 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+2025-05-07 12:53:25.160 Unity[75098:19038492] [XcodeApplications] Expected com.apple.dt.Xcode CFBundleIdentifier but found com.microsoft.VSCode in /Users/phamthanhtrung/Downloads/Visual Studio Code.app/Contents/Info.plist
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+chmod: /Users/phamthanhtrung/Downloads/6/tools/dummy/mac64/Luna.app/Contents/MacOS/Luna: No such file or directory
+xattr: /Users/phamthanhtrung/Downloads/6/jake: No such xattr: com.apple.quarantine
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Failed to sync packages list
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ .  / :MoveNext ()
+System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start< .  / > ( .  / &)
+ .  :  ()
+ .⁪/ :MoveNext ()
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start< .⁪/ > ( .⁪/ &)
+ .⁪:  ()
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:145)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 145)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.762 seconds
+Domain Reload Profiling: 1101ms
+	BeginReloadAssembly (129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (167ms)
+		LoadAssemblies (188ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (763ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (331ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (252ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Release of invalid GC handle. The handle is from a previous domain. The release operation is skipped.
+Release of invalid GC handle native callstack: 
+ #0 GetStacktrace(int)
+ #1 ScriptingGCHandle::Release() const
+ #2 ScriptingGCHandle::ReleaseAndClear()
+ #3 UploadHandlerRaw::~UploadHandlerRaw()
+ #4 UploadHandler::Release()
+ #5 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::~UnityWebRequestProto()
+ #6 UnityWebRequestAsyncOperation::InvokeCoroutine()
+ #7 UnityWebRequestProto<UnityWebRequestTransport, AtomicRefCounter, RedirectHelper, ResponseHelper, DownloadHandler, UploadHandler, CertificateHandler, HeaderHelper, AsyncOperation>::Job_InvokeCoroutine(AsyncOperation*)
+ #8 BackgroundJobQueue::ExecuteMainThreadJobs()
+ #9 PreloadManager::WaitForAllAsyncOperationsToComplete()
+ #10 UnloadUnusedAssetsImmediate(bool, bool)
+ #11 invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+ #12 _dispatch_client_callout
+ #13 _dispatch_async_and_wait_invoke
+ #14 _dispatch_client_callout
+ #15 _dispatch_main_queue_drain
+ #16 _dispatch_main_queue_callback_4CF
+ #17 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #18 __CFRunLoopRun
+ #19 CFRunLoopRunSpecific
+ #20 RunCurrentEventLoopInMode
+ #21 ReceiveNextEventCommon
+ #22 _BlockUntilNextEventMatchingListInModeWithFilter
+ #23 _DPSNextEvent
+ #24 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #25 -[NSApplication run]
+ #26 NSApplicationMain
+ #27 EditorMain(int, char const**)
+ #28 main
+ #29 start
+Unloading 3304 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (100.3 KB). Loaded Objects now: 3912.
+Memory consumption went from 145.6 MB to 145.5 MB.
+Total: 3.856542 ms (FindLiveObjects: 0.154458 ms CreateObjectMapping: 0.066250 ms MarkObjects: 3.503458 ms  DeleteObjects: 0.131875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 6f96fd3683cdf8fdc8f07b76add17bff -> 9040266a7beb9b88891f4f31bfa4d92f

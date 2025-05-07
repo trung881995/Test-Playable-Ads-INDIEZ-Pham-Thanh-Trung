@@ -21,6 +21,7 @@ public class AICarController : MonoBehaviour
 
     public CheckpointManager checkpointManager;
     private int currentCheckpointIndex = 0;
+    private float turnAmount = 0f;
 
     public GameObject SpeedUpEffect;
     public GameObject SmokeTrailEffect;
@@ -91,24 +92,27 @@ public class AICarController : MonoBehaviour
             float angleToTarget = Vector3.SignedAngle(transform.forward, targetDir, Vector3.up);
 
             // === Quay mượt về hướng mục tiêu ===
-            float clampedTurn = Mathf.Clamp(angleToTarget, -turnSpeed * Time.deltaTime, turnSpeed * Time.deltaTime);
-            transform.rotation = Quaternion.AngleAxis(clampedTurn, Vector3.up) * transform.rotation;
+            turnAmount = angleToTarget * turnSpeed * Time.deltaTime;
+            transform.Rotate(Vector3.up,turnAmount );
+
+          /*  float clampedTurn = Mathf.Clamp(angleToTarget, -turnSpeed * Time.deltaTime, turnSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.AngleAxis(clampedTurn, Vector3.up) * transform.rotation;*/
 
             // === Xác định hướng di chuyển (lùi nếu kẹt) ===
             Vector3 moveDir = (timeStopping >= 1.5f) ? -transform.forward : transform.forward;
             float moveStep = (moveSpeed+speedUpMoving) * Time.deltaTime;
 
             // === Drift giả lập nếu cua gắt và đang chạy nhanh ===
-            if (Mathf.Abs(angleToTarget) > slowTurnThreshold && velocity.magnitude > 5f)
+            if (Mathf.Abs(turnAmount) > slowTurnThreshold && velocity.magnitude > 5f)
             {
-                if (angleToTarget > 0)
+                if (turnAmount > 0)
                 {
                     if (!RightDriftEffect.activeInHierarchy)
                     {
                         rightDriftEffect();
                     }
                 }
-                else if (angleToTarget < 0)
+                else if (turnAmount < 0)
                 {
                     if (!LeftDriftEffect.activeInHierarchy)
                     {
@@ -116,9 +120,9 @@ public class AICarController : MonoBehaviour
                     }
                 }
 
-                Vector3 driftOffset = transform.right * Mathf.Sign(angleToTarget) * driftIntensity;
+                Vector3 driftOffset = transform.right * Mathf.Sign(turnAmount) * driftIntensity;
                 transform.position += driftOffset * Time.deltaTime;
-                //Debug.Log(" Drift giả lập!");
+                Debug.Log(" Drift giả lập!");
             }
             else
             {
@@ -131,16 +135,9 @@ public class AICarController : MonoBehaviour
             //var moveVelocity = Vector3.zero;
             transform.position = Vector3.SmoothDamp(transform.position, transform.position + moveDir * moveStep, ref moveVelocity, smoothTime * Time.deltaTime);
 
-            if (transform.position.y < 0.2f)
-            {
-                transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.up * 0.1f * 50f * Time.deltaTime, ref moveVelocity2, smoothTime * Time.deltaTime);
-
-            }
-            if (transform.position.y > 0.4f)
-            {
-                transform.position = Vector3.SmoothDamp(transform.position, transform.position + Vector3.down * 0.1f * 50f * Time.deltaTime, ref moveVelocity3, smoothTime * Time.deltaTime);
-
-            }
+            var pos = transform.position;
+            pos.y = 0.3f;
+            transform.position = pos;
             //SmokeTrailEffect.SetActive(true);
             /*      
                     // === Kiểm tra qua checkpoint ===
@@ -151,6 +148,8 @@ public class AICarController : MonoBehaviour
                             currentCheckpointIndex = 0;
                     }
             */
+
+            /*
             // === Né vật cản bằng Raycast 3 hướng ===
             RaycastHit hit;
             Vector3[] directions = {
@@ -174,6 +173,7 @@ public class AICarController : MonoBehaviour
             Debug.DrawRay(transform.position, directions[0] * obstacleDetectionRange, Color.red);
             Debug.DrawRay(transform.position, directions[1] * obstacleDetectionRange, Color.yellow);
             Debug.DrawRay(transform.position, directions[2] * obstacleDetectionRange, Color.yellow);
+            */
         }
         
     }
@@ -186,6 +186,7 @@ public class AICarController : MonoBehaviour
         timeStopping = 0f;
         speedUpTime = 0f;
         currentLap = 0;
+        turnAmount = 0f;
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(0, 0, 0);
         lastPosition = transform.position;
@@ -259,15 +260,15 @@ public class AICarController : MonoBehaviour
         {
             case MapType.Summer:
                 speedUpTime = 5;
-                speedUpMoving= 2500;
+                speedUpMoving= 1500;
                 break;
             case MapType.Rainy:
                 speedUpTime = 6;
-                speedUpMoving= 3000;
+                speedUpMoving= 2000;
                 break;
             case MapType.Winter:
                 speedUpTime = 7;
-                speedUpMoving= 3500;
+                speedUpMoving= 2500;
                 break;
         }
     }

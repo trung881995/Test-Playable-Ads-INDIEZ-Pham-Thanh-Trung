@@ -1,0 +1,436 @@
+{
+    "BuildID": "d3e6f484-d3aa-4737-a7e7-04c1d1fd97b3",
+    "Command": "project:upload",
+    "ProjectID": "c15883569d6bc4f039b50232f623b7dd",
+    "ProjectStateHash": "0758d839a93da98ce9579336e04bc865194a62181489ea47ad5dc1735ed00db5",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1746597341935,
+    "EndTime": 1746597421445,
+    "PlaygroundUserID": 23538,
+    "OperatingSystem": "darwin",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "2022.3.61f1",
+    "LunaVersion": "6.3.0",
+    "LogCount": 14,
+    "Logs": [
+        {
+            "LogID": "7d48c83e-69c0-4eaf-b423-849f82d37231",
+            "Order": 11,
+            "Timestamp": 1746597421581,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: Playable.InstallFullGame",
+            "Details": [
+                "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "DetailsValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "cf077155-131b-48f9-84ba-3ecc683fc610",
+            "Order": 11,
+            "Timestamp": 1746597421582,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3015",
+            "Description": "You are not the Game Ended API: LifeCycle.GameEnded",
+            "Details": [
+                "You are not using the Game Ended API: LifeCycle.GameEnded. Some ad networks require this call, please add the event to avoid the ad being rejected."
+            ],
+            "DescriptionValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "DetailsValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "ce2fbf83-1bd1-4c03-92ec-a4f33c3fab2c",
+            "Order": 11,
+            "Timestamp": 1746597421582,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "0102ab77-6157-49cb-ab1e-8f984a562ef0",
+            "Order": 11,
+            "Timestamp": 1746597421582,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "b72093bc-17f5-4ff5-9a71-618b70a155c9",
+            "Order": 0,
+            "Timestamp": 1746597344857,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1030",
+            "Description": "TMP Font Asset uses unsupported 'Atlas Population Mode'",
+            "Details": [
+                "TMP Font Asset '{0}' uses Atlas Population Mode '{1}' which is not supported"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "LiberationSans SDF - Fallback",
+                "Dynamic"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "059c37ae-0d0e-4b86-a131-9b72b56a6bf3",
+            "Order": 1,
+            "Timestamp": 1746597384166,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1007",
+            "Description": "Extensive use of mesh colliders",
+            "Details": [
+                "Usage of mesh colliders has negative effect on performance. You can use primitive colliders instead."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "1476fc88-5d2e-4882-a804-31c0fc18d476",
+            "Order": 2,
+            "Timestamp": 1746597384166,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of Rigidbody Component",
+            "Details": [
+                "There is extensive usage of the Rigidbody component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 16."
+            ],
+            "DescriptionValues": [
+                "Rigidbody"
+            ],
+            "DetailsValues": [
+                "Rigidbody",
+                "10",
+                "16"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "8122e5a0-46a4-4b77-9eb0-4516ed12abf0",
+            "Order": 3,
+            "Timestamp": 1746597384166,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 167."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "167"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "1cc7c502-ac03-43be-81ed-9371427f04c0",
+            "Order": 4,
+            "Timestamp": 1746597384176,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1027",
+            "Description": "This DOTween version is not supported",
+            "Details": [
+                "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "853eabfd-3d6e-4c44-9afc-33eee0845539",
+            "Order": 5,
+            "Timestamp": 1746597384176,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1026",
+            "Description": "This Cinemachine version is not supported",
+            "Details": [
+                "The incorrect Cinemachine version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "be2805b0-43f6-4e20-88f1-138ff66bc153",
+            "Order": 6,
+            "Timestamp": 1746597384176,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1015",
+            "Description": "This TMP version is not fully supported",
+            "Details": [
+                "The incorrect Text Mesh Pro for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "c52a1832-594d-4358-83f3-7dcc0ee3e13b",
+            "Order": 7,
+            "Timestamp": 1746597384176,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.7.7)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "/Users/phamthanhtrung/Desktop/Projects/Test-Playable-Ads-INDIEZ-Pham-Thanh-Trung/Packages/manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "d70467ab-6a37-46da-9c82-059ca80beadf",
+            "Order": 8,
+            "Timestamp": 1746597384177,
+            "Stage": 1,
+            "ErrorType": 3,
+            "ErrorCode": "LP1002",
+            "Description": "Repeat wrap mode used on a texture with non power-of-two dimensions, this might not be rendered correctly.",
+            "Details": [
+                "Repeat wrap mode used on 'LiberationSans SDF Atlas' texture at 'Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset' with non power-of-two dimensions, this might not be rendered correctly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "LiberationSans SDF Atlas",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "95c27a21-1827-4583-b4c8-14b9e531d26c",
+            "Order": 9,
+            "Timestamp": 1746597384177,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "MainTrack_Object",
+                "Pit_Road",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Spoiler",
+                "MainTrack_Object",
+                "Pit_Road",
+                "Arch_for_banner_free_obs",
+                "Traffic_light_free_obs",
+                "Traffic_light_free_obs (1)",
+                "Arch_for_banner_free_obs (1)",
+                "Arch_banner_finish_free_obs",
+                "Tire_free_obs",
+                "Tire_free_obs (1)",
+                "Tire_free_obs (2)",
+                "Flag_free_obs",
+                "Flag_free_obs (1)",
+                "Flag_free_obs (2)",
+                "Flag_free_obs (3)",
+                "Flag_free_obs (4)",
+                "Flag_free_obs (5)",
+                "Flag_free_obs (6)",
+                "Flag_free_obs (7)",
+                "Flag_free_obs (8)",
+                "Flag_free_obs (9)",
+                "Arch_01_free_obs",
+                "Arch_01_free_obs (1)",
+                "Arch_01_free_obs (2)",
+                "Arch_01_free_obs (3)",
+                "Arch_01_free_obs (4)",
+                "Arch_01_free_obs (5)",
+                "Arch_01_free_obs (6)",
+                "Arch_01_free_obs (7)",
+                "Arch_01_free_obs (8)",
+                "Arch_01_free_obs (9)",
+                "Arch_01_free_obs (10)",
+                "Arch_01_free_obs (11)",
+                "Arch_01_free_obs (12)",
+                "Arch_01_free_obs (13)",
+                "CheckPoint",
+                "CheckPoint (1)",
+                "CheckPoint (2)",
+                "CheckPoint (3)",
+                "CheckPoint (4)",
+                "CheckPoint (5)",
+                "CheckPoint (6)",
+                "CheckPoint (7)",
+                "CheckPoint (8)",
+                "CheckPoint (9)",
+                "CheckPoint (10)",
+                "CheckPoint (11)",
+                "CheckPoint (12)",
+                "CheckPoint (13)",
+                "CheckPoint (14)",
+                "CheckPoint (15)",
+                "CheckPoint (16)",
+                "CheckPoint (17)",
+                "CheckPoint (18)",
+                "CheckPoint (19)",
+                "CheckPoint (20)",
+                "CheckPoint (21)",
+                "CheckPoint (22)",
+                "CheckPoint (23)",
+                "CheckPoint (24)",
+                "Cube (2)",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube",
+                "Cube (1)",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Body",
+                "Spoiler"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 94,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

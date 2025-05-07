@@ -1,13 +1,12 @@
-﻿<Properties StartupConfiguration="{3DAD8B3E-2A62-58CE-3511-9D5AA68ECDA6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerCarController.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AICarController.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerCarController.cs" Line="206" Column="47" />
-      <File FileName="Assets/Scripts/SimpleCameraMove.cs" Line="3" Column="30" />
-      <File FileName="Assets/Scripts/CheckpointManager.cs" Line="7" Column="22" />
-      <File FileName="Assets/Scripts/AICarController.cs" Line="139" Column="43" />
-      <File FileName="Assets/Scripts/CameraSequence.cs" Line="84" Column="9" />
-      <File FileName="Assets/Scripts/UIManager.cs" Line="250" Column="30" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="189" Column="9" />
+      <File FileName="Assets/Scripts/PlayerCarController.cs" Line="142" Column="1" />
+      <File FileName="Assets/Scripts/CheckpointManager.cs" />
+      <File FileName="Assets/Scripts/CameraSequence.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AICarController.cs" Line="98" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,8 +17,11 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Assembly-CSharp-firstpass.csproj</String>
+    <String>Assembly-CSharp.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="42769a0d-6ccf-4151-849c-f18b9bc39d32" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

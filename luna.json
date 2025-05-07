@@ -1,7 +1,7 @@
 {
     "version": "6.3.0",
     "projectId": "c15883569d6bc4f039b50232f623b7dd",
-    "applicationID": 29436,
+    "applicationID": 29549,
     "creativeName": "",
     "pgServer": "EU",
     "window": {
@@ -129,7 +129,9 @@
                 "Assets/TextMesh Pro/Resources/TMP Settings.asset"
             ]
         },
-        "scenes": [],
+        "scenes": [
+            "Assets/Scenes/PlayableAdsScene2.unity"
+        ],
         "disabledScenes": [],
         "startupScene": 0,
         "packages": {
@@ -163,8 +165,39 @@
         "genericCheck": true,
         "disableAntiAliasing": true,
         "forceStableRandomSeed": false,
-        "unusedModules": [],
-        "disableRuntimeAnalysisForCode": true,
+        "unusedModules": [
+            {
+                "name": "physics3d",
+                "excluded": false,
+                "forceIncluded": false
+            },
+            {
+                "name": "physics2d",
+                "excluded": false,
+                "forceIncluded": false
+            },
+            {
+                "name": "particle-system",
+                "excluded": false,
+                "forceIncluded": false
+            },
+            {
+                "name": "reflection",
+                "excluded": false,
+                "forceIncluded": false
+            },
+            {
+                "name": "prefabs",
+                "excluded": false,
+                "forceIncluded": false
+            },
+            {
+                "name": "mecanim-wasm",
+                "excluded": false,
+                "forceIncluded": false
+            }
+        ],
+        "disableRuntimeAnalysisForCode": false,
         "disableRuntimeAnalysisForShaders": false,
         "useShadersCache": true,
         "preventUpdatingRAListWhenRAIsDisabled": false,
@@ -205,6 +238,26 @@
                         "script": "",
                         "ext": "",
                         "name": "Resources/unity_builtin_extra/Default-Particle"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "none",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "none",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset"
                     }
                 ]
             },
